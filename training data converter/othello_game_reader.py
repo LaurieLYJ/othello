@@ -164,13 +164,15 @@ def skipAnalysis(trainingFile):
 
 def main():
     #@TODO Change directory based on computer
-    directory = "C:\\Users\\Eliot\\Documents\\CMU\\S17\\10-401\\Othello Project\\"
+    directory = "C:\\Users\\Eliot\\Documents\\CMU\\S17\\10-401\\Othello Project\\othello\\training data converter\\"
 
-    trainingFileName = "games.txt"
-    trainingFile = open(directory + trainingFileName, 'r')
+    rawFolder = "Raw Output\\"
+    trainingFileName = "games_2.txt"
+    trainingFile = open(directory + rawFolder + trainingFileName, 'r')
 
-    outFileName = "training_data.txt"
-    outFile = open(directory + outFileName, 'w')
+    outFileName = "converted_"
+    outputFolder = "Converted Files\\"
+    outFile = open(directory + outputFolder + outFileName + trainingFileName, 'w')
 
     keepRunning = True
 
