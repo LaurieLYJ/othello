@@ -7,7 +7,7 @@ from keras.layers.core import Dense, Flatten
 from keras.callbacks import ModelCheckpoint
 
 batch_size = 100
-epochs = 50
+epochs = 100
 
 #map each location to a category
 groups = [[0]*9 for i in xrange(9)]
