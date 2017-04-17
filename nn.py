@@ -1,5 +1,6 @@
 import numpy as np
-from keras.models import Sequential
+import h5py
+from keras.models import Sequential, load_model
 from keras.utils import np_utils
 from keras.layers.convolutional import Convolution2D
 from keras.layers import MaxPooling2D
@@ -19,7 +20,7 @@ X_trn = []
 Y_trn = []
 
 #read from the training data
-dataFile = "/Users/liuyujin/othello/training data converter/training_data_1.txt"
+dataFile = "/Users/liuyujin/othello/training data converter/final_output.txt"
 with open(dataFile) as f:
 	content = f.readlines()
 content = [l.strip() for l in content]
@@ -58,4 +59,6 @@ model.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['accur
 X_trn = X_trn.reshape(X_trn.shape[0], input_cols,1, 1)
 Y_trn = np_utils.to_categorical(Y_trn, num_groups)
 model.fit(X_trn, Y_trn, batch_size=batch_size, nb_epoch=epochs)
-
+model.save('model.h5')
+#model.save_weights('model_weights.h5')
+#model.load_model(model.h5)
