@@ -23,6 +23,8 @@
 #in the input vector and be trained on the output data  on the line following
 #an input vector.
 
+import os
+
 #Recursively flattens a list
 #From my own 112 homework 9
 def flatten(L,spot=0):
@@ -86,7 +88,7 @@ def colToInt(colLetter):
 #Reads in move, and returns the move in (row,column) format as a tuple
 def readMove(trainingFile):
     rawLine = trainingFile.readline()
-    while(rawLine[0] != "=" and rawLine != ""):
+    while(rawLine != "" and rawLine[0] != "="):
         rawLine = trainingFile.readline()
 
     if rawLine == "":
@@ -150,10 +152,10 @@ def makeVector(rawBoard, rawPlayer, rawMove):
 
 #Skips analysis in training file where computer goes over game
 def skipAnalysis(trainingFile):
-    fileLine = trainingFile.readLine()
+    fileLine = trainingFile.readline()
 
     while(fileLine[0:18] != "Analysis complete"):
-        fileLine = trainingFile.readLine()
+        fileLine = trainingFile.readline()
 
         if fileLine == "":
             print("Reached EOF while skipping game analysis!")
@@ -165,35 +167,35 @@ def skipAnalysis(trainingFile):
 def main():
     #@TODO Change directory based on computer
     directory = "C:\\Users\\Eliot\\Documents\\CMU\\S17\\10-401\\Othello Project\\othello\\training data converter\\"
-
     rawFolder = "Raw Output\\"
-    trainingFileName = "games_2.txt"
-    trainingFile = open(directory + rawFolder + trainingFileName, 'r')
 
-    outFileName = "converted_"
-    outputFolder = "Converted Files\\"
-    outFile = open(directory + outputFolder + outFileName + trainingFileName, 'w')
+    outFile = open(directory + "final_output.txt", 'w')
 
-    keepRunning = True
+    for trainingFileName in os.listdir(directory + rawFolder):
+        if trainingFileName.endswith(".txt"):
+            print(trainingFileName)
+            trainingFile = open(directory + rawFolder + trainingFileName, 'r')
+            keepRunning = True
 
-    while(keepRunning):
-        while(readUntilBoard(trainingFile)):
+            while(keepRunning):
+                while(readUntilBoard(trainingFile)):
 
-            #Read in board, player, and computer's move
-            rawBoard = readBoard(trainingFile)
-            rawPlayer = readPlayer(trainingFile)
-            rawMove = readMove(trainingFile)
+                    #Read in board, player, and computer's move
+                    rawBoard = readBoard(trainingFile)
+                    rawPlayer = readPlayer(trainingFile)
+                    rawMove = readMove(trainingFile)
 
-            #If we se an error, return
-            if rawMove[1] == -1 or rawBoard == [] or rawPlayer == -2:
-                print("File, move, or board not found!!")
-                return None
+                    #If we se an error, return
+                    if rawMove[1] == -1 or rawBoard == [] or rawPlayer == -2:
+                        print("File, move, or board not found!!")
+                        break
 
-            #Write training vector to file
-            trainingVector = makeVector(rawBoard, rawPlayer, rawMove)
-            outFile.write(trainingVector)
+                    #Write training vector to file
+                    trainingVector = makeVector(rawBoard, rawPlayer, rawMove)
+                    outFile.write(trainingVector)
 
-        #Updates running label
-        keepRunning = skipAnalysis(trainingFile)
+                #Updates running label
+                keepRunning = skipAnalysis(trainingFile)
+
 
 main()

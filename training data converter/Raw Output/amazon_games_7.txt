@@ -1,0 +1,177 @@
+Ntest version as of Apr 15 2017
+Copyright 1999-2014 Chris Welty and Vlad Petric
+All Rights Reserved
+
+64-bit compile
+file was stored correctly
+---- Heights ----
+midgame : 12
+100% WLD: 20
+ 97% WLD: 20
+ 91% WLD: 20
+ 70% WLD: 21
+ 60% WLD: 21
+ 50% WLD: 22
+
+status Loading book
+status Negamaxing book
+status
+status Loading book
+status Negamaxing book
+status
+
+   A B C D E F G H  
+ 1 - - - - - - - - 1
+ 2 - - - - - - - - 2
+ 3 - - - - - - - - 3
+ 4 - - - O * - - - 4
+ 5 - - - * O - - - 5
+ 6 - - - - - - - - 6
+ 7 - - - - - - - - 7
+ 8 - - - - - - - - 8
+   A B C D E F G H  
+Black to move
+
+BOOK: b  26 in    1 +    0 games:  -119? < -119: -119>; cutoff -16400
+Contempt: -10000; Randomness: 3
+book D3 -1.19 1  27	b  27 in    1 +    0 games:  -119? < -119: -119>; cutoff -50
+book C4 -1.19 1  27	b  27 in    1 +    0 games:  -119? < -119: -119>; cutoff -50
+book F5 -1.19 1  27	b  27 in    1 +    0 games:  -119? < -119: -119>; cutoff -50
+book E6 -1.19 1  27	b  27 in    1 +    0 games:  -119? < -119: -119>; cutoff -50
+
+
+Choosing move 2/4 - C4/-1.19
+=== C4  -1.19 0  26 , book 0.00    0 n/0.000s =    0kn/s; **.** us/n 60e:  ===
+
+   A B C D E F G H  
+ 1 - - - - - - - - 1
+ 2 - - - - - - - - 2
+ 3 - - - - - - - - 3
+ 4 - - * * * - - - 4
+ 5 - - - * O - - - 5
+ 6 - - - - - - - - 6
+ 7 - - - - - - - - 7
+ 8 - - - - - - - - 8
+   A B C D E F G H  
+White to move
+
+BOOK: b  27 in    1 +    0 games:   119? <  119:  119>; cutoff 50
+Contempt: 10000; Randomness: 3
+book E3 1.19 1  28	b  28 in    1 +    0 games:   119? <  119:  119>; cutoff 137
+book C3 0.50 0  26	u  26 in    0 +    0 games:    50? <   50:   50>
+
+
+Choosing move 1/2 - E3/1.19
+=== E3  +1.19 0  27 , book 0.00    0 n/0.000s =    0kn/s; **.** us/n 59e:  ===
+
+   A B C D E F G H  
+ 1 - - - - - - - - 1
+ 2 - - - - - - - - 2
+ 3 - - - - O - - - 3
+ 4 - - * * O - - - 4
+ 5 - - - * O - - - 5
+ 6 - - - - - - - - 6
+ 7 - - - - - - - - 7
+ 8 - - - - - - - - 8
+   A B C D E F G H  
+Black to move
+
+BOOK: b  28 in    1 +    0 games:  -119? < -119: -119>; cutoff -137
+Contempt: -10000; Randomness: 3
+book F5 -1.19 0  27	u  27 in    0 +    0 games:  -119? < -119: -119>
+book F6 -1.19 1  27	b  27 in    1 +    0 games:  -119? < -119: -119>; cutoff 16
+
+
+Choosing move 1/2 - F5/-1.19
+=== F5  -1.19 0  28 , book 0.00    0 n/0.000s =    0kn/s; **.** us/n 58e:  ===
+
+   A B C D E F G H  
+ 1 - - - - - - - - 1
+ 2 - - - - - - - - 2
+ 3 - - - - O - - - 3
+ 4 - - * * O - - - 4
+ 5 - - - * * * - - 5
+ 6 - - - - - - - - 6
+ 7 - - - - - - - - 7
+ 8 - - - - - - - - 8
+   A B C D E F G H  
+White to move
+
+status Thinking
+search B4       +0.41 0   1
+search C5       +1.29 0   1
+search E6       +1.34 0   1
+search E6       +1.29 0   2
+search E6       +1.19 0   3
+search E6       +0.88 0   4
+search C5       +0.97 0   4
+search C5       +0.32 0   5
+search E6       +1.19 0   5
+search E6       +1.19 0   6
+search E6       +1.19 0   7
+search E6       +1.19 0   8
+search E6       +1.19 0   9
+search E6       +1.19 0  10
+search E6       +1.19 0  11
+search E6       +1.19 0  12
+search E6       +1.19 0  13
+search E6       +1.19 0  14
+search E6       +1.19 0  15
+search E6       +1.19 0  16
+search E6       +1.19 0  17
+search E6       +1.19 0  18
+search E6       +1.19 0  19
+search E6       +1.19 0  20
+search E6       +1.19 0  21
+search E6       +1.19 0  22
+search E6       +1.19 0  23
+search E6       +1.19 0  24
+search E6       +1.19 0  25
+search E6       +1.19 0  26
+>> Abort round!!!
+ 26 (57 empty)	E6/1.19		90.1s elapsed
+status
+=== E6  +1.19 0  26 90.09   28Mn/90.091s =  319kn/s;  3.13 us/n 57e:  ===
+
+   A B C D E F G H  
+ 1 - - - - - - - - 1
+ 2 - - - - - - - - 2
+ 3 - - - - O - - - 3
+ 4 - - * * O - - - 4
+ 5 - - - * O * - - 5
+ 6 - - - - O - - - 6
+ 7 - - - - - - - - 7
+ 8 - - - - - - - - 8
+   A B C D E F G H  
+Black to move
+
+status Thinking
+search F2       -4.32 0   1
+search D3       -1.52 0   1
+search F6       -1.29 0   1
+search F6       -1.19 0   2
+search F6       -1.19 0   3
+search F6       -1.19 0   4
+search F6       -1.19 0   5
+search F6       -1.19 0   6
+search F6       -1.19 0   7
+search F6       -1.19 0   8
+search F6       -1.19 0   9
+search F6       -1.19 0  10
+search F6       -1.19 0  11
+search F6       -1.19 0  12
+search F6       -1.19 0  13
+search F6       -1.19 0  14
+search F6       -1.19 0  15
+search F6       -1.19 0  16
+search F6       -1.19 0  17
+search F6       -1.19 0  18
+search F6       -1.19 0  19
+search F6       -1.19 0  20
+search F6       -1.19 0  21
+search F6       -1.19 0  22
+search F6       -1.19 0  23
+search F6       -1.19 0  24
+search F6       -1.19 0  25
+search F6       -1.19 0  26
+>> Abort round!!!
