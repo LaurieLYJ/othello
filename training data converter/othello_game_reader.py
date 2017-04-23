@@ -164,7 +164,7 @@ def skipAnalysis(trainingFile):
     return True
 
 
-def main():
+if __name__ == '__main__':
     #@TODO Change directory based on computer
     directory = "C:\\Users\\Eliot\\Documents\\CMU\\S17\\10-401\\Othello Project\\othello\\training data converter\\"
     rawFolder = "Raw Output\\"
@@ -196,6 +196,3 @@ def main():
 
                 #Updates running label
                 keepRunning = skipAnalysis(trainingFile)
-
-
-main()

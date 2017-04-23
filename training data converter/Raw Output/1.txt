@@ -1,0 +1,4636 @@
+Ntest version as of Apr 17 2017
+Copyright 1999-2014 Chris Welty and Vlad Petric
+All Rights Reserved
+
+64-bit compile
+file was stored correctly
+---- Heights ----
+midgame : 12
+100% WLD: 20
+ 97% WLD: 20
+ 91% WLD: 20
+ 70% WLD: 21
+ 60% WLD: 21
+ 50% WLD: 22
+
+status Loading book
+status Negamaxing book
+status
+status Loading book
+status Negamaxing book
+status
+
+   A B C D E F G H  
+ 1 - - - - - - - - 1
+ 2 - - - - - - - - 2
+ 3 - - - - - - - - 3
+ 4 - - - O * - - - 4
+ 5 - - - * O - - - 5
+ 6 - - - - - - - - 6
+ 7 - - - - - - - - 7
+ 8 - - - - - - - - 8
+   A B C D E F G H  
+Black to move
+
+status Thinking
+search D3       -0.81 0   1
+search D3       -1.39 0   2
+search D3       -0.98 0   3
+search D3       -1.34 0   4
+search D3       -0.46 0   5
+search D3       -1.30 0   6
+search D3       -0.97 0   7
+search D3       -0.60 0   8
+search D3       -0.48 0   9
+search F5       -0.47 0   9
+search F5       -0.73 0  10
+search F5       -0.91 0  11
+search F5       -0.90 0  12
+search F5       -0.61 0  13
+search F5       -1.14 0  14
+search F5       -0.93 0  15
+search F5       -1.18 0  16
+search F5       -0.88 0  17
+search F5       -1.20 0  18
+search E6       -1.15 0  18
+search E6       -1.04 0  19
+search E6       -1.05 0  20
+search E6       -1.03 0  21
+search F5       -1.01 0  21
+search D3       -0.99 0  21
+search C4       -0.98 0  21
+search C4       -1.11 0  22
+search C4       -0.92 0  23
+search C4       -0.86 0  24
+search C4       -0.77 0  25
+search C4       -1.45 0  26
+search D3       -1.44 0  26
+search F5       -1.43 0  26
+search E6       -1.42 0  26
+search E6       -1.38 0  27
+search C4       -1.37 0  27
+search C4       -1.41 0  28
+search C4       -1.03 0  29
+search C4       -1.40 0  30
+search C4       -1.19 0  31
+search C4       -1.28 0  32
+search C4       -1.00 0  33
+ 33 (60 empty)	C4/-1.00		33.2s elapsed
+status
+=== C4  -1.00 0  33 33.22  230Mn/33.225s = 6940kn/s;  0.14 us/n 60e:  ===
+
+   A B C D E F G H  
+ 1 - - - - - - - - 1
+ 2 - - - - - - - - 2
+ 3 - - - - - - - - 3
+ 4 - - * * * - - - 4
+ 5 - - - * O - - - 5
+ 6 - - - - - - - - 6
+ 7 - - - - - - - - 7
+ 8 - - - - - - - - 8
+   A B C D E F G H  
+White to move
+
+status Thinking
+search C3       +0.22 0   1
+search E3       +1.39 0   1
+search E3       +1.00 0   2
+search E3       +1.00 0   3
+search E3       +1.00 0   4
+search E3       +1.00 0   5
+search E3       +1.00 0   6
+search E3       +1.00 0   7
+search E3       +1.00 0   8
+search E3       +1.00 0   9
+search E3       +1.00 0  10
+search E3       +1.00 0  11
+search E3       +1.00 0  12
+search E3       +1.00 0  13
+search E3       +1.00 0  14
+search E3       +1.00 0  15
+search E3       +1.00 0  16
+search E3       +1.00 0  17
+search E3       +1.00 0  18
+search E3       +1.00 0  19
+search E3       +1.00 0  20
+search E3       +1.00 0  21
+search E3       +1.00 0  22
+search E3       +1.00 0  23
+search E3       +1.00 0  24
+search E3       +1.00 0  25
+search E3       +1.00 0  26
+search E3       +1.00 0  27
+search E3       +1.00 0  28
+search E3       +1.00 0  29
+search E3       +1.00 0  30
+search E3       +1.00 0  31
+search E3       +1.00 0  32
+>> Abort round!!!
+ 32 (59 empty)	E3/1.00		45s elapsed
+status
+=== E3  +1.00 0  32 45.00  309Mn/45.003s = 6867kn/s;  0.15 us/n 59e:  ===
+
+   A B C D E F G H  
+ 1 - - - - - - - - 1
+ 2 - - - - - - - - 2
+ 3 - - - - O - - - 3
+ 4 - - * * O - - - 4
+ 5 - - - * O - - - 5
+ 6 - - - - - - - - 6
+ 7 - - - - - - - - 7
+ 8 - - - - - - - - 8
+   A B C D E F G H  
+Black to move
+
+status Thinking
+search F2       -3.16 0   1
+search F3       -1.60 0   1
+search F5       -1.27 0   1
+search F6       -0.98 0   1
+search F6       -1.51 0   2
+search F5       -1.34 0   2
+search F5       -1.29 0   3
+search F5       -1.49 0   4
+search F5       -1.00 0   5
+search F5       -1.39 0   6
+search F5       -1.44 0   7
+search F5       -1.51 0   8
+search F5       -1.51 0   9
+search F5       -1.51 0  10
+search F5       -1.51 0  11
+search F5       -1.51 0  12
+search F5       -1.51 0  13
+search F5       -1.51 0  14
+search F5       -1.51 0  15
+search F5       -1.51 0  16
+search F5       -1.51 0  17
+search F5       -1.51 0  18
+search F5       -1.51 0  19
+search F5       -1.51 0  20
+search F5       -1.51 0  21
+search F5       -1.51 0  22
+search F5       -1.51 0  23
+search F5       -1.51 0  24
+search F5       -1.51 0  25
+search F5       -1.51 0  26
+search F5       -1.51 0  27
+search F5       -1.51 0  28
+search F5       -1.51 0  29
+search F5       -1.51 0  30
+ 30 (58 empty)	F5/-1.51		15.9s elapsed
+status
+=== F5  -1.51 0  30 15.91  107Mn/15.910s = 6769kn/s;  0.15 us/n 58e:  ===
+
+   A B C D E F G H  
+ 1 - - - - - - - - 1
+ 2 - - - - - - - - 2
+ 3 - - - - O - - - 3
+ 4 - - * * O - - - 4
+ 5 - - - * * * - - 5
+ 6 - - - - - - - - 6
+ 7 - - - - - - - - 7
+ 8 - - - - - - - - 8
+   A B C D E F G H  
+White to move
+
+status Thinking
+search B4       +0.41 0   1
+search C5       +1.29 0   1
+search E6       +1.34 0   1
+search E6       +1.29 0   2
+search E6       +1.49 0   3
+search E6       +1.00 0   4
+search E6       +1.39 0   5
+search E6       +1.44 0   6
+search E6       +1.51 0   7
+search E6       +1.51 0   8
+search E6       +1.51 0   9
+search E6       +1.51 0  10
+search E6       +1.51 0  11
+search E6       +1.51 0  12
+search E6       +1.51 0  13
+search E6       +1.51 0  14
+search E6       +1.51 0  15
+search E6       +1.51 0  16
+search E6       +1.51 0  17
+search E6       +1.51 0  18
+search E6       +1.51 0  19
+search E6       +1.51 0  20
+search E6       +1.51 0  21
+search E6       +1.51 0  22
+search E6       +1.51 0  23
+search E6       +1.51 0  24
+search E6       +1.51 0  25
+search E6       +1.51 0  26
+search E6       +1.51 0  27
+search E6       +1.51 0  28
+search E6       +1.51 0  29
+>> Abort round!!!
+ 29 (57 empty)	E6/1.51		45s elapsed
+status
+=== E6  +1.51 0  29 45.00  291Mn/45.002s = 6484kn/s;  0.15 us/n 57e:  ===
+
+   A B C D E F G H  
+ 1 - - - - - - - - 1
+ 2 - - - - - - - - 2
+ 3 - - - - O - - - 3
+ 4 - - * * O - - - 4
+ 5 - - - * O * - - 5
+ 6 - - - - O - - - 6
+ 7 - - - - - - - - 7
+ 8 - - - - - - - - 8
+   A B C D E F G H  
+Black to move
+
+status Thinking
+search F2       -4.32 0   1
+search D3       -1.52 0   1
+search F6       -1.29 0   1
+search F6       -1.51 0   2
+search F4       -1.49 0   2
+search F4       -1.41 0   3
+search D3       -1.00 0   3
+search D3       -2.39 0   4
+search F4       -1.39 0   4
+search F4       -1.44 0   5
+search F4       -2.17 0   6
+search F6       -1.51 0   6
+search F6       -1.51 0   7
+search F6       -1.51 0   8
+search F6       -1.51 0   9
+search F6       -1.51 0  10
+search F6       -1.51 0  11
+search F6       -1.51 0  12
+search F6       -1.51 0  13
+search F6       -1.51 0  14
+search F6       -1.51 0  15
+search F6       -1.51 0  16
+search F6       -1.51 0  17
+search F6       -1.51 0  18
+search F6       -1.51 0  19
+search F6       -1.51 0  20
+search F6       -1.51 0  21
+search F6       -1.51 0  22
+search F6       -1.51 0  23
+search F6       -1.51 0  24
+search F6       -1.51 0  25
+search F6       -1.51 0  26
+search F6       -1.51 0  27
+search F6       -1.51 0  28
+search F6       -1.51 0  29
+search F6       -1.51 0  30
+ 30 (56 empty)	F6/-1.51		17.2s elapsed
+status
+=== F6  -1.51 0  30 17.17  110Mn/17.167s = 6454kn/s;  0.15 us/n 56e:  ===
+
+   A B C D E F G H  
+ 1 - - - - - - - - 1
+ 2 - - - - - - - - 2
+ 3 - - - - O - - - 3
+ 4 - - * * O - - - 4
+ 5 - - - * * * - - 5
+ 6 - - - - O * - - 6
+ 7 - - - - - - - - 7
+ 8 - - - - - - - - 8
+   A B C D E F G H  
+White to move
+
+status Thinking
+search B3       -2.65 0   1
+search B4       -1.26 0   1
+search G4       -0.55 0   1
+search C5       +1.30 0   1
+search C5       +1.13 0   2
+search C5       +0.51 0   3
+search C5       +0.25 0   4
+search C5       +0.73 0   5
+search C5       +0.91 0   6
+search C5       +0.90 0   7
+search C5       +0.61 0   8
+search C5       +1.14 0   9
+search C5       +0.93 0  10
+search C5       +1.18 0  11
+search C5       +0.88 0  12
+search C5       +1.20 0  13
+search C5       +1.04 0  14
+search C5       +1.05 0  15
+search C5       +1.03 0  16
+search C5       +1.11 0  17
+search C5       +0.92 0  18
+search C5       +0.86 0  19
+search C5       +0.77 0  20
+search C5       +1.45 0  21
+search C5       +1.37 0  22
+search C5       +1.41 0  23
+search C5       +1.03 0  24
+search C5       +1.40 0  25
+search C5       +1.19 0  26
+search C5       +1.70 0  27
+search C5       +1.02 0  28
+search C5       +1.50 0  29
+ 29 (55 empty)	C5/1.50		15.5s elapsed
+status
+=== C5  +1.50 0  29 15.53   99Mn/15.529s = 6394kn/s;  0.16 us/n 55e:  ===
+
+   A B C D E F G H  
+ 1 - - - - - - - - 1
+ 2 - - - - - - - - 2
+ 3 - - - - O - - - 3
+ 4 - - * O O - - - 4
+ 5 - - O * * * - - 5
+ 6 - - - - O * - - 6
+ 7 - - - - - - - - 7
+ 8 - - - - - - - - 8
+   A B C D E F G H  
+Black to move
+
+status Thinking
+search E2       -5.93 0   1
+search C3       -1.18 0   1
+search F4       -1.13 0   1
+search F4       -1.50 0   2
+search F4       -1.50 0   3
+search F4       -1.50 0   4
+search F4       -1.73 0   5
+search C3       -1.50 0   5
+search C3       -1.50 0   6
+search C3       -1.50 0   7
+search C3       -1.50 0   8
+search C3       -1.50 0   9
+search C3       -1.50 0  10
+search C3       -1.50 0  11
+search C3       -1.50 0  12
+search C3       -1.50 0  13
+search C3       -1.50 0  14
+search C3       -1.50 0  15
+search C3       -1.50 0  16
+search C3       -1.50 0  17
+search C3       -1.50 0  18
+search C3       -1.50 0  19
+search C3       -1.50 0  20
+search C3       -1.50 0  21
+search C3       -1.50 0  22
+search C3       -1.50 0  23
+search C3       -1.50 0  24
+search C3       -1.50 0  25
+search C3       -1.50 0  26
+search C3       -1.50 0  27
+search C3       -1.50 0  28
+search C3       -1.37 0  29
+ 29 (54 empty)	C3/-1.37		23.9s elapsed
+status
+=== C3  -1.37 0  29 23.90  152Mn/23.897s = 6360kn/s;  0.16 us/n 54e:  ===
+
+   A B C D E F G H  
+ 1 - - - - - - - - 1
+ 2 - - - - - - - - 2
+ 3 - - * - O - - - 3
+ 4 - - * * O - - - 4
+ 5 - - O * * * - - 5
+ 6 - - - - O * - - 6
+ 7 - - - - - - - - 7
+ 8 - - - - - - - - 8
+   A B C D E F G H  
+White to move
+
+status Thinking
+search C2       -3.81 0   1
+search B3       -1.39 0   1
+search B4       +0.62 0   1
+search C6       +1.43 0   1
+search C6       +1.37 0   2
+search C6       +1.37 0   3
+search C6       +1.37 0   4
+search C6       +1.37 0   5
+search C6       +1.37 0   6
+search C6       +1.37 0   7
+search C6       +1.37 0   8
+search C6       +1.37 0   9
+search C6       +1.37 0  10
+search C6       +1.37 0  11
+search C6       +1.37 0  12
+search C6       +1.37 0  13
+search C6       +1.37 0  14
+search C6       +1.37 0  15
+search C6       +1.37 0  16
+search C6       +1.37 0  17
+search C6       +1.37 0  18
+search C6       +1.37 0  19
+search C6       +1.37 0  20
+search C6       +1.37 0  21
+search C6       +1.37 0  22
+search C6       +1.37 0  23
+search C6       +1.37 0  24
+search C6       +1.37 0  25
+search C6       +1.37 0  26
+search C6       +1.37 0  27
+search C6       +1.37 0  28
+search C6       +1.49 0  29
+ 29 (53 empty)	C6/1.49		43.4s elapsed
+status
+=== C6  +1.49 0  29 43.38  278Mn/43.384s = 6417kn/s;  0.16 us/n 53e:  ===
+
+   A B C D E F G H  
+ 1 - - - - - - - - 1
+ 2 - - - - - - - - 2
+ 3 - - * - O - - - 3
+ 4 - - * * O - - - 4
+ 5 - - O O * * - - 5
+ 6 - - O - O * - - 6
+ 7 - - - - - - - - 7
+ 8 - - - - - - - - 8
+   A B C D E F G H  
+Black to move
+
+status Thinking
+search E2       -6.59 0   1
+search F2       -4.19 0   1
+search D3       -1.45 0   1
+search D3       -1.49 0   2
+search D3       -1.49 0   3
+search D3       -1.49 0   4
+search D3       -1.49 0   5
+search D3       -1.49 0   6
+search D3       -1.49 0   7
+search D3       -1.49 0   8
+search D3       -1.49 0   9
+search D3       -1.49 0  10
+search D3       -1.49 0  11
+search D3       -1.49 0  12
+search D3       -1.49 0  13
+search D3       -1.49 0  14
+search D3       -1.49 0  15
+search D3       -1.49 0  16
+search D3       -1.49 0  17
+search D3       -1.49 0  18
+search D3       -1.49 0  19
+search D3       -1.49 0  20
+search D3       -1.49 0  21
+search D3       -1.49 0  22
+search D3       -1.49 0  23
+search D3       -1.49 0  24
+search D3       -1.49 0  25
+search D3       -1.49 0  26
+search D3       -1.49 0  27
+search D3       -1.49 0  28
+>> Abort round!!!
+ 28 (52 empty)	D3/-1.49		45s elapsed
+status
+=== D3  -1.49 0  28 45.00  295Mn/45.000s = 6556kn/s;  0.15 us/n 52e:  ===
+
+   A B C D E F G H  
+ 1 - - - - - - - - 1
+ 2 - - - - - - - - 2
+ 3 - - * * O - - - 3
+ 4 - - * * * - - - 4
+ 5 - - O O * * - - 5
+ 6 - - O - O * - - 6
+ 7 - - - - - - - - 7
+ 8 - - - - - - - - 8
+   A B C D E F G H  
+White to move
+
+status Thinking
+search C2       -2.12 0   1
+search D2       +1.66 0   1
+search D2       +1.29 0   2
+search D2       +0.90 0   3
+search D2       +0.61 0   4
+search D2       +1.55 0   5
+search D2       +1.43 0   6
+search D2       +1.47 0   7
+search D2       +1.21 0   8
+search D2       +1.38 0   9
+search D2       +1.60 0  10
+search D2       +1.14 0  11
+search D2       +1.08 0  12
+search D2       +1.11 0  13
+search D2       +1.21 0  14
+search D2       +1.52 0  15
+search D2       +1.28 0  16
+search D2       +1.54 0  17
+search D2       +1.63 0  18
+search D2       +1.50 0  19
+search D2       +1.59 0  20
+search D2       +1.48 0  21
+search D2       +1.51 0  22
+search D2       +1.50 0  23
+search D2       +1.65 0  24
+search D2       +1.65 0  25
+search D2       +1.54 0  26
+search D2       +1.61 0  27
+search D2       +1.24 0  28
+ 28 (51 empty)	D2/1.24		28.6s elapsed
+status
+=== D2  +1.24 0  28 28.56  179Mn/28.562s = 6267kn/s;  0.16 us/n 51e:  ===
+
+   A B C D E F G H  
+ 1 - - - - - - - - 1
+ 2 - - - O - - - - 2
+ 3 - - * O O - - - 3
+ 4 - - * O * - - - 4
+ 5 - - O O * * - - 5
+ 6 - - O - O * - - 6
+ 7 - - - - - - - - 7
+ 8 - - - - - - - - 8
+   A B C D E F G H  
+Black to move
+
+status Thinking
+search E1       -4.06 0   1
+search C2       -1.98 0   1
+search E2       -1.95 0   1
+search F3       -1.51 0   1
+search D6       -1.29 0   1
+search D6       -2.22 0   2
+search F3       -1.58 0   2
+search E2       -1.24 0   2
+search E2       -1.24 0   3
+search E2       -1.24 0   4
+search E2       -1.24 0   5
+search E2       -1.24 0   6
+search E2       -1.24 0   7
+search E2       -1.24 0   8
+search E2       -1.24 0   9
+search E2       -1.24 0  10
+search E2       -1.24 0  11
+search E2       -1.24 0  12
+search E2       -1.24 0  13
+search E2       -1.24 0  14
+search E2       -1.24 0  15
+search E2       -1.24 0  16
+search E2       -1.24 0  17
+search E2       -1.24 0  18
+search E2       -1.24 0  19
+search E2       -1.24 0  20
+search E2       -1.24 0  21
+search E2       -1.24 0  22
+search E2       -1.24 0  23
+search E2       -1.24 0  24
+search E2       -1.24 0  25
+search E2       -1.24 0  26
+search E2       -1.24 0  27
+search E2       -1.44 0  28
+ 28 (50 empty)	E2/-1.44		26.5s elapsed
+status
+=== E2  -1.44 0  28 26.46  159Mn/26.460s = 6013kn/s;  0.17 us/n 50e:  ===
+
+   A B C D E F G H  
+ 1 - - - - - - - - 1
+ 2 - - - O * - - - 2
+ 3 - - * * * - - - 3
+ 4 - - * O * - - - 4
+ 5 - - O O * * - - 5
+ 6 - - O - O * - - 6
+ 7 - - - - - - - - 7
+ 8 - - - - - - - - 8
+   A B C D E F G H  
+White to move
+
+status Thinking
+search E1       -2.97 0   1
+search C2       +0.58 0   1
+search B3       +1.75 0   1
+search B3       +1.44 0   2
+search B3       +1.44 0   3
+search B3       +1.44 0   4
+search B3       +1.44 0   5
+search B3       +1.44 0   6
+search B3       +1.44 0   7
+search B3       +1.44 0   8
+search B3       +1.44 0   9
+search B3       +1.44 0  10
+search B3       +1.44 0  11
+search B3       +1.44 0  12
+search B3       +1.44 0  13
+search B3       +1.44 0  14
+search B3       +1.44 0  15
+search B3       +1.44 0  16
+search B3       +1.44 0  17
+search B3       +1.44 0  18
+search B3       +1.44 0  19
+search B3       +1.44 0  20
+search B3       +1.44 0  21
+search B3       +1.44 0  22
+search B3       +1.44 0  23
+search B3       +1.44 0  24
+search B3       +1.44 0  25
+search B3       +1.44 0  26
+search B3       +1.44 0  27
+>> Abort round!!!
+ 27 (49 empty)	B3/1.44		45s elapsed
+status
+=== B3  +1.44 0  27 45.00  251Mn/45.003s = 5582kn/s;  0.18 us/n 49e:  ===
+
+   A B C D E F G H  
+ 1 - - - - - - - - 1
+ 2 - - - O * - - - 2
+ 3 - O * * * - - - 3
+ 4 - - O O * - - - 4
+ 5 - - O O * * - - 5
+ 6 - - O - O * - - 6
+ 7 - - - - - - - - 7
+ 8 - - - - - - - - 8
+   A B C D E F G H  
+Black to move
+
+status Thinking
+search C1       -2.37 0   1
+search B4       -0.96 0   1
+search B4       -1.54 0   2
+search B4       -1.54 0   3
+search C1       -1.47 0   3
+search C1       -1.42 0   4
+search C1       -1.82 0   5
+search B4       -1.54 0   5
+search B4       -1.54 0   6
+search C1       -1.47 0   6
+search C1       -1.60 0   7
+search B4       -1.54 0   7
+search B4       -1.54 0   8
+search B4       -1.54 0   9
+search C1       -1.53 0   9
+search C1       -1.66 0  10
+search B4       -1.54 0  10
+search B4       -1.54 0  11
+search B4       -1.54 0  12
+search B4       -1.54 0  13
+search B4       -1.54 0  14
+search B4       -1.54 0  15
+search B4       -1.54 0  16
+search B4       -1.54 0  17
+search B4       -1.54 0  18
+search B4       -1.54 0  19
+search B4       -1.54 0  20
+search B4       -1.54 0  21
+search B4       -1.54 0  22
+search B4       -1.54 0  23
+search B4       -1.54 0  24
+search B4       -1.54 0  25
+search B4       -1.54 0  26
+search B4       -1.54 0  27
+>> Abort round!!!
+ 27 (48 empty)	B4/-1.54		45s elapsed
+status
+=== B4  -1.54 0  27 45.00  261Mn/45.002s = 5820kn/s;  0.17 us/n 48e:  ===
+
+   A B C D E F G H  
+ 1 - - - - - - - - 1
+ 2 - - - O * - - - 2
+ 3 - O * * * - - - 3
+ 4 - * * * * - - - 4
+ 5 - - O O * * - - 5
+ 6 - - O - O * - - 6
+ 7 - - - - - - - - 7
+ 8 - - - - - - - - 8
+   A B C D E F G H  
+White to move
+
+status Thinking
+search E1       -5.85 0   1
+search C2       +1.55 0   1
+search C2       +1.69 0   2
+search F4       +1.70 0   2
+search F4       +1.70 0   3
+search F4       +1.70 0   4
+search F4       +1.70 0   5
+search F4       +1.70 0   6
+search F4       +1.70 0   7
+search F4       +1.70 0   8
+search F4       +1.70 0   9
+search F4       +1.70 0  10
+search F4       +1.72 0  11
+search F4       +1.70 0  12
+search F4       +1.70 0  13
+search F4       +1.70 0  14
+search F4       +1.82 0  15
+search F4       +1.70 0  16
+search F4       +1.99 0  17
+search F4       +1.70 0  18
+search F4       +1.87 0  19
+search F4       +1.70 0  20
+search F4       +1.71 0  21
+search F4       +1.70 0  22
+search F4       +1.70 0  23
+search F4       +1.70 0  24
+search F4       +1.70 0  25
+search F4       +1.70 0  26
+search F4       +1.70 0  27
+search F4       +1.91 0  28
+search C2       +1.92 0  28
+ 28 (47 empty)	C2/1.92	F4/1.91		23.6s elapsed
+status
+=== C2  +1.92 0  28 23.62  135Mn/23.618s = 5724kn/s;  0.17 us/n 47e:  ===
+
+   A B C D E F G H  
+ 1 - - - - - - - - 1
+ 2 - - O O * - - - 2
+ 3 - O O * * - - - 3
+ 4 - * O * * - - - 4
+ 5 - - O O * * - - 5
+ 6 - - O - O * - - 6
+ 7 - - - - - - - - 7
+ 8 - - - - - - - - 8
+   A B C D E F G H  
+Black to move
+
+status Thinking
+search C1       -1.43 0   1
+search C1       -1.92 0   2
+search C1       -1.92 0   3
+search C1       -1.92 0   4
+search C1       -1.92 0   5
+search C1       -1.92 0   6
+search C1       -1.92 0   7
+search C1       -1.92 0   8
+search C1       -1.92 0   9
+search C1       -1.92 0  10
+search C1       -1.92 0  11
+search C1       -1.92 0  12
+search C1       -1.92 0  13
+search C1       -1.92 0  14
+search C1       -1.92 0  15
+search C1       -2.85 0  16
+search D1       -1.92 0  16
+search D1       -1.92 0  17
+search D1       -1.99 0  18
+search D7       -1.92 0  18
+search D7       -1.92 0  19
+search D7       -1.92 0  20
+search D7       -1.92 0  21
+search D7       -1.92 0  22
+search D7       -1.92 0  23
+search D7       -1.92 0  24
+search D7       -1.92 0  25
+search D7       -1.92 0  26
+search D7       -1.92 0  27
+>> Abort round!!!
+ 27 (46 empty)	D7/-1.92		45s elapsed
+status
+=== D7  -1.92 0  27 45.00  246Mn/45.000s = 5479kn/s;  0.18 us/n 46e:  ===
+
+   A B C D E F G H  
+ 1 - - - - - - - - 1
+ 2 - - O O * - - - 2
+ 3 - O O * * - - - 3
+ 4 - * O * * - - - 4
+ 5 - - O O * * - - 5
+ 6 - - O - * * - - 6
+ 7 - - - * - - - - 7
+ 8 - - - - - - - - 8
+   A B C D E F G H  
+White to move
+
+status Thinking
+search F1       +1.39 0   1
+search A3       +1.72 0   1
+search F4       +1.98 0   1
+search F4       +1.12 0   2
+search A3       +1.34 0   2
+search A3       +1.34 0   3
+search A3       +1.34 0   4
+search A3       +1.34 0   5
+search A3       +1.34 0   6
+search A3       +1.34 0   7
+search A3       +1.34 0   8
+search A3       +1.34 0   9
+search A3       +1.34 0  10
+search A3       +1.34 0  11
+search A3       +1.34 0  12
+search A3       +1.34 0  13
+search A3       +1.34 0  14
+search A3       +1.34 0  15
+search A3       +1.34 0  16
+search A3       +1.34 0  17
+search A3       +1.34 0  18
+search A3       +1.34 0  19
+search A3       +1.34 0  20
+search A3       +1.34 0  21
+search A3       +1.34 0  22
+search A3       +1.34 0  23
+search A3       +1.34 0  24
+search A3       +1.34 0  25
+search A3       +1.34 0  26
+search A3       +1.34 0  27
+>> Abort round!!!
+ 27 (45 empty)	A3/1.34		45s elapsed
+status
+=== A3  +1.34 0  27 45.00  270Mn/45.002s = 6005kn/s;  0.17 us/n 45e:  ===
+
+   A B C D E F G H  
+ 1 - - - - - - - - 1
+ 2 - - O O * - - - 2
+ 3 O O O * * - - - 3
+ 4 - O O * * - - - 4
+ 5 - - O O * * - - 5
+ 6 - - O - * * - - 6
+ 7 - - - * - - - - 7
+ 8 - - - - - - - - 8
+   A B C D E F G H  
+Black to move
+
+status Thinking
+search C1       -2.06 0   1
+search D6       -0.73 0   1
+search D6       +0.03 0   2
+search D6       -1.44 0   3
+search C1       -1.29 0   3
+search C1       -1.14 0   4
+search C1       -1.99 0   5
+search D6       -1.67 0   5
+search D6       -0.95 0   6
+search D6       -0.85 0   7
+search D6       -1.71 0   8
+search D6       -0.81 0   9
+search D6       -1.39 0  10
+search D6       -0.82 0  11
+search D6       -0.77 0  12
+search D6       -0.38 0  13
+search D6       -1.14 0  14
+search D6       -1.35 0  15
+search D6       -1.53 0  16
+search D6       -0.30 0  17
+search D6       -0.89 0  18
+search D6       -0.62 0  19
+search D6       -0.26 0  20
+search D6       -0.91 0  21
+search D6       -1.42 0  22
+search D6       -1.59 0  23
+search C1       -1.58 0  23
+search C1       -2.01 0  24
+search D6       -1.69 0  24
+search D6       -0.92 0  25
+search D6       -1.33 0  26
+search D6       -0.89 0  27
+search D6       -1.67 0  28
+search D6       -0.56 0  29
+ 29 (44 empty)	D6/-0.56		15.2s elapsed
+status
+=== D6  -0.56 0  29 15.21   87Mn/15.214s = 5762kn/s;  0.17 us/n 44e:  ===
+
+   A B C D E F G H  
+ 1 - - - - - - - - 1
+ 2 - - O O * - - - 2
+ 3 O O O * * - - - 3
+ 4 - O O * * - - - 4
+ 5 - - O * * * - - 5
+ 6 - - O * * * - - 6
+ 7 - - - * - - - - 7
+ 8 - - - - - - - - 8
+   A B C D E F G H  
+White to move
+
+status Thinking
+search F1       -0.04 0   1
+search F4       -0.03 0   1
+search F4       -0.65 0   2
+search F1       +0.56 0   2
+search F1       +0.56 0   3
+search F1       +0.56 0   4
+search F1       +0.56 0   5
+search F1       +0.56 0   6
+search F1       +0.56 0   7
+search F1       +0.56 0   8
+search F1       +0.56 0   9
+search F1       +0.56 0  10
+search F1       +0.56 0  11
+search F1       +0.56 0  12
+search F1       +0.56 0  13
+search F1       +0.56 0  14
+search F1       +0.56 0  15
+search F1       +0.56 0  16
+search F1       +0.56 0  17
+search F1       +0.56 0  18
+search F1       +0.56 0  19
+search F1       +0.56 0  20
+search F1       +0.56 0  21
+search F1       +0.56 0  22
+search F1       +0.56 0  23
+search F1       +0.56 0  24
+search F1       +0.56 0  25
+search F1       +0.56 0  26
+search F1       +0.56 0  27
+search F1       +0.56 0  28
+search F1       +0.79 0  29
+search F1       +1.05 0  30
+search F1       +1.10 0  31
+ 31 (43 empty)	F1/1.10		18.7s elapsed
+status
+=== F1  +1.10 0  31 18.74  103Mn/18.739s = 5532kn/s;  0.18 us/n 43e:  ===
+
+   A B C D E F G H  
+ 1 - - - - - O - - 1
+ 2 - - O O O - - - 2
+ 3 O O O O * - - - 3
+ 4 - O O * * - - - 4
+ 5 - - O * * * - - 5
+ 6 - - O * * * - - 6
+ 7 - - - * - - - - 7
+ 8 - - - - - - - - 8
+   A B C D E F G H  
+Black to move
+
+status Thinking
+search C1       -1.71 0   1
+search E1       -1.49 0   1
+search B6       -1.44 0   1
+search B6       -1.10 0   2
+search B6       -1.10 0   3
+search B6       -1.10 0   4
+search B6       -1.10 0   5
+search B6       -1.10 0   6
+search B6       -1.10 0   7
+search B6       -1.10 0   8
+search B6       -1.10 0   9
+search B6       -1.10 0  10
+search B6       -1.10 0  11
+search B6       -1.10 0  12
+search B6       -1.10 0  13
+search B6       -1.10 0  14
+search B6       -1.10 0  15
+search B6       -1.10 0  16
+search B6       -1.10 0  17
+search B6       -1.10 0  18
+search B6       -1.10 0  19
+search B6       -1.10 0  20
+search B6       -1.10 0  21
+search B6       -1.10 0  22
+search B6       -1.10 0  23
+search B6       -1.10 0  24
+search B6       -1.10 0  25
+search B6       -1.10 0  26
+search B6       -1.10 0  27
+search B6       -1.10 0  28
+search B6       -1.10 0  29
+search B6       -1.10 0  30
+search B6       -0.06 0  31
+ 31 (42 empty)	B6/-0.06		34.3s elapsed
+status
+=== B6  -0.06 0  31 34.35  168Mn/34.347s = 4892kn/s;  0.20 us/n 42e:  ===
+
+   A B C D E F G H  
+ 1 - - - - - O - - 1
+ 2 - - O O O - - - 2
+ 3 O O O O * - - - 3
+ 4 - O O * * - - - 4
+ 5 - - * * * * - - 5
+ 6 - * * * * * - - 6
+ 7 - - - * - - - - 7
+ 8 - - - - - - - - 8
+   A B C D E F G H  
+White to move
+
+status Thinking
+search F3       +2.33 0   1
+search F3       +0.06 0   2
+search F3       +0.06 0   3
+search F3       +0.06 0   4
+search F3       +0.06 0   5
+search F3       +0.06 0   6
+search F3       +0.06 0   7
+search F3       -1.40 0   8
+search C7       +0.06 0   8
+search C7       +0.06 0   9
+search C7       +0.06 0  10
+search C7       +0.06 0  11
+search C7       +0.06 0  12
+search C7       +0.06 0  13
+search C7       +0.06 0  14
+search C7       +0.06 0  15
+search C7       +0.06 0  16
+search C7       +0.06 0  17
+search C7       +0.06 0  18
+search C7       +0.06 0  19
+search C7       +0.06 0  20
+search C7       +0.06 0  21
+search C7       +0.06 0  22
+search C7       +0.06 0  23
+search C7       +0.06 0  24
+search C7       +0.06 0  25
+search C7       +0.06 0  26
+search C7       +0.06 0  27
+search C7       +0.06 0  28
+search C7       +0.06 0  29
+search C7       +0.06 0  30
+search C7       +0.67 0  31
+>> Abort round!!!
+ 31 (41 empty)	C7/0.67	 30 (41 empty)	C7/0.06		45s elapsed
+status
+=== C7  +0.67 0  30 , best to  31 45.00  201Mn/45.004s = 4469kn/s;  0.22 us/n 41e:  ===
+
+   A B C D E F G H  
+ 1 - - - - - O - - 1
+ 2 - - O O O - - - 2
+ 3 O O O O * - - - 3
+ 4 - O O * * - - - 4
+ 5 - - O * * * - - 5
+ 6 - * O * * * - - 6
+ 7 - - O * - - - - 7
+ 8 - - - - - - - - 8
+   A B C D E F G H  
+Black to move
+
+status Thinking
+search C1       -3.36 0   1
+search E1       -2.73 0   1
+search B5       -0.01 0   1
+search B5       -0.95 0   2
+search D1       -0.67 0   2
+search D1       -0.67 0   3
+search D1       -0.67 0   4
+search D1       -0.67 0   5
+search D1       -0.67 0   6
+search D1       -0.67 0   7
+search D1       -0.67 0   8
+search D1       -0.67 0   9
+search D1       -0.67 0  10
+search D1       -0.67 0  11
+search D1       -0.67 0  12
+search D1       -0.67 0  13
+search D1       -0.67 0  14
+search D1       -0.67 0  15
+search D1       -0.67 0  16
+search D1       -0.67 0  17
+search D1       -0.67 0  18
+search D1       -0.67 0  19
+search D1       -0.67 0  20
+search D1       -0.67 0  21
+search D1       -0.67 0  22
+search D1       -0.67 0  23
+search D1       -0.67 0  24
+search D1       -0.67 0  25
+search D1       -0.67 0  26
+search D1       -0.67 0  27
+search D1       -0.67 0  28
+search D1       -0.67 0  29
+search D1       -0.67 0  30
+search D1       -1.16 0  31
+>> Abort round!!!
+ 31 (40 empty)	D1/-1.16	 30 (40 empty)	D1/-0.67		45s elapsed
+status
+=== D1  -1.16 0  30 , best to  31 45.00  257Mn/45.002s = 5716kn/s;  0.17 us/n 40e:  ===
+
+   A B C D E F G H  
+ 1 - - - * - O - - 1
+ 2 - - O * O - - - 2
+ 3 O O O * * - - - 3
+ 4 - O O * * - - - 4
+ 5 - - O * * * - - 5
+ 6 - * O * * * - - 6
+ 7 - - O * - - - - 7
+ 8 - - - - - - - - 8
+   A B C D E F G H  
+White to move
+
+status Thinking
+search E1       +3.52 0   1
+search E1       +1.16 0   2
+search E1       +1.16 0   3
+search E1       +1.16 0   4
+search E1       +1.16 0   5
+search E1       +1.16 0   6
+search E1       +1.16 0   7
+search E1       +0.46 0   8
+search E8       +1.16 0   8
+search E8       +1.16 0   9
+search E8       +1.16 0  10
+search E8       +1.16 0  11
+search E8       +1.16 0  12
+search E8       +1.16 0  13
+search E8       +1.16 0  14
+search E8       +1.16 0  15
+search E8       +1.16 0  16
+search E8       +1.16 0  17
+search E8       +1.16 0  18
+search E8       +1.16 0  19
+search E8       +1.16 0  20
+search E8       +1.16 0  21
+search E8       +1.16 0  22
+search E8       +1.16 0  23
+search E8       +1.16 0  24
+search E8       +1.16 0  25
+search E8       +1.16 0  26
+search E8       +1.16 0  27
+search E8       +1.16 0  28
+search E8       +1.16 0  29
+search E8       +1.16 0  30
+search E8       +1.16 0  50%W
+search E8       +2.00 0  50% 
+ 50%  (39 empty)	E8/2.00		25.6s elapsed
+status
+=== E8  +2.00 0  50%  25.63  239Mn/25.626s = 9343kn/s;  0.11 us/n 39e:  ===
+
+   A B C D E F G H  
+ 1 - - - * - O - - 1
+ 2 - - O * O - - - 2
+ 3 O O O * * - - - 3
+ 4 - O O * * - - - 4
+ 5 - - O * * * - - 5
+ 6 - * O * * * - - 6
+ 7 - - O O - - - - 7
+ 8 - - - - O - - - 8
+   A B C D E F G H  
+Black to move
+
+status Thinking
+search E1       -2.31 0   1
+search B5       -0.85 0   1
+search B5       -2.00 0   2
+search B5       -2.00 0   3
+search B5       -2.00 0   4
+search B5       -2.00 0   5
+search B5       -2.00 0   6
+search B5       -2.00 0   7
+search B5       -2.00 0   8
+search B5       -2.00 0   9
+search B5       -2.00 0  10
+search B5       -2.00 0  11
+search B5       -2.00 0  12
+search B5       -2.00 0  13
+search B5       -2.00 0  14
+search B5       -2.00 0  15
+search B5       -2.00 0  16
+search B5       -2.00 0  17
+search B5       -2.00 0  18
+search B5       -2.00 0  19
+search B5       -2.00 0  20
+search B5       -2.00 0  21
+search B5       -2.00 0  22
+search B5       -2.00 0  23
+search B5       -2.00 0  24
+search B5       -2.00 0  25
+search B5       -2.00 0  26
+search B5       -2.00 0  27
+search B5       -2.00 0  28
+search B5       -2.00 0  29
+search B5       -2.00 0  50%W
+search B5       -2.00 0  50% 
+search B5       -2.00 0  60%W
+ 60%W (38 empty)	B5/-2.00		43.5s elapsed
+status
+=== B5  -2.00 0  60%W 43.45  589Mn/43.451s = 13560kn/s;  0.07 us/n 38e:  ===
+
+   A B C D E F G H  
+ 1 - - - * - O - - 1
+ 2 - - O * O - - - 2
+ 3 O O O * * - - - 3
+ 4 - O * * * - - - 4
+ 5 - * * * * * - - 5
+ 6 - * O * * * - - 6
+ 7 - - O O - - - - 7
+ 8 - - - - O - - - 8
+   A B C D E F G H  
+White to move
+
+status Thinking
+search E1       +1.42 0   1
+search E1       +0.03 0   2
+search A4       +0.81 0   2
+search A5       +1.00 0   2
+search A5       +1.00 0   3
+search A5       +1.00 0   4
+search A5       +1.00 0   5
+search A5       +1.00 0   6
+search A5       +1.00 0   7
+search E1       +1.07 0   7
+search E1       +2.75 0   8
+search E1       +4.77 0   9
+search E1       +3.71 0  10
+search E1       +3.38 0  11
+search E1       +2.01 0  12
+search A5       +2.18 0  12
+search A5       +1.14 0  13
+search E1       +1.15 0  13
+search E1       +2.83 0  14
+search E1       +1.96 0  15
+search E1       +2.32 0  16
+search E1       +2.08 0  17
+search E1       +1.05 0  18
+search A5       +1.06 0  18
+search A5       +1.23 0  19
+search E1       +1.24 0  19
+search E1       +1.65 0  20
+search E1       +1.30 0  21
+search A5       +1.31 0  21
+search A5       +1.25 0  22
+search E1       +1.73 0  22
+search E1       +1.00 0  23
+search E1       +1.00 0  24
+search E1       +1.01 0  25
+search E1       +1.00 0  26
+search A5       +1.01 0  26
+search A5       +1.00 0  27
+search A5       +1.00 0  28
+search A5       +1.00 0  50%W
+search A5       +1.03 0  50% 
+search A5       +1.03 0  60%W
+search A5       +1.00 0  60% 
+search E1       +1.98 0  60% 
+ 60%  (37 empty)	E1/1.98	A5/1.00		24s elapsed
+status
+=== E1  +1.98 0  60%  23.99  240Mn/23.992s = 10024kn/s;  0.10 us/n 37e:  ===
+
+   A B C D E F G H  
+ 1 - - - * O O - - 1
+ 2 - - O O O - - - 2
+ 3 O O O * * - - - 3
+ 4 - O * * * - - - 4
+ 5 - * * * * * - - 5
+ 6 - * O * * * - - 6
+ 7 - - O O - - - - 7
+ 8 - - - - O - - - 8
+   A B C D E F G H  
+Black to move
+
+status Thinking
+search C1       -4.20 0   1
+search G1       -0.03 0   1
+search G1       -1.98 0   2
+search G1       -1.98 0   3
+search G1       -1.98 0   4
+search G1       -1.98 0   5
+search G1       -1.98 0   6
+search G1       -1.98 0   7
+search G1       -1.98 0   8
+search G1       -1.98 0   9
+search G1       -1.98 0  10
+search G1       -1.98 0  11
+search G1       -1.98 0  12
+search G1       -1.98 0  13
+search G1       -1.98 0  14
+search G1       -1.98 0  15
+search G1       -1.98 0  16
+search G1       -1.98 0  17
+search G1       -1.98 0  18
+search G1       -1.98 0  19
+search G1       -1.98 0  20
+search G1       -1.98 0  21
+search G1       -1.98 0  22
+search G1       -1.98 0  23
+search G1       -1.98 0  24
+search G1       -1.98 0  25
+search G1       -1.98 0  26
+search G1       -1.98 0  27
+search G1       -1.98 0  50%W
+search G1       -1.98 0  50% 
+search G1       -1.98 0  60%W
+search G1       -1.98 0  60% 
+search G1       -1.98 0  70%W
+search G1       -2.00 0  70% 
+search G1       -2.00 0  91%W
+search G1       -2.00 0  91% 
+ 91%  (36 empty)	G1/-2.00		36.5s elapsed
+status
+=== G1  -2.00 0  91%  36.45  593Mn/36.454s = 16273kn/s;  0.06 us/n 36e:  ===
+
+   A B C D E F G H  
+ 1 - - - * * * * - 1
+ 2 - - O O O - - - 2
+ 3 O O O * * - - - 3
+ 4 - O * * * - - - 4
+ 5 - * * * * * - - 5
+ 6 - * O * * * - - 6
+ 7 - - O O - - - - 7
+ 8 - - - - O - - - 8
+   A B C D E F G H  
+White to move
+
+status Thinking
+search F3       -3.49 0   1
+search A4       +0.00 0   1
+search A4       +0.16 0   2
+search A5       +2.00 0   2
+search A5       +2.00 0   3
+search A5       +2.00 0   4
+search A5       +2.00 0   5
+search A5       +2.00 0   6
+search A5       +2.00 0   7
+search A5       +2.00 0   8
+search A5       +2.00 0   9
+search A5       +2.00 0  10
+search A5       +2.00 0  11
+search A5       +2.00 0  12
+search A5       +2.00 0  13
+search A5       +2.00 0  14
+search A5       +2.00 0  15
+search A5       +2.00 0  16
+search A5       +2.00 0  17
+search A5       +2.00 0  18
+search A5       +2.00 0  19
+search A5       +2.00 0  20
+search A5       +2.00 0  21
+search A5       +2.00 0  22
+search A5       +2.00 0  23
+search A5       +2.00 0  24
+search A5       +2.00 0  25
+search A5       +2.00 0  26
+search A5       +2.00 0  50%W
+search A5       +2.00 0  50% 
+search A5       +2.00 0  60%W
+search A5       +2.00 0  60% 
+search A5       +2.00 0  70%W
+search A5       +2.00 0  70% 
+search A5       +2.00 0  91%W
+search A5       +2.00 0  91% 
+search A5       +2.00 0  97%W
+>> Abort round!!!
+ 97%W (35 empty)	A5/2.00		45s elapsed
+status
+=== A5  +2.00 0  97%W 45.01  818Mn/45.008s = 18194kn/s;  0.05 us/n 35e:  ===
+
+   A B C D E F G H  
+ 1 - - - * * * * - 1
+ 2 - - O O O - - - 2
+ 3 O O O * * - - - 3
+ 4 - O * * * - - - 4
+ 5 O * * * * * - - 5
+ 6 - O O * * * - - 6
+ 7 - - O O - - - - 7
+ 8 - - - - O - - - 8
+   A B C D E F G H  
+Black to move
+
+status Thinking
+search C1       -3.08 0   1
+search F3       +0.74 0   1
+search F3       -1.00 0   2
+search F3       -1.00 0   3
+search F3       -5.20 0   4
+search C1       -5.09 0   4
+search A4       -4.62 0   4
+search A6       -1.46 0   4
+search A6       -2.00 0   5
+search A6       -3.13 0   6
+search F3       -3.12 0   6
+search F3       -6.91 0   7
+search A6       -2.00 0   7
+search A6       -2.00 0   8
+search A6       -2.00 0   9
+search A6       -2.00 0  10
+search A6       -2.00 0  11
+search A6       -2.00 0  12
+search A6       -2.00 0  13
+search A6       -2.00 0  14
+search A6       -2.00 0  15
+search A6       -2.00 0  16
+search A6       -2.00 0  17
+search A6       -2.00 0  18
+search A6       -2.00 0  19
+search A6       -2.00 0  20
+search A6       -2.00 0  21
+search A6       -2.00 0  22
+search A6       -2.00 0  23
+search A6       -2.00 0  24
+search A6       -1.60 0  25
+search A6       -1.60 0  50%W
+search A6       -2.00 0  50% 
+search A6       -2.00 0  60%W
+search A6       -1.01 0  60% 
+search A6       -1.01 0  70%W
+search A6       -2.00 0  70% 
+search A6       -2.00 0  91%W
+search A6       -2.00 0  91% 
+search A6       -2.00 0  97%W
+>> Abort round!!!
+ 97%W (34 empty)	A6/-2.00		45s elapsed
+status
+=== A6  -2.00 0  97%W 45.00  706Mn/45.002s = 15704kn/s;  0.06 us/n 34e:  ===
+
+   A B C D E F G H  
+ 1 - - - * * * * - 1
+ 2 - - O O O - - - 2
+ 3 O O O * * - - - 3
+ 4 - O * * * - - - 4
+ 5 O * * * * * - - 5
+ 6 * * * * * * - - 6
+ 7 - - O O - - - - 7
+ 8 - - - - O - - - 8
+   A B C D E F G H  
+White to move
+
+status Thinking
+search F3       -1.09 0   1
+search A4       +3.10 0   1
+search A4       +1.49 0   2
+search A4       +1.46 0   3
+search A4       -0.29 0   4
+search F3       +2.00 0   4
+search F3       +3.13 0   5
+search F3       +2.00 0   6
+search F3       +1.12 0   7
+search F3       +2.00 0   8
+search F3       +1.01 0   9
+search F3       +1.01 0  10
+search F3       +2.00 0  11
+search F3       +2.56 0  12
+search F3       +2.00 0  13
+search F3       +2.00 0  14
+search F3       +2.00 0  15
+search F3       +2.00 0  16
+search F3       +2.00 0  17
+search F3       +2.00 0  18
+search F3       +2.00 0  19
+search F3       +2.00 0  20
+search F3       +2.00 0  21
+search F3       +2.00 0  22
+search F3       +2.00 0  23
+search F3       +2.00 0  24
+search F3       +2.00 0  50%W
+search F3       +2.00 0  50% 
+search F3       +2.00 0  60%W
+search F3       +2.00 0  60% 
+search F3       +2.00 0  70%W
+search F3       +2.00 0  70% 
+search F3       +2.00 0  91%W
+search F3       +2.00 0  91% 
+search F3       +2.00 0  97%W
+>> Abort round!!!
+ 97%W (33 empty)	F3/2.00		45s elapsed
+status
+=== F3  +2.00 0  97%W 45.01  754Mn/45.007s = 16771kn/s;  0.06 us/n 33e:  ===
+
+   A B C D E F G H  
+ 1 - - - * * * * - 1
+ 2 - - O O O - - - 2
+ 3 O O O O O O - - 3
+ 4 - O * * * - - - 4
+ 5 O * * * * * - - 5
+ 6 * * * * * * - - 6
+ 7 - - O O - - - - 7
+ 8 - - - - O - - - 8
+   A B C D E F G H  
+Black to move
+
+status Thinking
+search C1       -1.83 0   1
+search F2       +0.38 0   1
+search F2       -1.07 0   2
+search F2       -2.00 0   3
+search F2       -3.13 0   4
+search F2       -2.00 0   5
+search F2       -1.12 0   6
+search F2       -2.00 0   7
+search F2       -1.01 0   8
+search F2       -1.01 0   9
+search F2       -2.00 0  10
+search F2       -2.56 0  11
+search F2       -2.00 0  12
+search F2       -2.00 0  13
+search F2       -2.00 0  14
+search F2       -2.00 0  15
+search F2       -2.00 0  16
+search F2       -2.00 0  17
+search F2       -2.00 0  18
+search F2       -2.00 0  19
+search F2       -2.00 0  20
+search F2       -1.00 0  21
+search F2       -2.00 0  22
+search F2       -2.00 0  23
+search F2       -2.00 0  50%W
+search F2       -2.00 0  50% 
+search F2       -2.00 0  60%W
+search F2       -2.00 0  60% 
+search F2       -2.00 0  70%W
+search F2       -2.00 0  70% 
+search F2       -2.00 0  91%W
+search F2       -2.00 0  91% 
+search F2       -2.00 0  97%W
+>> Abort round!!!
+ 97%W (32 empty)	F2/-2.00		45s elapsed
+status
+=== F2  -2.00 0  97%W 45.01  741Mn/45.006s = 16477kn/s;  0.06 us/n 32e:  ===
+
+   A B C D E F G H  
+ 1 - - - * * * * - 1
+ 2 - - O O O * - - 2
+ 3 O O O O * O - - 3
+ 4 - O * * * - - - 4
+ 5 O * * * * * - - 5
+ 6 * * * * * * - - 6
+ 7 - - O O - - - - 7
+ 8 - - - - O - - - 8
+   A B C D E F G H  
+White to move
+
+status Thinking
+search A4       +1.07 0   1
+search A4       +2.00 0   2
+search A4       +2.00 0   3
+search F4       +3.13 0   3
+search F4       +2.00 0   4
+search F4       +1.12 0   5
+search F4       +2.00 0   6
+search F4       +1.01 0   7
+search F4       +1.01 0   8
+search F4       +2.00 0   9
+search F4       +2.56 0  10
+search F4       +2.00 0  11
+search F4       +2.00 0  12
+search F4       +2.00 0  13
+search F4       +2.00 0  14
+search F4       +2.00 0  15
+search F4       +2.00 0  16
+search F4       +2.00 0  17
+search F4       +2.00 0  18
+search F4       +2.00 0  19
+search F4       +2.00 0  20
+search F4       +2.00 0  21
+search F4       +2.00 0  22
+search F4       +2.00 0  50%W
+search F4       +2.00 0  50% 
+search F4       +2.00 0  60%W
+search F4       +2.00 0  60% 
+search F4       +2.00 0  70%W
+search F4       +2.00 0  70% 
+search F4       +2.00 0  91%W
+search F4       +2.00 0  91% 
+search F4       +2.00 0  97%W
+search F4       +2.00 0 100%W
+AddToBook mode - solved node
+100%W (31 empty)	F4/2.00		34.1s elapsed
+status
+=== F4  +2.00 0 100%W 34.06  714Mn/34.056s = 20978kn/s;  0.05 us/n 31e:  ===
+
+   A B C D E F G H  
+ 1 - - - * * * * - 1
+ 2 - - O O O * - - 2
+ 3 O O O O O O - - 3
+ 4 - O O O O O - - 4
+ 5 O * * * O * - - 5
+ 6 * * * O * * - - 6
+ 7 - - O O - - - - 7
+ 8 - - - - O - - - 8
+   A B C D E F G H  
+Black to move
+
+BOOK: s 100%W in    0 +    0 games:  -200L <-10200:-10200>
+Contempt: -10000; Randomness: 3
+status Thinking
+search C1       -3.58 0   1
+search G4       -2.04 0   1
+search E7       +0.86 0   1
+search E7       -3.13 0   2
+search E7       -2.00 0   3
+search E7       -1.12 0   4
+search E7       -2.00 0   5
+search E7       -1.01 0   6
+search E7       -1.01 0   7
+search E7       -2.00 0   8
+search E7       -2.56 0   9
+search E7       -2.00 0  10
+search E7       -2.00 0  11
+search E7       -2.00 0  12
+search E7       -2.00 0  13
+search E7       -2.00 0  14
+search E7       -2.00 0  15
+search E7       -2.00 0  16
+search E7       -2.00 0  17
+search E7       -2.00 0  18
+search E7       -2.00 0  19
+search E7       -2.00 0  20
+search E7       -2.00 0  21
+search E7       -2.00 0  50%W
+search E7       -2.00 0  50% 
+search E7       -2.00 0  60%W
+search E7       -2.00 0  60% 
+search E7       -2.00 0  70%W
+search E7       -2.00 0  70% 
+search E7       -2.00 0  91%W
+search E7       -2.00 0  91% 
+search E7       -2.00 0  97%W
+search E7       -2.00 0 100%W
+>> Abort round!!!
+AddToBook mode - solved node
+100%W (30 empty)	E7/-2.00		45s elapsed
+status
+=== E7  -2.00 0 100%W 45.01  553Mn/45.008s = 12307kn/s;  0.08 us/n 30e:  ===
+
+   A B C D E F G H  
+ 1 - - - * * * * - 1
+ 2 - - O O O * - - 2
+ 3 O O O O O O - - 3
+ 4 - O O O O O - - 4
+ 5 O * * * O * - - 5
+ 6 * * * * * * - - 6
+ 7 - - O O * - - - 7
+ 8 - - - - O - - - 8
+   A B C D E F G H  
+White to move
+
+status Thinking
+search A4       +3.13 0   1
+search A4       +4.50 0   2
+search A4       +2.26 0   3
+search A4       +2.22 0   4
+search F8       +3.12 0   4
+search F8       +1.00 0   5
+search A4       +1.02 0   5
+search A4       +3.25 0   6
+search A4       +1.37 0   7
+search F8       +2.00 0   7
+search F8       +2.00 0   8
+search F8       +2.00 0   9
+search F8       +2.00 0  10
+search F8       +2.00 0  11
+search F8       +2.00 0  12
+search F8       +2.00 0  13
+search F8       +2.00 0  14
+search F8       +1.99 0  15
+search F8       +1.99 0  16
+search F8       +1.99 0  17
+search F8       +2.00 0  18
+search F8       +2.00 0  19
+search F8       +1.86 0  20
+search F8       +1.86 0  50%W
+search F8       +1.02 0  50% 
+search G5       +1.03 0  50% 
+search G5       +0.01 0  60%W
+search F8       +1.02 0  60%W
+search F8       +2.00 0  60% 
+search F8       +2.00 0  70%W
+search F8       +2.00 0  70% 
+search F8       +2.00 0  91%W
+search F8       +2.00 0  91% 
+search F8       +2.00 0  97%W
+search F8       +2.00 0 100%W
+>> Abort round!!!
+AddToBook mode - solved node
+100%W (29 empty)	F8/2.00		45s elapsed
+status
+=== F8  +2.00 0 100%W 45.00  839Mn/45.003s = 18644kn/s;  0.05 us/n 29e:  ===
+
+   A B C D E F G H  
+ 1 - - - * * * * - 1
+ 2 - - O O O * - - 2
+ 3 O O O O O O - - 3
+ 4 - O O O O O - - 4
+ 5 O * O * O * - - 5
+ 6 * * * O * * - - 6
+ 7 - - O O O - - - 7
+ 8 - - - - O O - - 8
+   A B C D E F G H  
+Black to move
+
+status Thinking
+search C1       -1.68 0   1
+search G4       -0.17 0   1
+search G4       -4.58 0   2
+search C8       -1.12 0   2
+search C8       -3.12 0   3
+search D8       -2.00 0   3
+search D8       -2.00 0   4
+search C8       -1.00 0   4
+search C8       -1.00 0   5
+search C8       -4.16 0   6
+search D8       -2.00 0   6
+search D8       -2.00 0   7
+search D8       -2.00 0   8
+search D8       -2.00 0   9
+search D8       -2.00 0  10
+search D8       -2.00 0  11
+search D8       -2.00 0  12
+search D8       -2.00 0  13
+search D8       -2.00 0  14
+search D8       -2.00 0  15
+search D8       -2.00 0  16
+search D8       -2.00 0  17
+search D8       -2.00 0  18
+search D8       -2.00 0  19
+search D8       -2.00 0  50%W
+search D8       -2.00 0  50% 
+search D8       -2.00 0  60%W
+search D8       -2.00 0  60% 
+search D8       -2.00 0  70%W
+search D8       -2.00 0  70% 
+search D8       -2.00 0  91%W
+search D8       -2.00 0  91% 
+search D8       -2.00 0  97%W
+search D8       -2.00 0 100%W
+search D8       -2.00 0 100% 
+AddToBook mode - solved node
+100%  (28 empty)	D8/-2.00		18.3s elapsed
+status
+=== D8  -2.00 0 100%  18.31  331Mn/18.307s = 18112kn/s;  0.06 us/n 28e:  ===
+
+   A B C D E F G H  
+ 1 - - - * * * * - 1
+ 2 - - O O O * - - 2
+ 3 O O O O O O - - 3
+ 4 - O O O O O - - 4
+ 5 O * O * O * - - 5
+ 6 * * * * * * - - 6
+ 7 - - * * * - - - 7
+ 8 - - - * O O - - 8
+   A B C D E F G H  
+White to move
+
+status Thinking
+search A4       +3.05 0   1
+search A4       +2.00 0   2
+search A4       +2.00 0   3
+search A4       +2.00 0   4
+search A4       +2.00 0   5
+search A4       +2.00 0   6
+search A4       +2.00 0   7
+search A4       +2.00 0   8
+search A4       +2.00 0   9
+search A4       +0.07 0  10
+search G5       +1.00 0  10
+search G6       +1.01 0  10
+search C8       +2.00 0  10
+search C8       +2.00 0  11
+search C8       +2.00 0  12
+search C8       +2.00 0  13
+search C8       +2.00 0  14
+search C8       +2.00 0  15
+search C8       +2.00 0  16
+search C8       +2.00 0  17
+search C8       +2.00 0  18
+search C8       +2.00 0  50%W
+search C8       +2.00 0  50% 
+search C8       +2.00 0  60%W
+search C8       +2.00 0  60% 
+search C8       +2.00 0  70%W
+search C8       +2.00 0  70% 
+search C8       +2.00 0  91%W
+search C8       +2.00 0  91% 
+search C8       +2.00 0  97%W
+search C8       +2.00 0 100%W
+search C8       +2.00 0 100% 
+AddToBook mode - solved node
+100%  (27 empty)	C8/2.00		0.00619s elapsed
+status
+=== C8  +2.00 0 100%  0.01   26kn/0.006s = 4312kn/s;  0.23 us/n 27e:  ===
+
+   A B C D E F G H  
+ 1 - - - * * * * - 1
+ 2 - - O O O * - - 2
+ 3 O O O O O O - - 3
+ 4 - O O O O O - - 4
+ 5 O * O * O * - - 5
+ 6 * * O * * * - - 6
+ 7 - - O * * - - - 7
+ 8 - - O O O O - - 8
+   A B C D E F G H  
+Black to move
+
+BOOK: s 100%  in    0 +    0 games:  -200L <-10200:-10200>
+Contempt: -10000; Randomness: 3
+status Thinking
+search G3       -3.22 0   1
+search G4       -2.89 0   1
+search G4       -8.66 0   2
+search G3       -7.59 0   2
+search G3       -5.51 0   3
+search G3       -4.87 0   4
+search G3       -4.14 0   5
+search G3       -4.77 0   6
+search G3       -3.53 0   7
+search G3       -4.68 0   8
+search G3       -2.91 0   9
+search G3       -2.25 0  10
+search G3       -2.52 0  11
+search G3       -3.20 0  12
+search G3       -3.06 0  13
+search G3       -1.96 0  14
+search G3       -0.80 0  15
+search G3       -1.96 0  16
+search G3       -2.84 0  17
+search G3       -2.84 0  50%W
+search G3       -4.00 0  50% 
+search G3       -4.00 0  60%W
+search G3       -2.00 0  60% 
+search G3       -2.00 0  70%W
+search G3       -4.00 0  70% 
+search G4       -2.00 0  70% 
+search G4       -2.00 0  91%W
+search G4       -2.00 0  91% 
+search G4       -2.00 0  97%W
+search G4       -2.00 0 100%W
+search G4       -2.00 0 100% 
+AddToBook mode - solved node
+100%  (26 empty)	G4/-2.00		9.24s elapsed
+status
+=== G4  -2.00 0 100%  9.24  114Mn/9.242s = 12442kn/s;  0.08 us/n 26e:  ===
+
+   A B C D E F G H  
+ 1 - - - * * * * - 1
+ 2 - - O O * * - - 2
+ 3 O O O O O * - - 3
+ 4 - O O O O O * - 4
+ 5 O * O * O * - - 5
+ 6 * * O * * * - - 6
+ 7 - - O * * - - - 7
+ 8 - - O O O O - - 8
+   A B C D E F G H  
+White to move
+
+status Thinking
+search G3       +2.61 0   1
+search A4       +8.66 0   1
+search A4       +2.00 0   2
+search A4       +2.00 0   3
+search A4       +2.00 0   4
+search A4       +2.00 0   5
+search A4       +2.00 0   6
+search A4       +2.00 0   7
+search A4       +2.00 0   8
+search A4       +2.00 0   9
+search A4       +2.00 0  10
+search A4       +2.00 0  11
+search A4       +2.00 0  12
+search A4       +2.00 0  13
+search A4       +2.00 0  14
+search A4       +2.00 0  15
+search A4       +2.00 0  16
+search A4       +2.00 0  50%W
+search A4       +2.00 0  50% 
+search A4       +2.00 0  60%W
+search A4       +2.00 0  60% 
+search A4       +2.00 0  70%W
+search A4       +2.00 0  70% 
+search A4       +2.00 0  91%W
+search A4       +2.00 0  91% 
+search A4       +2.00 0  97%W
+search A4       +2.00 0 100%W
+search A4       +2.00 0 100% 
+AddToBook mode - solved node
+100%  (25 empty)	A4/2.00		0.000615s elapsed
+status
+=== A4  +2.00 0 100%  0.00  239 n/0.001s =  370kn/s;  2.70 us/n 25e:  ===
+
+   A B C D E F G H  
+ 1 - - - * * * * - 1
+ 2 - - O O * * - - 2
+ 3 O O O O O * - - 3
+ 4 O O O O O O * - 4
+ 5 O O O * O * - - 5
+ 6 * * O * * * - - 6
+ 7 - - O * * - - - 7
+ 8 - - O O O O - - 8
+   A B C D E F G H  
+Black to move
+
+BOOK: s 100%  in    0 +    0 games:  -200L <-10200:-10200>
+Contempt: -10000; Randomness: 3
+status Thinking
+search G3       -10.54 0   1
+search G3       -2.00 0   2
+search G3       -2.00 0   3
+search G3       -2.00 0   4
+search G3       -2.00 0   5
+search G3       -2.00 0   6
+search G3       -2.00 0   7
+search G3       -2.00 0   8
+search G3       -2.00 0   9
+search G3       -2.00 0  10
+search G3       -2.00 0  11
+search G3       -2.00 0  12
+search G3       -2.00 0  13
+search G3       -2.00 0  14
+search G3       -2.00 0  15
+search G3       -2.00 0  50%W
+search G3       -2.00 0  50% 
+search G3       -2.00 0  60%W
+search G3       -2.00 0  60% 
+search G3       -2.00 0  70%W
+search G3       -2.00 0  70% 
+search G3       -2.00 0  91%W
+search G3       -2.00 0  91% 
+search G3       -2.00 0  97%W
+search G3       -2.00 0 100%W
+search G3       -2.00 0 100% 
+AddToBook mode - solved node
+100%  (24 empty)	G3/-2.00		0.000539s elapsed
+status
+=== G3  -2.00 0 100%  0.00  162 n/0.001s =  280kn/s;  3.56 us/n 24e:  ===
+
+   A B C D E F G H  
+ 1 - - - * * * * - 1
+ 2 - - O O * * - - 2
+ 3 O O O O O * * - 3
+ 4 O O O O O * * - 4
+ 5 O O O * * * - - 5
+ 6 * * O * * * - - 6
+ 7 - - O * * - - - 7
+ 8 - - O O O O - - 8
+   A B C D E F G H  
+White to move
+
+status Thinking
+search H3       -4.72 0   1
+search H4       +4.94 0   1
+search G5       +5.49 0   1
+search F7       +8.53 0   1
+search A7       +8.55 0   1
+search A7       +2.00 0   2
+search A7       +2.00 0   3
+search A7       +2.00 0   4
+search A7       +2.00 0   5
+search A7       +2.00 0   6
+search A7       +2.00 0   7
+search A7       +2.00 0   8
+search A7       +2.00 0   9
+search A7       +2.00 0  10
+search A7       +2.00 0  11
+search A7       +2.00 0  12
+search A7       +2.00 0  13
+search A7       +2.00 0  14
+search A7       +2.00 0  50%W
+search A7       +2.00 0  50% 
+search A7       +2.00 0  60%W
+search A7       +2.00 0  60% 
+search A7       +2.00 0  70%W
+search A7       +2.00 0  70% 
+search A7       +2.00 0  91%W
+search A7       +2.00 0  91% 
+search A7       +2.00 0  97%W
+search A7       +2.00 0 100%W
+search A7       +2.00 0 100% 
+AddToBook mode - solved node
+100%  (23 empty)	A7/2.00		0.000481s elapsed
+status
+=== A7  +2.00 0 100%  0.00  198 n/0.001s =  393kn/s;  2.54 us/n 23e:  ===
+
+   A B C D E F G H  
+ 1 - - - * * * * - 1
+ 2 - - O O * * - - 2
+ 3 O O O O O * * - 3
+ 4 O O O O O * * - 4
+ 5 O O O * * * - - 5
+ 6 O O O * * * - - 6
+ 7 O - O * * - - - 7
+ 8 - - O O O O - - 8
+   A B C D E F G H  
+Black to move
+
+BOOK: s 100%  in    0 +    0 games:  -200L <-10200:-10200>
+Contempt: -10000; Randomness: 3
+status Thinking
+search C1       -1.19 0   1
+search C1       -2.00 0   2
+search C1       -2.00 0   3
+search C1       -2.00 0   4
+search C1       -2.00 0   5
+search C1       -2.00 0   6
+search C1       -2.00 0   7
+search C1       -2.00 0   8
+search C1       -2.00 0   9
+search C1       -2.00 0  10
+search C1       -2.00 0  11
+search C1       -2.00 0  12
+search C1       -2.00 0  13
+search C1       -2.00 0  50%W
+search C1       -2.00 0  50% 
+search C1       -2.00 0  60%W
+search C1       -2.00 0  60% 
+search C1       -2.00 0  70%W
+search C1       -2.00 0  70% 
+search C1       -2.00 0  91%W
+search C1       -2.00 0  91% 
+search C1       -2.00 0  97%W
+search C1       -2.00 0 100%W
+search C1       -2.00 0 100% 
+AddToBook mode - solved node
+100%  (22 empty)	C1/-2.00		0.000387s elapsed
+status
+=== C1  -2.00 0 100%  0.00  150 n/0.000s =  366kn/s;  2.73 us/n 22e:  ===
+
+   A B C D E F G H  
+ 1 - - * * * * * - 1
+ 2 - - O * * * - - 2
+ 3 O O O O * * * - 3
+ 4 O O O O O * * - 4
+ 5 O O O * * * - - 5
+ 6 O O O * * * - - 6
+ 7 O - O * * - - - 7
+ 8 - - O O O O - - 8
+   A B C D E F G H  
+White to move
+
+status Thinking
+search H3       -13.40 0   1
+search H4       -5.08 0   1
+search G5       -4.96 0   1
+search G6       -4.77 0   1
+search F7       +3.63 0   1
+search F7       +2.00 0   2
+search F7       +2.00 0   3
+search F7       +2.00 0   4
+search F7       +2.00 0   5
+search F7       +2.00 0   6
+search F7       +2.00 0   7
+search F7       +2.00 0   8
+search F7       +2.00 0   9
+search F7       +2.00 0  10
+search F7       +2.00 0  11
+search F7       +2.00 0  12
+search F7       +2.00 0  50%W
+search F7       +2.00 0  50% 
+search F7       +2.00 0  60%W
+search F7       +2.00 0  60% 
+search F7       +2.00 0  70%W
+search F7       +2.00 0  70% 
+search F7       +2.00 0  91%W
+search F7       +2.00 0  91% 
+search F7       +2.00 0  97%W
+search F7       +2.00 0 100%W
+search F7       +2.00 0 100% 
+AddToBook mode - solved node
+100%  (21 empty)	F7/2.00		0.000418s elapsed
+status
+=== F7  +2.00 0 100%  0.00  144 n/0.000s =  327kn/s;  3.06 us/n 21e:  ===
+
+   A B C D E F G H  
+ 1 - - * * * * * - 1
+ 2 - - O * * * - - 2
+ 3 O O O O * * * - 3
+ 4 O O O O O * * - 4
+ 5 O O O O * * - - 5
+ 6 O O O * O * - - 6
+ 7 O - O O O O - - 7
+ 8 - - O O O O - - 8
+   A B C D E F G H  
+Black to move
+
+BOOK: s 100%  in    0 +    0 games:  -200L <-10200:-10200>
+Contempt: -10000; Randomness: 3
+status Thinking
+search B1       -1.48 0   1
+search B1       -2.00 0   2
+search B1       -2.00 0   3
+search B1       -2.00 0   4
+search B1       -2.00 0   5
+search B1       -2.00 0   6
+search B1       -2.00 0   7
+search B1       -2.00 0   8
+search B1       -2.00 0   9
+search B1       -2.00 0  10
+search B1       -2.00 0  11
+search B1       -2.00 0  50%W
+search B1       -2.00 0  50% 
+search B1       -2.00 0  60%W
+search B1       -2.00 0  60% 
+search B1       -2.00 0  70%W
+search B1       -2.00 0  70% 
+search B1       -2.00 0  91%W
+search B1       -2.00 0  91% 
+search B1       -2.00 0  97%W
+search B1       -2.00 0 100%W
+search B1       -2.00 0 100% 
+AddToBook mode - solved node
+100%  (20 empty)	B1/-2.00		0.000335s elapsed
+status
+=== B1  -2.00 0 100%  0.00   92 n/0.000s =  259kn/s;  3.86 us/n 20e:  ===
+
+   A B C D E F G H  
+ 1 - * * * * * * - 1
+ 2 - - * * * * - - 2
+ 3 O O O * * * * - 3
+ 4 O O O O * * * - 4
+ 5 O O O O * * - - 5
+ 6 O O O * O * - - 6
+ 7 O - O O O O - - 7
+ 8 - - O O O O - - 8
+   A B C D E F G H  
+White to move
+
+status Thinking
+search H3       -14.66 0   1
+search H4       -4.62 0   1
+search G5       -1.28 0   1
+search G5       -2.90 0   2
+search G6       +2.00 0   2
+search G6       +2.00 0   3
+search G6       +2.00 0   4
+search G6       +2.00 0   5
+search G6       +2.00 0   6
+search G6       +2.00 0   7
+search G6       +2.00 0   8
+search G6       +2.00 0   9
+search G6       +2.00 0  10
+search G6       +2.00 0  50%W
+search G6       +2.00 0  50% 
+search G6       +2.00 0  60%W
+search G6       +2.00 0  60% 
+search G6       +2.00 0  70%W
+search G6       +2.00 0  70% 
+search G6       +2.00 0  91%W
+search G6       +2.00 0  91% 
+search G6       +2.00 0  97%W
+search G6       +2.00 0 100%W
+search G6       +2.00 0 100% 
+AddToBook mode - solved node
+100%  (19 empty)	G6/2.00		0.000364s elapsed
+status
+=== G6  +2.00 0 100%  0.00  119 n/0.000s =  309kn/s;  3.24 us/n 19e:  ===
+
+   A B C D E F G H  
+ 1 - * * * * * * - 1
+ 2 - - * * * * - - 2
+ 3 O O O * * * * - 3
+ 4 O O O O * * * - 4
+ 5 O O O O * * - - 5
+ 6 O O O * O O O - 6
+ 7 O - O O O O - - 7
+ 8 - - O O O O - - 8
+   A B C D E F G H  
+Black to move
+
+BOOK: s 100%  in    0 +    0 games:  -200L <-10200:-10200>
+Contempt: -10000; Randomness: 3
+status Thinking
+search H6       -0.19 0   1
+search B7       +1.31 0   1
+search B7       -10.81 0   2
+search H6       -2.23 0   2
+search G7       -2.00 0   2
+search G7       -2.00 0   3
+search G7       -2.00 0   4
+search G7       -2.00 0   5
+search G7       -2.00 0   6
+search G7       -2.00 0   7
+search G7       -2.00 0   8
+search G7       -2.00 0   9
+search G7       -2.00 0  50%W
+search G7       -2.00 0  50% 
+search G7       -2.00 0  60%W
+search G7       -2.00 0  60% 
+search G7       -2.00 0  70%W
+search G7       -2.00 0  70% 
+search G7       -2.00 0  91%W
+search G7       -2.00 0  91% 
+search G7       -2.00 0  97%W
+search G7       -2.00 0 100%W
+search G7       -2.00 0 100% 
+AddToBook mode - solved node
+100%  (18 empty)	G7/-2.00		0.000356s elapsed
+status
+=== G7  -2.00 0 100%  0.00  139 n/0.000s =  368kn/s;  2.71 us/n 18e:  ===
+
+   A B C D E F G H  
+ 1 - * * * * * * - 1
+ 2 - - * * * * - - 2
+ 3 O O O * * * * - 3
+ 4 O O O O * * * - 4
+ 5 O O O O * * - - 5
+ 6 O O O * O * O - 6
+ 7 O - O O O O * - 7
+ 8 - - O O O O - - 8
+   A B C D E F G H  
+White to move
+
+status Thinking
+search H8       -1.29 0   1
+search G5       +0.16 0   1
+search G5       +2.00 0   2
+search G5       +2.00 0   3
+search G5       +2.00 0   4
+search G5       +2.00 0   5
+search G5       +2.00 0   6
+search G5       +2.00 0   7
+search G5       +2.00 0   8
+search G5       +2.00 0  50%W
+search G5       +2.00 0  50% 
+search G5       +2.00 0  60%W
+search G5       +2.00 0  60% 
+search G5       +2.00 0  70%W
+search G5       +2.00 0  70% 
+search G5       +2.00 0  91%W
+search G5       +2.00 0  91% 
+search G5       +2.00 0  97%W
+search G5       +2.00 0 100%W
+search G5       +2.00 0 100% 
+AddToBook mode - solved node
+100%  (17 empty)	G5/2.00		0.000328s elapsed
+status
+=== G5  +2.00 0 100%  0.00  125 n/0.000s =  357kn/s;  2.80 us/n 17e:  ===
+
+   A B C D E F G H  
+ 1 - * * * * * * - 1
+ 2 - - * * * * - - 2
+ 3 O O O * * * * - 3
+ 4 O O O O * * * - 4
+ 5 O O O O O O O - 5
+ 6 O O O * O O O - 6
+ 7 O - O O O O * - 7
+ 8 - - O O O O - - 8
+   A B C D E F G H  
+Black to move
+
+BOOK: s 100%  in    0 +    0 games:  -200L <-10200:-10200>
+Contempt: -10000; Randomness: 3
+status Thinking
+search H6       -4.55 0   1
+search B2       +3.67 0   1
+search B2       -2.00 0   2
+search B2       -2.00 0   3
+search B2       -2.00 0   4
+search B2       -2.00 0   5
+search B2       -2.00 0   6
+search B2       -2.00 0   7
+search B2       -2.00 0  50%W
+search B2       -2.00 0  50% 
+search B2       -2.00 0  60%W
+search B2       -2.00 0  60% 
+search B2       -2.00 0  70%W
+search B2       -2.00 0  70% 
+search B2       -2.00 0  91%W
+search B2       -2.00 0  91% 
+search B2       -2.00 0  97%W
+search B2       -2.00 0 100%W
+search B2       -2.00 0 100% 
+AddToBook mode - solved node
+100%  (16 empty)	B2/-2.00		0.000311s elapsed
+status
+=== B2  -2.00 0 100%  0.00   95 n/0.000s =  282kn/s;  3.54 us/n 16e:  ===
+
+   A B C D E F G H  
+ 1 - * * * * * * - 1
+ 2 - * * * * * - - 2
+ 3 O O * * * * * - 3
+ 4 O O O * * * * - 4
+ 5 O O O O * O O - 5
+ 6 O O O * O * O - 6
+ 7 O - O O O O * - 7
+ 8 - - O O O O - - 8
+   A B C D E F G H  
+White to move
+
+status Thinking
+search H3       -2.89 0   1
+search H4       +4.38 0   1
+search H4       +2.00 0   2
+search H4       +2.00 0   3
+search H4       +2.00 0   4
+search H4       +2.00 0   5
+search H4       +2.00 0   6
+search H4       +2.00 0  50%W
+search H4       +2.00 0  50% 
+search H4       +2.00 0  60%W
+search H4       +2.00 0  60% 
+search H4       +2.00 0  70%W
+search H4       +2.00 0  70% 
+search H4       +2.00 0  91%W
+search H4       +2.00 0  91% 
+search H4       +2.00 0  97%W
+search H4       +2.00 0 100%W
+search H4       +2.00 0 100% 
+AddToBook mode - solved node
+100%  (15 empty)	H4/2.00		0.000289s elapsed
+status
+=== H4  +2.00 0 100%  0.00   85 n/0.000s =  271kn/s;  3.68 us/n 15e:  ===
+
+   A B C D E F G H  
+ 1 - * * * * * * - 1
+ 2 - * * * * * - - 2
+ 3 O O * * * * * - 3
+ 4 O O O O O O O O 4
+ 5 O O O O * O O - 5
+ 6 O O O * O * O - 6
+ 7 O - O O O O * - 7
+ 8 - - O O O O - - 8
+   A B C D E F G H  
+Black to move
+
+BOOK: s 100%  in    0 +    0 games:  -200L <-10200:-10200>
+Contempt: -10000; Randomness: 3
+status Thinking
+search H5       -5.51 0   1
+search H7       -5.27 0   1
+search H7       -5.75 0   2
+search H5       -2.00 0   2
+search H5       -2.00 0   3
+search H5       -2.00 0   4
+search H5       -2.00 0   5
+search H5       -2.00 0  50%W
+search H5       -2.00 0  50% 
+search H5       -2.00 0  60%W
+search H5       -2.00 0  60% 
+search H5       -2.00 0  70%W
+search H5       -2.00 0  70% 
+search H5       -2.00 0  91%W
+search H5       -2.00 0  91% 
+search H5       -2.00 0  97%W
+search H5       -2.00 0 100%W
+search H5       -2.00 0 100% 
+AddToBook mode - solved node
+100%  (14 empty)	H5/-2.00		0.000304s elapsed
+status
+=== H5  -2.00 0 100%  0.00   93 n/0.000s =  285kn/s;  3.51 us/n 14e:  ===
+
+   A B C D E F G H  
+ 1 - * * * * * * - 1
+ 2 - * * * * * - - 2
+ 3 O O * * * * * - 3
+ 4 O O O O O O * O 4
+ 5 O O O O * * * * 5
+ 6 O O O * O * O - 6
+ 7 O - O O O O * - 7
+ 8 - - O O O O - - 8
+   A B C D E F G H  
+White to move
+
+status Thinking
+search A1       -4.88 0   1
+search H8       -0.18 0   1
+search H3       -0.08 0   1
+search H3       -0.22 0   2
+search H8       +0.00 0   2
+search H2       +2.00 0   2
+search H2       +2.00 0   3
+search H2       +2.00 0   4
+search H2       +2.00 0  50%W
+search H2       +2.00 0  50% 
+search H2       +2.00 0  60%W
+search H2       +2.00 0  60% 
+search H2       +2.00 0  70%W
+search H2       +2.00 0  70% 
+search H2       +2.00 0  91%W
+search H2       +2.00 0  91% 
+search H2       +2.00 0  97%W
+search H2       +2.00 0 100%W
+search H2       +2.00 0 100% 
+AddToBook mode - solved node
+100%  (13 empty)	H2/2.00		0.000323s elapsed
+status
+=== H2  +2.00 0 100%  0.00   93 n/0.000s =  266kn/s;  3.75 us/n 13e:  ===
+
+   A B C D E F G H  
+ 1 - * * * * * * - 1
+ 2 - * * * * * - O 2
+ 3 O O * * * * O - 3
+ 4 O O O O O O * O 4
+ 5 O O O O * * * * 5
+ 6 O O O * O * O - 6
+ 7 O - O O O O * - 7
+ 8 - - O O O O - - 8
+   A B C D E F G H  
+Black to move
+
+BOOK: s 100%  in    0 +    0 games:  -200L <-10200:-10200>
+Contempt: -10000; Randomness: 3
+status Thinking
+search H3       +4.29 0   1
+search H3       -2.00 0   2
+search H3       -2.00 0   3
+search H3       -2.00 0  50%W
+search H3       -2.00 0  50% 
+search H3       -2.00 0  60%W
+search H3       -2.00 0  60% 
+search H3       -2.00 0  70%W
+search H3       -2.00 0  70% 
+search H3       -2.00 0  91%W
+search H3       -2.00 0  91% 
+search H3       -2.00 0  97%W
+search H3       -2.00 0 100%W
+search H3       -2.00 0 100% 
+AddToBook mode - solved node
+100%  (12 empty)	H3/-2.00		0.000262s elapsed
+status
+=== H3  -2.00 0 100%  0.00  133 n/0.000s =  466kn/s;  2.14 us/n 12e:  ===
+
+   A B C D E F G H  
+ 1 - * * * * * * - 1
+ 2 - * * * * * - O 2
+ 3 O O * * * * * * 3
+ 4 O O O O O O * * 4
+ 5 O O O O * * * * 5
+ 6 O O O * O * O - 6
+ 7 O - O O O O * - 7
+ 8 - - O O O O - - 8
+   A B C D E F G H  
+White to move
+
+status Thinking
+search A1       -12.51 0   1
+search H8       -10.94 0   1
+search H8       -15.77 0   2
+search H6       +2.00 0   2
+search H6       +2.00 0  50%W
+search H6       +2.00 0  50% 
+search H6       +2.00 0  60%W
+search H6       +2.00 0  60% 
+search H6       +2.00 0  70%W
+search H6       +2.00 0  70% 
+search H6       +2.00 0  91%W
+search H6       +2.00 0  91% 
+search H6       +2.00 0  97%W
+search H6       +2.00 0 100%W
+search H6       +2.00 0 100% 
+AddToBook mode - solved node
+100%  (11 empty)	H6/2.00		0.000291s elapsed
+status
+=== H6  +2.00 0 100%  0.00  352 n/0.000s = 1117kn/s;  0.89 us/n 11e:  ===
+
+   A B C D E F G H  
+ 1 - * * * * * * - 1
+ 2 - * * * * * - O 2
+ 3 O O * * * * * O 3
+ 4 O O O O O O * O 4
+ 5 O O O O * * O O 5
+ 6 O O O * O * O O 6
+ 7 O - O O O O O - 7
+ 8 - - O O O O - - 8
+   A B C D E F G H  
+Black to move
+
+BOOK: s 100%  in    0 +    0 games:  -200L <-10200:-10200>
+Contempt: -10000; Randomness: 3
+status Thinking
+search H8       +11.99 0   1
+search H8       -4.00 0  50%W
+search H8       -6.00 0  50% 
+search H7       -2.00 0  50% 
+search H7       -2.00 0  60%W
+search H7       -2.00 0  60% 
+search H7       -2.00 0  70%W
+search H7       -2.00 0  70% 
+search H7       -2.00 0  91%W
+search H7       -2.00 0  91% 
+search H7       -2.00 0  97%W
+search H7       -2.00 0 100%W
+search H7       -2.00 0 100% 
+AddToBook mode - solved node
+100%  (10 empty)	H7/-2.00		0.000282s elapsed
+status
+=== H7  -2.00 0 100%  0.00 1434 n/0.000s = 4717kn/s;  0.21 us/n 10e:  ===
+
+   A B C D E F G H  
+ 1 - * * * * * * - 1
+ 2 - * * * * * - O 2
+ 3 O O * * * * * O 3
+ 4 O O O O O O * O 4
+ 5 O O O O * * O O 5
+ 6 O O O * O * * O 6
+ 7 O - O O O O O * 7
+ 8 - - O O O O - - 8
+   A B C D E F G H  
+White to move
+
+status Thinking
+search A1       -36.00 0 100% 
+search H8       +2.00 0 100% 
+AddToBook mode - solved node
+100%  (9 empty)	H8/2.00	A1/-36.00		8.2e-05s elapsed
+status
+=== H8  +2.00 0 100%  0.00  664 n/0.000s = 5981kn/s;  0.17 us/n  9e:  ===
+
+   A B C D E F G H  
+ 1 - * * * * * * - 1
+ 2 - * * * * * - O 2
+ 3 O O * * * * * O 3
+ 4 O O O O O O * O 4
+ 5 O O O O * * O O 5
+ 6 O O O * O * * O 6
+ 7 O - O O O O O O 7
+ 8 - - O O O O - O 8
+   A B C D E F G H  
+Black to move
+
+status Thinking
+search B7       -36.00 0 100% 
+search B8       -34.00 0 100% 
+search G8       -2.00 0 100% 
+100%  (8 empty)	G8/-2.00	B8/-34.00	B7/-36.00		8.2e-05s elapsed
+status
+=== G8  -2.00 0 100%  0.00  337 n/0.000s = 3008kn/s;  0.33 us/n  8e:  ===
+
+   A B C D E F G H  
+ 1 - * * * * * * - 1
+ 2 - * * * * * - O 2
+ 3 O O * * * * * O 3
+ 4 O O O O O O * O 4
+ 5 O O O O * * O O 5
+ 6 O O O * O * * O 6
+ 7 O - O O O O * O 7
+ 8 - - O O O O * O 8
+   A B C D E F G H  
+White to move
+
+status Thinking
+search A1       +2.00 0 100% 
+100%  (7 empty)	A1/2.00		5.2e-05s elapsed
+status
+=== A1  +2.00 0 100%  0.00   53 n/0.000s =  697kn/s;  1.43 us/n  7e:  ===
+
+   A B C D E F G H  
+ 1 O * * * * * * - 1
+ 2 - O * * * * - O 2
+ 3 O O O * * * * O 3
+ 4 O O O O O O * O 4
+ 5 O O O O * * O O 5
+ 6 O O O * O * * O 6
+ 7 O - O O O O * O 7
+ 8 - - O O O O * O 8
+   A B C D E F G H  
+Black to move
+
+status Thinking
+search A2       -2.00 0 100% 
+100%  (6 empty)	A2/-2.00		5.1e-05s elapsed
+status
+=== A2  -2.00 0 100%  0.00   43 n/0.000s =  581kn/s;  1.72 us/n  6e:  ===
+
+   A B C D E F G H  
+ 1 O * * * * * * - 1
+ 2 * * * * * * - O 2
+ 3 O * O * * * * O 3
+ 4 O O * O O O * O 4
+ 5 O O O * * * O O 5
+ 6 O O O * * * * O 6
+ 7 O - O O O * * O 7
+ 8 - - O O O O * O 8
+   A B C D E F G H  
+White to move
+
+status Thinking
+search H1       +2.00 0 100% 
+100%  (5 empty)	H1/2.00		5.2e-05s elapsed
+status
+=== H1  +2.00 0 100%  0.00   24 n/0.000s =  315kn/s;  3.17 us/n  5e:  ===
+
+   A B C D E F G H  
+ 1 O O O O O O O O 1
+ 2 * * * * * * - O 2
+ 3 O * O * * * * O 3
+ 4 O O * O O O * O 4
+ 5 O O O * * * O O 5
+ 6 O O O * * * * O 6
+ 7 O - O O O * * O 7
+ 8 - - O O O O * O 8
+   A B C D E F G H  
+Black to move
+
+status Thinking
+search A8       -2.00 0 100% 
+100%  (4 empty)	A8/-2.00		4.5e-05s elapsed
+status
+=== A8  -2.00 0 100%  0.00   14 n/0.000s =  205kn/s;  4.86 us/n  4e:  ===
+
+   A B C D E F G H  
+ 1 O O O O O O O O 1
+ 2 * * * * * * - O 2
+ 3 * * O * * * * O 3
+ 4 * O * O O O * O 4
+ 5 * O O * * * O O 5
+ 6 * O O * * * * O 6
+ 7 * - O O O * * O 7
+ 8 * - O O O O * O 8
+   A B C D E F G H  
+White to move
+
+=== G2      ? 0 100%  0.00    0 n/0.000s =    0kn/s; **.** us/n  3e:  ===
+
+   A B C D E F G H  
+ 1 O O O O O O O O 1
+ 2 * * * * * * O O 2
+ 3 * * O * * O O O 3
+ 4 * O * O O O O O 4
+ 5 * O O * * * O O 5
+ 6 * O O * * * * O 6
+ 7 * - O O O * * O 7
+ 8 * - O O O O * O 8
+   A B C D E F G H  
+Black to move
+
+status Thinking
+search B7       -14.00 0 100% 
+search B8       -2.00 0 100% 
+100%  (2 empty)	B8/-2.00	B7/-14.00		5.2e-05s elapsed
+status
+=== B8  -2.00 0 100%  0.00    4 n/0.000s =   51kn/s; 19.25 us/n  2e:  ===
+
+   A B C D E F G H  
+ 1 O O O O O O O O 1
+ 2 * * * * * * O O 2
+ 3 * * O * * O O O 3
+ 4 * O * O O O O O 4
+ 5 * O O * * * O O 5
+ 6 * O O * * * * O 6
+ 7 * - * O O * * O 7
+ 8 * * * * * * * O 8
+   A B C D E F G H  
+White to move
+
+=== B7      ? 0 100%  0.00    0 n/0.000s =    0kn/s; **.** us/n  1e:  ===
+
+status Learning a30/a30
+------------------------------------
+Correcting Position from game:
+
+   A B C D E F G H
+ 1 - * * * * * * -  1
+ 2 - * * * * * - O  2
+ 3 O O * * * * * O  3
+ 4 O O O O O O * O  4
+ 5 O O O O * * O O  5
+ 6 O O O * O * * O  6
+ 7 O - O O O O O *  7
+ 8 - - O O O O - -  8
+   A B C D E F G H
+Black: 23  White: 32  Empty: 9
+White to move
+OLD: s 100%  in    0 +    0 games:   200W <10200:10200>
+NEW: s 100%  in    1 +    0 games:   200W <10200:10200>
+------------------------------------
+Correcting Position from game:
+
+   A B C D E F G H
+ 1 - * * * * * * -  1
+ 2 - * * * * * - O  2
+ 3 O O * * * * * O  3
+ 4 O O O O O O * O  4
+ 5 O O O O * * O O  5
+ 6 O O O * O * O O  6
+ 7 O - O O O O O -  7
+ 8 - - O O O O - -  8
+   A B C D E F G H
+Black: 21  White: 33  Empty: 10
+Black to move
+OLD: s 100%  in    0 +    0 games:  -200L <-10200:-10200>
+NEW: s 100%  in    1 +    0 games:  -200L <-10200:-10200>
+------------------------------------
+Correcting Position from game:
+
+   A B C D E F G H
+ 1 - * * * * * * -  1
+ 2 - * * * * * - O  2
+ 3 O O * * * * * *  3
+ 4 O O O O O O * *  4
+ 5 O O O O * * * *  5
+ 6 O O O * O * O -  6
+ 7 O - O O O O * -  7
+ 8 - - O O O O - -  8
+   A B C D E F G H
+Black: 26  White: 27  Empty: 11
+White to move
+OLD: s 100%  in    0 +    0 games:   200W <10200:10200>
+NEW: s 100%  in    1 +    0 games:   200W <10200:10200>
+------------------------------------
+Correcting Position from game:
+
+   A B C D E F G H
+ 1 - * * * * * * -  1
+ 2 - * * * * * - O  2
+ 3 O O * * * * O -  3
+ 4 O O O O O O * O  4
+ 5 O O O O * * * *  5
+ 6 O O O * O * O -  6
+ 7 O - O O O O * -  7
+ 8 - - O O O O - -  8
+   A B C D E F G H
+Black: 23  White: 29  Empty: 12
+Black to move
+OLD: s 100%  in    0 +    0 games:  -200L <-10200:-10200>
+NEW: s 100%  in    1 +    0 games:  -200L <-10200:-10200>
+------------------------------------
+Correcting Position from game:
+
+   A B C D E F G H
+ 1 - * * * * * * -  1
+ 2 - * * * * * - -  2
+ 3 O O * * * * * -  3
+ 4 O O O O O O * O  4
+ 5 O O O O * * * *  5
+ 6 O O O * O * O -  6
+ 7 O - O O O O * -  7
+ 8 - - O O O O - -  8
+   A B C D E F G H
+Black: 24  White: 27  Empty: 13
+White to move
+OLD: s 100%  in    0 +    0 games:   200W <10200:10200>
+NEW: s 100%  in    1 +    0 games:   200W <10200:10200>
+------------------------------------
+Correcting Position from game:
+
+   A B C D E F G H
+ 1 - * * * * * * -  1
+ 2 - * * * * * - -  2
+ 3 O O * * * * * -  3
+ 4 O O O O O O O O  4
+ 5 O O O O * O O -  5
+ 6 O O O * O * O -  6
+ 7 O - O O O O * -  7
+ 8 - - O O O O - -  8
+   A B C D E F G H
+Black: 20  White: 30  Empty: 14
+Black to move
+OLD: s 100%  in    0 +    0 games:  -200L <-10200:-10200>
+NEW: s 100%  in    1 +    0 games:  -200L <-10200:-10200>
+------------------------------------
+Correcting Position from game:
+
+   A B C D E F G H
+ 1 - * * * * * * -  1
+ 2 - * * * * * - -  2
+ 3 O O * * * * * -  3
+ 4 O O O * * * * -  4
+ 5 O O O O * O O -  5
+ 6 O O O * O * O -  6
+ 7 O - O O O O * -  7
+ 8 - - O O O O - -  8
+   A B C D E F G H
+Black: 24  White: 25  Empty: 15
+White to move
+OLD: s 100%  in    0 +    0 games:   200W <10200:10200>
+NEW: s 100%  in    1 +    0 games:   200W <10200:10200>
+------------------------------------
+Correcting Position from game:
+
+   A B C D E F G H
+ 1 - * * * * * * -  1
+ 2 - - * * * * - -  2
+ 3 O O O * * * * -  3
+ 4 O O O O * * * -  4
+ 5 O O O O O O O -  5
+ 6 O O O * O O O -  6
+ 7 O - O O O O * -  7
+ 8 - - O O O O - -  8
+   A B C D E F G H
+Black: 19  White: 29  Empty: 16
+Black to move
+OLD: s 100%  in    0 +    0 games:  -200L <-10200:-10200>
+NEW: s 100%  in    1 +    0 games:  -200L <-10200:-10200>
+------------------------------------
+Correcting Position from game:
+
+   A B C D E F G H
+ 1 - * * * * * * -  1
+ 2 - - * * * * - -  2
+ 3 O O O * * * * -  3
+ 4 O O O O * * * -  4
+ 5 O O O O * * - -  5
+ 6 O O O * O * O -  6
+ 7 O - O O O O * -  7
+ 8 - - O O O O - -  8
+   A B C D E F G H
+Black: 22  White: 25  Empty: 17
+White to move
+OLD: s 100%  in    0 +    0 games:   200W <10200:10200>
+NEW: s 100%  in    1 +    0 games:   200W <10200:10200>
+------------------------------------
+Correcting Position from game:
+
+   A B C D E F G H
+ 1 - * * * * * * -  1
+ 2 - - * * * * - -  2
+ 3 O O O * * * * -  3
+ 4 O O O O * * * -  4
+ 5 O O O O * * - -  5
+ 6 O O O * O O O -  6
+ 7 O - O O O O - -  7
+ 8 - - O O O O - -  8
+   A B C D E F G H
+Black: 20  White: 26  Empty: 18
+Black to move
+OLD: s 100%  in    0 +    0 games:  -200L <-10200:-10200>
+NEW: s 100%  in    1 +    0 games:  -200L <-10200:-10200>
+------------------------------------
+Correcting Position from game:
+
+   A B C D E F G H
+ 1 - * * * * * * -  1
+ 2 - - * * * * - -  2
+ 3 O O O * * * * -  3
+ 4 O O O O * * * -  4
+ 5 O O O O * * - -  5
+ 6 O O O * O * - -  6
+ 7 O - O O O O - -  7
+ 8 - - O O O O - -  8
+   A B C D E F G H
+Black: 21  White: 24  Empty: 19
+White to move
+OLD: s 100%  in    0 +    0 games:   200W <10200:10200>
+NEW: s 100%  in    1 +    0 games:   200W <10200:10200>
+------------------------------------
+Correcting Position from game:
+
+   A B C D E F G H
+ 1 - - * * * * * -  1
+ 2 - - O * * * - -  2
+ 3 O O O O * * * -  3
+ 4 O O O O O * * -  4
+ 5 O O O O * * - -  5
+ 6 O O O * O * - -  6
+ 7 O - O O O O - -  7
+ 8 - - O O O O - -  8
+   A B C D E F G H
+Black: 17  White: 27  Empty: 20
+Black to move
+OLD: s 100%  in    0 +    0 games:  -200L <-10200:-10200>
+NEW: s 100%  in    1 +    0 games:  -200L <-10200:-10200>
+------------------------------------
+Correcting Position from game:
+
+   A B C D E F G H
+ 1 - - * * * * * -  1
+ 2 - - O * * * - -  2
+ 3 O O O O * * * -  3
+ 4 O O O O O * * -  4
+ 5 O O O * * * - -  5
+ 6 O O O * * * - -  6
+ 7 O - O * * - - -  7
+ 8 - - O O O O - -  8
+   A B C D E F G H
+Black: 21  White: 22  Empty: 21
+White to move
+OLD: s 100%  in    0 +    0 games:   200W <10200:10200>
+NEW: s 100%  in    1 +    0 games:   200W <10200:10200>
+------------------------------------
+Correcting Position from game:
+
+   A B C D E F G H
+ 1 - - - * * * * -  1
+ 2 - - O O * * - -  2
+ 3 O O O O O * * -  3
+ 4 O O O O O * * -  4
+ 5 O O O * * * - -  5
+ 6 O O O * * * - -  6
+ 7 O - O * * - - -  7
+ 8 - - O O O O - -  8
+   A B C D E F G H
+Black: 18  White: 24  Empty: 22
+Black to move
+OLD: s 100%  in    0 +    0 games:  -200L <-10200:-10200>
+NEW: s 100%  in    1 +    0 games:  -200L <-10200:-10200>
+------------------------------------
+Correcting Position from game:
+
+   A B C D E F G H
+ 1 - - - * * * * -  1
+ 2 - - O O * * - -  2
+ 3 O O O O O * * -  3
+ 4 O O O O O * * -  4
+ 5 O O O * * * - -  5
+ 6 * * O * * * - -  6
+ 7 - - O * * - - -  7
+ 8 - - O O O O - -  8
+   A B C D E F G H
+Black: 20  White: 21  Empty: 23
+White to move
+OLD: s 100%  in    0 +    0 games:   200W <10200:10200>
+NEW: s 100%  in    1 +    0 games:   200W <10200:10200>
+------------------------------------
+Correcting Position from game:
+
+   A B C D E F G H
+ 1 - - - * * * * -  1
+ 2 - - O O * * - -  2
+ 3 O O O O O * - -  3
+ 4 O O O O O O * -  4
+ 5 O O O * O * - -  5
+ 6 * * O * * * - -  6
+ 7 - - O * * - - -  7
+ 8 - - O O O O - -  8
+   A B C D E F G H
+Black: 17  White: 23  Empty: 24
+Black to move
+OLD: s 100%  in    0 +    0 games:  -200L <-10200:-10200>
+NEW: s 100%  in    1 +    0 games:  -200L <-10200:-10200>
+------------------------------------
+Correcting Position from game:
+
+   A B C D E F G H
+ 1 - - - * * * * -  1
+ 2 - - O O * * - -  2
+ 3 O O O O O * - -  3
+ 4 - O O O O O * -  4
+ 5 O * O * O * - -  5
+ 6 * * O * * * - -  6
+ 7 - - O * * - - -  7
+ 8 - - O O O O - -  8
+   A B C D E F G H
+Black: 18  White: 21  Empty: 25
+White to move
+OLD: s 100%  in    0 +    0 games:   200W <10200:10200>
+NEW: s 100%  in    1 +    0 games:   200W <10200:10200>
+------------------------------------
+Correcting Position from game:
+
+   A B C D E F G H
+ 1 - - - * * * * -  1
+ 2 - - O O O * - -  2
+ 3 O O O O O O - -  3
+ 4 - O O O O O - -  4
+ 5 O * O * O * - -  5
+ 6 * * O * * * - -  6
+ 7 - - O * * - - -  7
+ 8 - - O O O O - -  8
+   A B C D E F G H
+Black: 15  White: 23  Empty: 26
+Black to move
+OLD: s 100%  in    0 +    0 games:  -200L <-10200:-10200>
+NEW: s 100%  in    1 +    0 games:  -200L <-10200:-10200>
+------------------------------------
+Correcting Position from game:
+
+   A B C D E F G H
+ 1 - - - * * * * -  1
+ 2 - - O O O * - -  2
+ 3 O O O O O O - -  3
+ 4 - O O O O O - -  4
+ 5 O * O * O * - -  5
+ 6 * * * * * * - -  6
+ 7 - - * * * - - -  7
+ 8 - - - * O O - -  8
+   A B C D E F G H
+Black: 18  White: 19  Empty: 27
+White to move
+OLD: s 100%  in    0 +    0 games:   200W <10200:10200>
+NEW: s 100%  in    1 +    0 games:   200W <10200:10200>
+------------------------------------
+Correcting Position from game:
+
+   A B C D E F G H
+ 1 - - - * * * * -  1
+ 2 - - O O O * - -  2
+ 3 O O O O O O - -  3
+ 4 - O O O O O - -  4
+ 5 O * O * O * - -  5
+ 6 * * * O * * - -  6
+ 7 - - O O O - - -  7
+ 8 - - - - O O - -  8
+   A B C D E F G H
+Black: 13  White: 23  Empty: 28
+Black to move
+OLD: s 100%  in    0 +    0 games:  -200L <-10200:-10200>
+NEW: s 100%  in    1 +    0 games:  -200L <-10200:-10200>
+------------------------------------
+Correcting Position from game:
+
+   A B C D E F G H
+ 1 - - - * * * * -  1
+ 2 - - O O O * - -  2
+ 3 O O O O O O - -  3
+ 4 - O O O O O - -  4
+ 5 O * * * O * - -  5
+ 6 * * * * * * - -  6
+ 7 - - O O * - - -  7
+ 8 - - - - O - - -  8
+   A B C D E F G H
+Black: 16  White: 19  Empty: 29
+White to move
+OLD: s 100%W in    0 +    0 games:   200W <10200:10200>
+NEW: s 100%W in    1 +    0 games:   200W <10200:10200>
+------------------------------------
+Correcting Position from game:
+
+   A B C D E F G H
+ 1 - - - * * * * -  1
+ 2 - - O O O * - -  2
+ 3 O O O O O O - -  3
+ 4 - O O O O O - -  4
+ 5 O * * * O * - -  5
+ 6 * * * O * * - -  6
+ 7 - - O O - - - -  7
+ 8 - - - - O - - -  8
+   A B C D E F G H
+Black: 14  White: 20  Empty: 30
+Black to move
+OLD: s 100%W in    0 +    0 games:  -200L <-10200:-10200>
+NEW: s 100%W in    1 +    0 games:  -200L <-10200:-10200>
+------------------------------------
+Correcting Position from game:
+
+   A B C D E F G H
+ 1 - - - * * * * -  1
+ 2 - - O O O * - -  2
+ 3 O O O O * O - -  3
+ 4 - O * * * - - -  4
+ 5 O * * * * * - -  5
+ 6 * * * * * * - -  6
+ 7 - - O O - - - -  7
+ 8 - - - - O - - -  8
+   A B C D E F G H
+Black: 20  White: 13  Empty: 31
+White to move
+OLD: s 100%W in    0 +    0 games:   200W <10200:10200>
+NEW: s 100%W in    1 +    0 games:   200W <10200:10200>
+------------------------------------
+Correcting Position from game:
+
+   A B C D E F G H
+ 1 - - - * * * * -  1
+ 2 - - O O O - - -  2
+ 3 O O O O O O - -  3
+ 4 - O * * * - - -  4
+ 5 O * * * * * - -  5
+ 6 * * * * * * - -  6
+ 7 - - O O - - - -  7
+ 8 - - - - O - - -  8
+   A B C D E F G H
+Black: 18  White: 14  Empty: 32
+Black to move
+OLD: b  97%W in    0 +    0 games:  -200? < -200: -200>; cutoff -200
+
+status Adding deviation: 32 empty
+NEW: b  97%W in    1 +    0 games:  -200? < -600: -600>; cutoff -600
+------------------------------------
+Correcting Position from game:
+
+   A B C D E F G H
+ 1 - - - * * * * -  1
+ 2 - - O O O - - -  2
+ 3 O O O * * - - -  3
+ 4 - O * * * - - -  4
+ 5 O * * * * * - -  5
+ 6 * * * * * * - -  6
+ 7 - - O O - - - -  7
+ 8 - - - - O - - -  8
+   A B C D E F G H
+Black: 20  White: 11  Empty: 33
+White to move
+OLD: b  97%W in    0 +    0 games:   200? <  200:  200>; cutoff 200
+
+status Adding deviation: 33 empty
+NEW: b  97%W in    1 +    0 games:   200? <  600:  600>; cutoff -200
+------------------------------------
+Correcting Position from game:
+
+   A B C D E F G H
+ 1 - - - * * * * -  1
+ 2 - - O O O - - -  2
+ 3 O O O * * - - -  3
+ 4 - O * * * - - -  4
+ 5 O * * * * * - -  5
+ 6 - O O * * * - -  6
+ 7 - - O O - - - -  7
+ 8 - - - - O - - -  8
+   A B C D E F G H
+Black: 17  White: 13  Empty: 34
+Black to move
+OLD: b  97%W in    0 +    0 games:  -200? < -200: -200>; cutoff -200
+
+status Adding deviation: 34 empty
+NEW: b  97%W in    1 +    0 games:  -200? < -600: -600>; cutoff -600
+------------------------------------
+Correcting Position from game:
+
+   A B C D E F G H
+ 1 - - - * * * * -  1
+ 2 - - O O O - - -  2
+ 3 O O O * * - - -  3
+ 4 - O * * * - - -  4
+ 5 - * * * * * - -  5
+ 6 - * O * * * - -  6
+ 7 - - O O - - - -  7
+ 8 - - - - O - - -  8
+   A B C D E F G H
+Black: 18  White: 11  Empty: 35
+White to move
+OLD: b  97%W in    0 +    0 games: No values; cutoff 200
+
+status Adding deviation: 35 empty
+NEW: b  97%W in    1 +    0 games:   200? <  600:  600>; cutoff -1200
+------------------------------------
+Correcting Position from game:
+
+   A B C D E F G H
+ 1 - - - * O O - -  1
+ 2 - - O O O - - -  2
+ 3 O O O * * - - -  3
+ 4 - O * * * - - -  4
+ 5 - * * * * * - -  5
+ 6 - * O * * * - -  6
+ 7 - - O O - - - -  7
+ 8 - - - - O - - -  8
+   A B C D E F G H
+Black: 15  White: 13  Empty: 36
+Black to move
+OLD: b  91%  in    0 +    0 games: No values; cutoff -200
+
+status Adding deviation: 36 empty
+NEW: b  91%  in    1 +    0 games:  -200? < -600: -600>; cutoff -1599
+------------------------------------
+Correcting Position from game:
+
+   A B C D E F G H
+ 1 - - - * - O - -  1
+ 2 - - O * O - - -  2
+ 3 O O O * * - - -  3
+ 4 - O * * * - - -  4
+ 5 - * * * * * - -  5
+ 6 - * O * * * - -  6
+ 7 - - O O - - - -  7
+ 8 - - - - O - - -  8
+   A B C D E F G H
+Black: 16  White: 11  Empty: 37
+White to move
+OLD: b  60%  in    0 +    0 games: No values; cutoff 198
+
+status Adding deviation: 37 empty
+NEW: b  60%  in    1 +    0 games:   200? <  600:  600>; cutoff -1000
+------------------------------------
+Correcting Position from game:
+
+   A B C D E F G H
+ 1 - - - * - O - -  1
+ 2 - - O * O - - -  2
+ 3 O O O * * - - -  3
+ 4 - O O * * - - -  4
+ 5 - - O * * * - -  5
+ 6 - * O * * * - -  6
+ 7 - - O O - - - -  7
+ 8 - - - - O - - -  8
+   A B C D E F G H
+Black: 13  White: 13  Empty: 38
+Black to move
+OLD: b  60%W in    0 +    0 games: No values; cutoff -200
+
+status Adding deviation: 38 empty
+NEW: b  60%W in    1 +    0 games:   -99? <  -99:  -99>; cutoff -200
+------------------------------------
+Correcting Position from game:
+
+   A B C D E F G H
+ 1 - - - * - O - -  1
+ 2 - - O * O - - -  2
+ 3 O O O * * - - -  3
+ 4 - O O * * - - -  4
+ 5 - - O * * * - -  5
+ 6 - * O * * * - -  6
+ 7 - - O * - - - -  7
+ 8 - - - - - - - -  8
+   A B C D E F G H
+Black: 14  White: 11  Empty: 39
+White to move
+OLD: b  50%  in    0 +    0 games: No values; cutoff 200
+
+status Adding deviation: 39 empty
+NEW: b  50%  in    1 +    0 games:    99? <   99:   99>; cutoff -203
+------------------------------------
+Correcting Position from game:
+
+   A B C D E F G H
+ 1 - - - - - O - -  1
+ 2 - - O O O - - -  2
+ 3 O O O O * - - -  3
+ 4 - O O * * - - -  4
+ 5 - - O * * * - -  5
+ 6 - * O * * * - -  6
+ 7 - - O * - - - -  7
+ 8 - - - - - - - -  8
+   A B C D E F G H
+Black: 11  White: 13  Empty: 40
+Black to move
+OLD: b  30 in    0 +    0 games:   -67? <  -67:  -67>; cutoff -67
+
+status Adding deviation: 40 empty
+NEW: b  30 in    1 +    0 games:   -99? <  -99:  -99>; cutoff -113
+------------------------------------
+Correcting Position from game:
+
+   A B C D E F G H
+ 1 - - - - - O - -  1
+ 2 - - O O O - - -  2
+ 3 O O O O * - - -  3
+ 4 - O O * * - - -  4
+ 5 - - * * * * - -  5
+ 6 - * * * * * - -  6
+ 7 - - - * - - - -  7
+ 8 - - - - - - - -  8
+   A B C D E F G H
+Black: 13  White: 10  Empty: 41
+White to move
+OLD: b  30 in    0 +    0 games:     6? <    6:    6>; cutoff 6
+
+status Adding deviation: 41 empty
+NEW: b  30 in    1 +    0 games:    99? <   99:   99>; cutoff -464
+------------------------------------
+Correcting Position from game:
+
+   A B C D E F G H
+ 1 - - - - - O - -  1
+ 2 - - O O O - - -  2
+ 3 O O O O * - - -  3
+ 4 - O O * * - - -  4
+ 5 - - O * * * - -  5
+ 6 - - O * * * - -  6
+ 7 - - - * - - - -  7
+ 8 - - - - - - - -  8
+   A B C D E F G H
+Black: 10  White: 12  Empty: 42
+Black to move
+OLD: b  31 in    0 +    0 games: No values; cutoff -6
+
+status Adding deviation: 42 empty
+NEW: b  31 in    1 +    0 games:   -99? <  -99:  -99>; cutoff -235
+------------------------------------
+Correcting Position from game:
+
+   A B C D E F G H
+ 1 - - - - - - - -  1
+ 2 - - O O * - - -  2
+ 3 O O O * * - - -  3
+ 4 - O O * * - - -  4
+ 5 - - O * * * - -  5
+ 6 - - O * * * - -  6
+ 7 - - - * - - - -  7
+ 8 - - - - - - - -  8
+   A B C D E F G H
+Black: 12  White: 9  Empty: 43
+White to move
+OLD: b  31 in    0 +    0 games: No values; cutoff 110
+
+status Adding deviation: 43 empty
+NEW: b  31 in    1 +    0 games:    99? <   99:   99>; cutoff -220
+------------------------------------
+Correcting Position from game:
+
+   A B C D E F G H
+ 1 - - - - - - - -  1
+ 2 - - O O * - - -  2
+ 3 O O O * * - - -  3
+ 4 - O O * * - - -  4
+ 5 - - O O * * - -  5
+ 6 - - O - * * - -  6
+ 7 - - - * - - - -  7
+ 8 - - - - - - - -  8
+   A B C D E F G H
+Black: 10  White: 10  Empty: 44
+Black to move
+OLD: b  29 in    0 +    0 games: No values; cutoff -56
+
+status Adding deviation: 44 empty
+NEW: b  29 in    1 +    0 games:   -99? <  -99:  -99>; cutoff -259
+------------------------------------
+Correcting Position from game:
+
+   A B C D E F G H
+ 1 - - - - - - - -  1
+ 2 - - O O * - - -  2
+ 3 - O O * * - - -  3
+ 4 - * O * * - - -  4
+ 5 - - O O * * - -  5
+ 6 - - O - * * - -  6
+ 7 - - - * - - - -  7
+ 8 - - - - - - - -  8
+   A B C D E F G H
+Black: 11  White: 8  Empty: 45
+White to move
+OLD: b  27 in    0 +    0 games: No values; cutoff 134
+
+status Adding deviation: 45 empty
+NEW: b  27 in    1 +    0 games:   171? <  171:  171>; cutoff 134
+------------------------------------
+Correcting Position from game:
+
+   A B C D E F G H
+ 1 - - - - - - - -  1
+ 2 - - O O * - - -  2
+ 3 - O O * * - - -  3
+ 4 - * O * * - - -  4
+ 5 - - O O * * - -  5
+ 6 - - O - O * - -  6
+ 7 - - - - - - - -  7
+ 8 - - - - - - - -  8
+   A B C D E F G H
+Black: 9  White: 9  Empty: 46
+Black to move
+OLD: b  27 in    0 +    0 games:  -192? < -192: -192>; cutoff -192
+
+status Adding deviation: 46 empty
+NEW: b  27 in    1 +    0 games:  -171? < -171: -171>; cutoff -259
+------------------------------------
+Correcting Position from game:
+
+   A B C D E F G H
+ 1 - - - - - - - -  1
+ 2 - - - O * - - -  2
+ 3 - O * * * - - -  3
+ 4 - * * * * - - -  4
+ 5 - - O O * * - -  5
+ 6 - - O - O * - -  6
+ 7 - - - - - - - -  7
+ 8 - - - - - - - -  8
+   A B C D E F G H
+Black: 11  White: 6  Empty: 47
+White to move
+OLD: b  28 in    0 +    0 games: No values; cutoff 192
+
+status Adding deviation: 47 empty
+NEW: b  28 in    1 +    0 games:   191? <  191:  191>; cutoff 99
+------------------------------------
+Correcting Position from game:
+
+   A B C D E F G H
+ 1 - - - - - - - -  1
+ 2 - - - O * - - -  2
+ 3 - O * * * - - -  3
+ 4 - - O O * - - -  4
+ 5 - - O O * * - -  5
+ 6 - - O - O * - -  6
+ 7 - - - - - - - -  7
+ 8 - - - - - - - -  8
+   A B C D E F G H
+Black: 8  White: 8  Empty: 48
+Black to move
+OLD: b  27 in    0 +    0 games: No values; cutoff -154
+
+status Adding deviation: 48 empty
+NEW: b  27 in    1 +    0 games:  -191? < -191: -191>; cutoff -194
+------------------------------------
+Correcting Position from game:
+
+   A B C D E F G H
+ 1 - - - - - - - -  1
+ 2 - - - O * - - -  2
+ 3 - - * * * - - -  3
+ 4 - - * O * - - -  4
+ 5 - - O O * * - -  5
+ 6 - - O - O * - -  6
+ 7 - - - - - - - -  7
+ 8 - - - - - - - -  8
+   A B C D E F G H
+Black: 9  White: 6  Empty: 49
+White to move
+OLD: b  27 in    0 +    0 games:   144? <  144:  144>; cutoff 144
+
+status Adding deviation: 49 empty
+NEW: b  27 in    1 +    0 games:   191? <  191:  191>; cutoff 94
+------------------------------------
+Correcting Position from game:
+
+   A B C D E F G H
+ 1 - - - - - - - -  1
+ 2 - - - O - - - -  2
+ 3 - - * O O - - -  3
+ 4 - - * O * - - -  4
+ 5 - - O O * * - -  5
+ 6 - - O - O * - -  6
+ 7 - - - - - - - -  7
+ 8 - - - - - - - -  8
+   A B C D E F G H
+Black: 6  White: 8  Empty: 50
+Black to move
+OLD: b  28 in    0 +    0 games: No values; cutoff -144
+
+status Adding deviation: 50 empty
+NEW: b  28 in    1 +    0 games:  -179? < -179: -179>; cutoff -179
+------------------------------------
+Correcting Position from game:
+
+   A B C D E F G H
+ 1 - - - - - - - -  1
+ 2 - - - - - - - -  2
+ 3 - - * * O - - -  3
+ 4 - - * * * - - -  4
+ 5 - - O O * * - -  5
+ 6 - - O - O * - -  6
+ 7 - - - - - - - -  7
+ 8 - - - - - - - -  8
+   A B C D E F G H
+Black: 8  White: 5  Empty: 51
+White to move
+OLD: b  28 in    0 +    0 games: No values; cutoff 124
+
+status Adding deviation: 51 empty
+NEW: b  28 in    1 +    0 games:   179? <  179:  179>; cutoff -196
+------------------------------------
+Correcting Position from game:
+
+   A B C D E F G H
+ 1 - - - - - - - -  1
+ 2 - - - - - - - -  2
+ 3 - - * - O - - -  3
+ 4 - - * * O - - -  4
+ 5 - - O O * * - -  5
+ 6 - - O - O * - -  6
+ 7 - - - - - - - -  7
+ 8 - - - - - - - -  8
+   A B C D E F G H
+Black: 6  White: 6  Empty: 52
+Black to move
+OLD: b  28 in    0 +    0 games:  -149? < -149: -149>; cutoff -149
+
+status Adding deviation: 52 empty
+NEW: b  28 in    1 +    0 games:  -179? < -179: -179>; cutoff -222
+------------------------------------
+Correcting Position from game:
+
+   A B C D E F G H
+ 1 - - - - - - - -  1
+ 2 - - - - - - - -  2
+ 3 - - * - O - - -  3
+ 4 - - * * O - - -  4
+ 5 - - O * * * - -  5
+ 6 - - - - O * - -  6
+ 7 - - - - - - - -  7
+ 8 - - - - - - - -  8
+   A B C D E F G H
+Black: 7  White: 4  Empty: 53
+White to move
+OLD: b  29 in    0 +    0 games: No values; cutoff 149
+
+status Adding deviation: 53 empty
+NEW: b  29 in    1 +    0 games:   179? <  179:  179>; cutoff 81
+------------------------------------
+Correcting Position from game:
+
+   A B C D E F G H
+ 1 - - - - - - - -  1
+ 2 - - - - - - - -  2
+ 3 - - - - O - - -  3
+ 4 - - * O O - - -  4
+ 5 - - O * * * - -  5
+ 6 - - - - O * - -  6
+ 7 - - - - - - - -  7
+ 8 - - - - - - - -  8
+   A B C D E F G H
+Black: 5  White: 5  Empty: 54
+Black to move
+OLD: b  29 in    0 +    0 games: No values; cutoff -137
+
+status Adding deviation: 54 empty
+NEW: b  29 in    1 +    0 games:  -179? < -179: -179>; cutoff -181
+------------------------------------
+Correcting Position from game:
+
+   A B C D E F G H
+ 1 - - - - - - - -  1
+ 2 - - - - - - - -  2
+ 3 - - - - O - - -  3
+ 4 - - * * O - - -  4
+ 5 - - - * * * - -  5
+ 6 - - - - O * - -  6
+ 7 - - - - - - - -  7
+ 8 - - - - - - - -  8
+   A B C D E F G H
+Black: 6  White: 3  Empty: 55
+White to move
+OLD: b  29 in    0 +    0 games:   151? <  151:  151>; cutoff 150
+
+status Adding deviation: 55 empty
+NEW: b  29 in    1 +    0 games:   179? <  179:  179>; cutoff -99
+------------------------------------
+Correcting Position from game:
+
+   A B C D E F G H
+ 1 - - - - - - - -  1
+ 2 - - - - - - - -  2
+ 3 - - - - O - - -  3
+ 4 - - * * O - - -  4
+ 5 - - - * O * - -  5
+ 6 - - - - O - - -  6
+ 7 - - - - - - - -  7
+ 8 - - - - - - - -  8
+   A B C D E F G H
+Black: 4  White: 4  Empty: 56
+Black to move
+OLD: b  30 in    0 +    0 games: No values; cutoff -151
+
+status Adding deviation: 56 empty
+NEW: b  30 in    1 +    0 games:  -179? < -179: -179>; cutoff -294
+------------------------------------
+Correcting Position from game:
+
+   A B C D E F G H
+ 1 - - - - - - - -  1
+ 2 - - - - - - - -  2
+ 3 - - - - O - - -  3
+ 4 - - * * O - - -  4
+ 5 - - - * * * - -  5
+ 6 - - - - - - - -  6
+ 7 - - - - - - - -  7
+ 8 - - - - - - - -  8
+   A B C D E F G H
+Black: 5  White: 2  Empty: 57
+White to move
+OLD: b  29 in    0 +    0 games:   151? <  151:  151>; cutoff 151
+
+status Adding deviation: 57 empty
+NEW: b  29 in    1 +    0 games:   179? <  179:  179>; cutoff 67
+------------------------------------
+Correcting Position from game:
+
+   A B C D E F G H
+ 1 - - - - - - - -  1
+ 2 - - - - - - - -  2
+ 3 - - - - O - - -  3
+ 4 - - * * O - - -  4
+ 5 - - - * O - - -  5
+ 6 - - - - - - - -  6
+ 7 - - - - - - - -  7
+ 8 - - - - - - - -  8
+   A B C D E F G H
+Black: 3  White: 3  Empty: 58
+Black to move
+OLD: b  31 in    0 +    0 games:  -100? < -100: -100>; cutoff 16400
+
+56 search increased-height leaf node ( 28-> 29)
+
+status Adding deviation: 57 empty
+
+status Adding deviation: 58 empty
+NEW: b  31 in    1 +    0 games:  -179? < -179: -179>; cutoff -179
+------------------------------------
+Correcting Position from game:
+
+   A B C D E F G H
+ 1 - - - - - - - -  1
+ 2 - - - - - - - -  2
+ 3 - - - - - - - -  3
+ 4 - - * * * - - -  4
+ 5 - - - * O - - -  5
+ 6 - - - - - - - -  6
+ 7 - - - - - - - -  7
+ 8 - - - - - - - -  8
+   A B C D E F G H
+Black: 4  White: 1  Empty: 59
+White to move
+OLD: b  32 in    0 +    0 games:   100? <  100:  100>; cutoff 100
+
+status Adding deviation: 59 empty
+NEW: b  32 in    1 +    0 games:   179? <  179:  179>; cutoff 1
+------------------------------------
+Correcting Position from game:
+
+   A B C D E F G H
+ 1 - - - - - - - -  1
+ 2 - - - - - - - -  2
+ 3 - - - - - - - -  3
+ 4 - - - O * - - -  4
+ 5 - - - * O - - -  5
+ 6 - - - - - - - -  6
+ 7 - - - - - - - -  7
+ 8 - - - - - - - -  8
+   A B C D E F G H
+Black: 2  White: 2  Empty: 60
+Black to move
+OLD: b  33 in    0 +    0 games: No values; cutoff -100
+NEW: b  33 in    1 +    0 games:  -179? < -179: -179>; cutoff -16400
+
+Done correcting game positions! 30 searches in 1.06e+03s
+Done correcting game. 30 searches done.
+----------- Analyzing Game -----------
+--------- move 1--------------
+  A B C D E F G H 
+1 - - - - - - - -  1
+2 - - - - - - - -  2
+3 - - - - - - - -  3
+4 - - - O * - - -  4
+5 - - - * O - - -  5
+6 - - - - - - - -  6
+7 - - - - - - - -  7
+8 - - - - - - - -  8
+  A B C D E F G H 
+
+Black: 2  White: 2  Empty: 60
+
+Black to move
+a30 played: C4
+--------- move 2--------------
+  A B C D E F G H 
+1 - - - - - - - -  1
+2 - - - - - - - -  2
+3 - - - - - - - -  3
+4 - - * * * - - -  4
+5 - - - * O - - -  5
+6 - - - - - - - -  6
+7 - - - - - - - -  7
+8 - - - - - - - -  8
+  A B C D E F G H 
+
+Black: 4  White: 1  Empty: 59
+
+White to move
+b  32 in    1 +    0 games:   179? <  179:  179>; cutoff 1
+book E3 1.79 1  31	b  31 in    1 +    0 games:   179? <  179:  179>; cutoff 179
+book C3 0.01 0  31	u  31 in    0 +    0 games:     1? <    1:    1>
+
+
+a30 played: E3
+--------- move 3--------------
+  A B C D E F G H 
+1 - - - - - - - -  1
+2 - - - - - - - -  2
+3 - - - - O - - -  3
+4 - - * * O - - -  4
+5 - - - * O - - -  5
+6 - - - - - - - -  6
+7 - - - - - - - -  7
+8 - - - - - - - -  8
+  A B C D E F G H 
+
+Black: 3  White: 3  Empty: 58
+
+Black to move
+b  31 in    1 +    0 games:  -179? < -179: -179>; cutoff -179
+book F5 -1.79 1  30	b  30 in    1 +    0 games:  -179? < -179: -179>; cutoff 142
+book F6 -1.79 0  30	u  30 in    0 +    0 games:  -179? < -179: -179>
+
+
+a30 played: F5
+--------- move 4--------------
+  A B C D E F G H 
+1 - - - - - - - -  1
+2 - - - - - - - -  2
+3 - - - - O - - -  3
+4 - - * * O - - -  4
+5 - - - * * * - -  5
+6 - - - - - - - -  6
+7 - - - - - - - -  7
+8 - - - - - - - -  8
+  A B C D E F G H 
+
+Black: 5  White: 2  Empty: 57
+
+White to move
+b  30 in    1 +    0 games:   179? <  179:  179>; cutoff -142
+book E6 1.79 1  30	b  30 in    1 +    0 games:   179? <  179:  179>; cutoff 294
+book B4 0.56 0  29	u  29 in    0 +    0 games:    56? <   56:   56>
+book G6 -1.42 0  29	u  29 in    0 +    0 games:  -142? < -142: -142>
+
+
+a30 played: E6
+--------- move 5--------------
+  A B C D E F G H 
+1 - - - - - - - -  1
+2 - - - - - - - -  2
+3 - - - - O - - -  3
+4 - - * * O - - -  4
+5 - - - * O * - -  5
+6 - - - - O - - -  6
+7 - - - - - - - -  7
+8 - - - - - - - -  8
+  A B C D E F G H 
+
+Black: 4  White: 4  Empty: 56
+
+Black to move
+b  30 in    1 +    0 games:  -179? < -179: -179>; cutoff -294
+book F6 -1.79 1  29	b  29 in    1 +    0 games:  -179? < -179: -179>; cutoff 99
+book D3 -2.94 0  29	u  29 in    0 +    0 games:  -294? < -294: -294>
+
+
+a30 played: F6
+--------- move 6--------------
+  A B C D E F G H 
+1 - - - - - - - -  1
+2 - - - - - - - -  2
+3 - - - - O - - -  3
+4 - - * * O - - -  4
+5 - - - * * * - -  5
+6 - - - - O * - -  6
+7 - - - - - - - -  7
+8 - - - - - - - -  8
+  A B C D E F G H 
+
+Black: 6  White: 3  Empty: 55
+
+White to move
+b  29 in    1 +    0 games:   179? <  179:  179>; cutoff -99
+book C5 1.79 1  29	b  29 in    1 +    0 games:   179? <  179:  179>; cutoff 181
+book G4 -0.99 0  28	u  28 in    0 +    0 games:   -99? <  -99:  -99>
+
+
+a30 played: C5
+--------- move 7--------------
+  A B C D E F G H 
+1 - - - - - - - -  1
+2 - - - - - - - -  2
+3 - - - - O - - -  3
+4 - - * O O - - -  4
+5 - - O * * * - -  5
+6 - - - - O * - -  6
+7 - - - - - - - -  7
+8 - - - - - - - -  8
+  A B C D E F G H 
+
+Black: 5  White: 5  Empty: 54
+
+Black to move
+b  29 in    1 +    0 games:  -179? < -179: -179>; cutoff -181
+book C3 -1.79 1  29	b  29 in    1 +    0 games:  -179? < -179: -179>; cutoff -81
+book F4 -1.81 0  28	u  28 in    0 +    0 games:  -181? < -181: -181>
+
+
+a30 played: C3
+--------- move 8--------------
+  A B C D E F G H 
+1 - - - - - - - -  1
+2 - - - - - - - -  2
+3 - - * - O - - -  3
+4 - - * * O - - -  4
+5 - - O * * * - -  5
+6 - - - - O * - -  6
+7 - - - - - - - -  7
+8 - - - - - - - -  8
+  A B C D E F G H 
+
+Black: 7  White: 4  Empty: 53
+
+White to move
+b  29 in    1 +    0 games:   179? <  179:  179>; cutoff 81
+book C6 1.79 1  28	b  28 in    1 +    0 games:   179? <  179:  179>; cutoff 222
+book B4 0.81 0  28	u  28 in    0 +    0 games:    81? <   81:   81>
+
+
+a30 played: C6
+--------- move 9--------------
+  A B C D E F G H 
+1 - - - - - - - -  1
+2 - - - - - - - -  2
+3 - - * - O - - -  3
+4 - - * * O - - -  4
+5 - - O O * * - -  5
+6 - - O - O * - -  6
+7 - - - - - - - -  7
+8 - - - - - - - -  8
+  A B C D E F G H 
+
+Black: 6  White: 6  Empty: 52
+
+Black to move
+b  28 in    1 +    0 games:  -179? < -179: -179>; cutoff -222
+book D3 -1.79 1  28	b  28 in    1 +    0 games:  -179? < -179: -179>; cutoff 196
+book D6 -2.22 0  27	u  27 in    0 +    0 games:  -222? < -222: -222>
+
+
+a30 played: D3
+--------- move 10--------------
+  A B C D E F G H 
+1 - - - - - - - -  1
+2 - - - - - - - -  2
+3 - - * * O - - -  3
+4 - - * * * - - -  4
+5 - - O O * * - -  5
+6 - - O - O * - -  6
+7 - - - - - - - -  7
+8 - - - - - - - -  8
+  A B C D E F G H 
+
+Black: 8  White: 5  Empty: 51
+
+White to move
+b  28 in    1 +    0 games:   179? <  179:  179>; cutoff -196
+book D2 1.79 1  28	b  28 in    1 +    0 games:   179? <  179:  179>; cutoff 179
+book C2 -1.96 0  27	u  27 in    0 +    0 games:  -196? < -196: -196>
+
+
+a30 played: D2
+--------- move 11--------------
+  A B C D E F G H 
+1 - - - - - - - -  1
+2 - - - O - - - -  2
+3 - - * O O - - -  3
+4 - - * O * - - -  4
+5 - - O O * * - -  5
+6 - - O - O * - -  6
+7 - - - - - - - -  7
+8 - - - - - - - -  8
+  A B C D E F G H 
+
+Black: 6  White: 8  Empty: 50
+
+Black to move
+b  28 in    1 +    0 games:  -179? < -179: -179>; cutoff -179
+book C2 -1.79 0  27	u  27 in    0 +    0 games:  -179? < -179: -179>
+book E2 -1.91 1  27	b  27 in    1 +    0 games:  -191? < -191: -191>; cutoff -94
+book F3 -1.96 0  27	u  27 in    0 +    0 games:  -196? < -196: -196>
+
+
+a30 played: E2
+--------- move 12--------------
+  A B C D E F G H 
+1 - - - - - - - -  1
+2 - - - O * - - -  2
+3 - - * * * - - -  3
+4 - - * O * - - -  4
+5 - - O O * * - -  5
+6 - - O - O * - -  6
+7 - - - - - - - -  7
+8 - - - - - - - -  8
+  A B C D E F G H 
+
+Black: 9  White: 6  Empty: 49
+
+White to move
+b  27 in    1 +    0 games:   191? <  191:  191>; cutoff 94
+book B3 1.91 1  27	b  27 in    1 +    0 games:   191? <  191:  191>; cutoff 194
+book F4 0.94 0  26	u  26 in    0 +    0 games:    94? <   94:   94>
+
+
+a30 played: B3
+--------- move 13--------------
+  A B C D E F G H 
+1 - - - - - - - -  1
+2 - - - O * - - -  2
+3 - O * * * - - -  3
+4 - - O O * - - -  4
+5 - - O O * * - -  5
+6 - - O - O * - -  6
+7 - - - - - - - -  7
+8 - - - - - - - -  8
+  A B C D E F G H 
+
+Black: 8  White: 8  Empty: 48
+
+Black to move
+b  27 in    1 +    0 games:  -191? < -191: -191>; cutoff -194
+book B4 -1.91 1  28	b  28 in    1 +    0 games:  -191? < -191: -191>; cutoff -99
+book E1 -1.94 0  26	u  26 in    0 +    0 games:  -194? < -194: -194>
+book C1 -2.59 0  26	u  26 in    0 +    0 games:  -259? < -259: -259>
+
+
+a30 played: B4
+--------- move 14--------------
+  A B C D E F G H 
+1 - - - - - - - -  1
+2 - - - O * - - -  2
+3 - O * * * - - -  3
+4 - * * * * - - -  4
+5 - - O O * * - -  5
+6 - - O - O * - -  6
+7 - - - - - - - -  7
+8 - - - - - - - -  8
+  A B C D E F G H 
+
+Black: 11  White: 6  Empty: 47
+
+White to move
+b  28 in    1 +    0 games:   191? <  191:  191>; cutoff 99
+book F4 1.91 0  27	u  27 in    0 +    0 games:   191? <  191:  191>
+book C2 1.71 1  27	b  27 in    1 +    0 games:   171? <  171:  171>; cutoff 259
+book A3 0.99 0  27	u  27 in    0 +    0 games:    99? <   99:   99>
+
+
+a30 played: C2
+--------- move 15--------------
+  A B C D E F G H 
+1 - - - - - - - -  1
+2 - - O O * - - -  2
+3 - O O * * - - -  3
+4 - * O * * - - -  4
+5 - - O O * * - -  5
+6 - - O - O * - -  6
+7 - - - - - - - -  7
+8 - - - - - - - -  8
+  A B C D E F G H 
+
+Black: 9  White: 9  Empty: 46
+
+Black to move
+b  27 in    1 +    0 games:  -171? < -171: -171>; cutoff -259
+book D7 -1.71 1  27	b  27 in    1 +    0 games:  -171? < -171: -171>; cutoff -134
+book C1 -2.59 0  26	u  26 in    0 +    0 games:  -259? < -259: -259>
+book D1 -2.89 0  26	u  26 in    0 +    0 games:  -289? < -289: -289>
+
+
+a30 played: D7
+--------- move 16--------------
+  A B C D E F G H 
+1 - - - - - - - -  1
+2 - - O O * - - -  2
+3 - O O * * - - -  3
+4 - * O * * - - -  4
+5 - - O O * * - -  5
+6 - - O - * * - -  6
+7 - - - * - - - -  7
+8 - - - - - - - -  8
+  A B C D E F G H 
+
+Black: 11  White: 8  Empty: 45
+
+White to move
+b  27 in    1 +    0 games:   171? <  171:  171>; cutoff 134
+book F4 1.71 0  26	u  26 in    0 +    0 games:   171? <  171:  171>
+book A3 0.99 1  29	b  29 in    1 +    0 games:    99? <   99:   99>; cutoff 259
+
+
+a30 played: A3
+--------- move 17--------------
+  A B C D E F G H 
+1 - - - - - - - -  1
+2 - - O O * - - -  2
+3 O O O * * - - -  3
+4 - O O * * - - -  4
+5 - - O O * * - -  5
+6 - - O - * * - -  6
+7 - - - * - - - -  7
+8 - - - - - - - -  8
+  A B C D E F G H 
+
+Black: 10  White: 10  Empty: 44
+
+Black to move
+b  29 in    1 +    0 games:   -99? <  -99:  -99>; cutoff -259
+book D6 -0.99 1  31	b  31 in    1 +    0 games:   -99? <  -99:  -99>; cutoff 220
+book C1 -2.59 0  28	u  28 in    0 +    0 games:  -259? < -259: -259>
+
+
+a30 played: D6
+--------- move 18--------------
+  A B C D E F G H 
+1 - - - - - - - -  1
+2 - - O O * - - -  2
+3 O O O * * - - -  3
+4 - O O * * - - -  4
+5 - - O * * * - -  5
+6 - - O * * * - -  6
+7 - - - * - - - -  7
+8 - - - - - - - -  8
+  A B C D E F G H 
+
+Black: 12  White: 9  Empty: 43
+
+White to move
+b  31 in    1 +    0 games:    99? <   99:   99>; cutoff -220
+book F1 0.99 1  31	b  31 in    1 +    0 games:    99? <   99:   99>; cutoff 235
+book E7 -2.20 0  30	u  30 in    0 +    0 games:  -220? < -220: -220>
+
+
+a30 played: F1
+--------- move 19--------------
+  A B C D E F G H 
+1 - - - - - O - -  1
+2 - - O O O - - -  2
+3 O O O O * - - -  3
+4 - O O * * - - -  4
+5 - - O * * * - -  5
+6 - - O * * * - -  6
+7 - - - * - - - -  7
+8 - - - - - - - -  8
+  A B C D E F G H 
+
+Black: 10  White: 12  Empty: 42
+
+Black to move
+b  31 in    1 +    0 games:   -99? <  -99:  -99>; cutoff -235
+book B6 -0.99 1  30	b  30 in    1 +    0 games:   -99? <  -99:  -99>; cutoff 464
+book D1 -2.35 0  30	u  30 in    0 +    0 games:  -235? < -235: -235>
+
+
+a30 played: B6
+--------- move 20--------------
+  A B C D E F G H 
+1 - - - - - O - -  1
+2 - - O O O - - -  2
+3 O O O O * - - -  3
+4 - O O * * - - -  4
+5 - - * * * * - -  5
+6 - * * * * * - -  6
+7 - - - * - - - -  7
+8 - - - - - - - -  8
+  A B C D E F G H 
+
+Black: 13  White: 10  Empty: 41
+
+White to move
+b  30 in    1 +    0 games:    99? <   99:   99>; cutoff -464
+book C7 0.99 1  30	b  30 in    1 +    0 games:    99? <   99:   99>; cutoff 113
+book D8 -4.64 0  29	u  29 in    0 +    0 games:  -464? < -464: -464>
+
+
+a30 played: C7
+--------- move 21--------------
+  A B C D E F G H 
+1 - - - - - O - -  1
+2 - - O O O - - -  2
+3 O O O O * - - -  3
+4 - O O * * - - -  4
+5 - - O * * * - -  5
+6 - * O * * * - -  6
+7 - - O * - - - -  7
+8 - - - - - - - -  8
+  A B C D E F G H 
+
+Black: 11  White: 13  Empty: 40
+
+Black to move
+b  30 in    1 +    0 games:   -99? <  -99:  -99>; cutoff -113
+book D1 -0.99 1  50% 	b  50%  in    1 +    0 games:   -99? <  -99:  -99>; cutoff 203
+book B5 -1.13 0  29	u  29 in    0 +    0 games:  -113? < -113: -113>
+
+
+a30 played: D1
+--------- move 22--------------
+  A B C D E F G H 
+1 - - - * - O - -  1
+2 - - O * O - - -  2
+3 O O O * * - - -  3
+4 - O O * * - - -  4
+5 - - O * * * - -  5
+6 - * O * * * - -  6
+7 - - O * - - - -  7
+8 - - - - - - - -  8
+  A B C D E F G H 
+
+Black: 14  White: 11  Empty: 39
+
+White to move
+b  50%  in    1 +    0 games:    99? <   99:   99>; cutoff -203
+book E8 0.99 1  60%W	b  60%W in    1 +    0 games:    99? <   99:   99>; cutoff 200
+book A6 -2.03 0  50% 	u  50%  in    0 +    0 games:  -203? < -203: -203>
+
+
+a30 played: E8
+--------- move 23--------------
+  A B C D E F G H 
+1 - - - * - O - -  1
+2 - - O * O - - -  2
+3 O O O * * - - -  3
+4 - O O * * - - -  4
+5 - - O * * * - -  5
+6 - * O * * * - -  6
+7 - - O O - - - -  7
+8 - - - - O - - -  8
+  A B C D E F G H 
+
+Black: 13  White: 13  Empty: 38
+
+Black to move
+b  60%W in    1 +    0 games:   -99? <  -99:  -99>; cutoff -200
+book C8 -0.99 0  60%W	u  60%W in    0 +    0 games:   -99? <  -99:  -99>
+book B5 -6.00 1  60% 	b  60%  in    1 +    0 games:  -200? < -600: -600>; cutoff 1000
+
+
+a30 played: B5
+--------- move 24--------------
+  A B C D E F G H 
+1 - - - * - O - -  1
+2 - - O * O - - -  2
+3 O O O * * - - -  3
+4 - O * * * - - -  4
+5 - * * * * * - -  5
+6 - * O * * * - -  6
+7 - - O O - - - -  7
+8 - - - - O - - -  8
+  A B C D E F G H 
+
+Black: 16  White: 11  Empty: 37
+
+White to move
+b  60%  in    1 +    0 games:   200? <  600:  600>; cutoff -1000
+book E1 6.00 1  91% 	b  91%  in    1 +    0 games:   200? <  600:  600>; cutoff 1599
+book A5 1.00 0  60% 	u  60%  in    0 +    0 games:   100? <  100:  100>
+book A4 -10.00 0  60% 	u  60%  in    0 +    0 games: -1000? <-1000:-1000>
+
+
+a30 played: E1
+--------- move 25--------------
+  A B C D E F G H 
+1 - - - * O O - -  1
+2 - - O O O - - -  2
+3 O O O * * - - -  3
+4 - O * * * - - -  4
+5 - * * * * * - -  5
+6 - * O * * * - -  6
+7 - - O O - - - -  7
+8 - - - - O - - -  8
+  A B C D E F G H 
+
+Black: 15  White: 13  Empty: 36
+
+Black to move
+b  91%  in    1 +    0 games:  -200? < -600: -600>; cutoff -1599
+book G1 -6.00 1  97%W	b  97%W in    1 +    0 games:  -200? < -600: -600>; cutoff 1200
+book C1 -15.99 0  91% 	u  91%  in    0 +    0 games: -1599? <-1599:-1599>
+
+
+a30 played: G1
+--------- move 26--------------
+  A B C D E F G H 
+1 - - - * * * * -  1
+2 - - O O O - - -  2
+3 O O O * * - - -  3
+4 - O * * * - - -  4
+5 - * * * * * - -  5
+6 - * O * * * - -  6
+7 - - O O - - - -  7
+8 - - - - O - - -  8
+  A B C D E F G H 
+
+Black: 18  White: 11  Empty: 35
+
+White to move
+b  97%W in    1 +    0 games:   200? <  600:  600>; cutoff -1200
+book A5 6.00 1  97%W	b  97%W in    1 +    0 games:   200? <  600:  600>; cutoff 600
+book A6 -12.00 0  97%W	u  97%W in    0 +    0 games: -1200? <-1200:-1200>
+
+
+a30 played: A5
+--------- move 27--------------
+  A B C D E F G H 
+1 - - - * * * * -  1
+2 - - O O O - - -  2
+3 O O O * * - - -  3
+4 - O * * * - - -  4
+5 O * * * * * - -  5
+6 - O O * * * - -  6
+7 - - O O - - - -  7
+8 - - - - O - - -  8
+  A B C D E F G H 
+
+Black: 17  White: 13  Empty: 34
+
+Black to move
+b  97%W in    1 +    0 games:  -200? < -600: -600>; cutoff -600
+book A4 -6.00 0  97%W	u  97%W in    0 +    0 games:  -600? < -600: -600>
+book A6 -6.00 1  97%W	b  97%W in    1 +    0 games:  -200? < -600: -600>; cutoff 200
+
+
+a30 played: A6
+--------- move 28--------------
+  A B C D E F G H 
+1 - - - * * * * -  1
+2 - - O O O - - -  2
+3 O O O * * - - -  3
+4 - O * * * - - -  4
+5 O * * * * * - -  5
+6 * * * * * * - -  6
+7 - - O O - - - -  7
+8 - - - - O - - -  8
+  A B C D E F G H 
+
+Black: 20  White: 11  Empty: 33
+
+White to move
+b  97%W in    1 +    0 games:   200? <  600:  600>; cutoff -200
+book F3 6.00 1  97%W	b  97%W in    1 +    0 games:   200? <  600:  600>; cutoff 600
+book F7 -2.00 0  97%W	u  97%W in    0 +    0 games:  -200? < -200: -200>
+
+
+a30 played: F3
+--------- move 29--------------
+  A B C D E F G H 
+1 - - - * * * * -  1
+2 - - O O O - - -  2
+3 O O O O O O - -  3
+4 - O * * * - - -  4
+5 O * * * * * - -  5
+6 * * * * * * - -  6
+7 - - O O - - - -  7
+8 - - - - O - - -  8
+  A B C D E F G H 
+
+Black: 18  White: 14  Empty: 32
+
+Black to move
+b  97%W in    1 +    0 games:  -200? < -600: -600>; cutoff -600
+book D8 -6.00 0  97%W	u  97%W in    0 +    0 games:  -600? < -600: -600>
+book F2 -102.00 1 100%W	s 100%W in    1 +    0 games:  -200W <-10200:-10200>
+
+
+a30 played: F2
+--------- move 30--------------
+  A B C D E F G H 
+1 - - - * * * * -  1
+2 - - O O O * - -  2
+3 O O O O * O - -  3
+4 - O * * * - - -  4
+5 O * * * * * - -  5
+6 * * * * * * - -  6
+7 - - O O - - - -  7
+8 - - - - O - - -  8
+  A B C D E F G H 
+
+Black: 20  White: 13  Empty: 31
+
+White to move
+s 100%W in    1 +    0 games:   200W <10200:10200>
+book F4 102.00 1 100%W	s 100%W in    1 +    0 games:   200L <10200:10200>
+
+
+a30 played: F4
+--------- move 31--------------
+  A B C D E F G H 
+1 - - - * * * * -  1
+2 - - O O O * - -  2
+3 O O O O O O - -  3
+4 - O O O O O - -  4
+5 O * * * O * - -  5
+6 * * * O * * - -  6
+7 - - O O - - - -  7
+8 - - - - O - - -  8
+  A B C D E F G H 
+
+Black: 14  White: 20  Empty: 30
+
+Black to move
+s 100%W in    1 +    0 games:  -200L <-10200:-10200>
+book E7 -102.00 1 100%W	s 100%W in    1 +    0 games:  -200W <-10200:-10200>
+
+
+a30 played: E7
+--------- move 32--------------
+  A B C D E F G H 
+1 - - - * * * * -  1
+2 - - O O O * - -  2
+3 O O O O O O - -  3
+4 - O O O O O - -  4
+5 O * * * O * - -  5
+6 * * * * * * - -  6
+7 - - O O * - - -  7
+8 - - - - O - - -  8
+  A B C D E F G H 
+
+Black: 16  White: 19  Empty: 29
+
+White to move
+s 100%W in    1 +    0 games:   200W <10200:10200>
+book F8 102.00 1 100% 	s 100%  in    1 +    0 games:   200L <10200:10200>
+
+
+a30 played: F8
+--------- move 33--------------
+  A B C D E F G H 
+1 - - - * * * * -  1
+2 - - O O O * - -  2
+3 O O O O O O - -  3
+4 - O O O O O - -  4
+5 O * O * O * - -  5
+6 * * * O * * - -  6
+7 - - O O O - - -  7
+8 - - - - O O - -  8
+  A B C D E F G H 
+
+Black: 13  White: 23  Empty: 28
+
+Black to move
+s 100%  in    1 +    0 games:  -200L <-10200:-10200>
+book D8 -102.00 1 100% 	s 100%  in    1 +    0 games:  -200W <-10200:-10200>
+
+
+a30 played: D8
+--------- move 34--------------
+  A B C D E F G H 
+1 - - - * * * * -  1
+2 - - O O O * - -  2
+3 O O O O O O - -  3
+4 - O O O O O - -  4
+5 O * O * O * - -  5
+6 * * * * * * - -  6
+7 - - * * * - - -  7
+8 - - - * O O - -  8
+  A B C D E F G H 
+
+Black: 18  White: 19  Empty: 27
+
+White to move
+s 100%  in    1 +    0 games:   200W <10200:10200>
+book C8 102.00 1 100% 	s 100%  in    1 +    0 games:   200L <10200:10200>
+
+
+a30 played: C8
+--------- move 35--------------
+  A B C D E F G H 
+1 - - - * * * * -  1
+2 - - O O O * - -  2
+3 O O O O O O - -  3
+4 - O O O O O - -  4
+5 O * O * O * - -  5
+6 * * O * * * - -  6
+7 - - O * * - - -  7
+8 - - O O O O - -  8
+  A B C D E F G H 
+
+Black: 15  White: 23  Empty: 26
+
+Black to move
+s 100%  in    1 +    0 games:  -200L <-10200:-10200>
+book G4 -102.00 1 100% 	s 100%  in    1 +    0 games:  -200W <-10200:-10200>
+
+
+a30 played: G4
+--------- move 36--------------
+  A B C D E F G H 
+1 - - - * * * * -  1
+2 - - O O * * - -  2
+3 O O O O O * - -  3
+4 - O O O O O * -  4
+5 O * O * O * - -  5
+6 * * O * * * - -  6
+7 - - O * * - - -  7
+8 - - O O O O - -  8
+  A B C D E F G H 
+
+Black: 18  White: 21  Empty: 25
+
+White to move
+s 100%  in    1 +    0 games:   200W <10200:10200>
+book A4 102.00 1 100% 	s 100%  in    1 +    0 games:   200L <10200:10200>
+
+
+a30 played: A4
+--------- move 37--------------
+  A B C D E F G H 
+1 - - - * * * * -  1
+2 - - O O * * - -  2
+3 O O O O O * - -  3
+4 O O O O O O * -  4
+5 O O O * O * - -  5
+6 * * O * * * - -  6
+7 - - O * * - - -  7
+8 - - O O O O - -  8
+  A B C D E F G H 
+
+Black: 17  White: 23  Empty: 24
+
+Black to move
+s 100%  in    1 +    0 games:  -200L <-10200:-10200>
+book G3 -102.00 1 100% 	s 100%  in    1 +    0 games:  -200W <-10200:-10200>
+
+
+a30 played: G3
+--------- move 38--------------
+  A B C D E F G H 
+1 - - - * * * * -  1
+2 - - O O * * - -  2
+3 O O O O O * * -  3
+4 O O O O O * * -  4
+5 O O O * * * - -  5
+6 * * O * * * - -  6
+7 - - O * * - - -  7
+8 - - O O O O - -  8
+  A B C D E F G H 
+
+Black: 20  White: 21  Empty: 23
+
+White to move
+s 100%  in    1 +    0 games:   200W <10200:10200>
+book A7 102.00 1 100% 	s 100%  in    1 +    0 games:   200L <10200:10200>
+
+
+a30 played: A7
+--------- move 39--------------
+  A B C D E F G H 
+1 - - - * * * * -  1
+2 - - O O * * - -  2
+3 O O O O O * * -  3
+4 O O O O O * * -  4
+5 O O O * * * - -  5
+6 O O O * * * - -  6
+7 O - O * * - - -  7
+8 - - O O O O - -  8
+  A B C D E F G H 
+
+Black: 18  White: 24  Empty: 22
+
+Black to move
+s 100%  in    1 +    0 games:  -200L <-10200:-10200>
+book C1 -102.00 1 100% 	s 100%  in    1 +    0 games:  -200W <-10200:-10200>
+
+
+a30 played: C1
+--------- move 40--------------
+  A B C D E F G H 
+1 - - * * * * * -  1
+2 - - O * * * - -  2
+3 O O O O * * * -  3
+4 O O O O O * * -  4
+5 O O O * * * - -  5
+6 O O O * * * - -  6
+7 O - O * * - - -  7
+8 - - O O O O - -  8
+  A B C D E F G H 
+
+Black: 21  White: 22  Empty: 21
+
+White to move
+s 100%  in    1 +    0 games:   200W <10200:10200>
+book F7 102.00 1 100% 	s 100%  in    1 +    0 games:   200L <10200:10200>
+
+
+a30 played: F7
+--------- move 41--------------
+  A B C D E F G H 
+1 - - * * * * * -  1
+2 - - O * * * - -  2
+3 O O O O * * * -  3
+4 O O O O O * * -  4
+5 O O O O * * - -  5
+6 O O O * O * - -  6
+7 O - O O O O - -  7
+8 - - O O O O - -  8
+  A B C D E F G H 
+
+Black: 17  White: 27  Empty: 20
+
+Black to move
+s 100%  in    1 +    0 games:  -200L <-10200:-10200>
+book B1 -102.00 1 100% 	s 100%  in    1 +    0 games:  -200W <-10200:-10200>
+
+
+a30 played: B1
+--------- move 42--------------
+  A B C D E F G H 
+1 - * * * * * * -  1
+2 - - * * * * - -  2
+3 O O O * * * * -  3
+4 O O O O * * * -  4
+5 O O O O * * - -  5
+6 O O O * O * - -  6
+7 O - O O O O - -  7
+8 - - O O O O - -  8
+  A B C D E F G H 
+
+Black: 21  White: 24  Empty: 19
+
+White to move
+s 100%  in    1 +    0 games:   200W <10200:10200>
+book G6 102.00 1 100% 	s 100%  in    1 +    0 games:   200L <10200:10200>
+
+
+a30 played: G6
+--------- move 43--------------
+  A B C D E F G H 
+1 - * * * * * * -  1
+2 - - * * * * - -  2
+3 O O O * * * * -  3
+4 O O O O * * * -  4
+5 O O O O * * - -  5
+6 O O O * O O O -  6
+7 O - O O O O - -  7
+8 - - O O O O - -  8
+  A B C D E F G H 
+
+Black: 20  White: 26  Empty: 18
+
+Black to move
+s 100%  in    1 +    0 games:  -200L <-10200:-10200>
+book G7 -102.00 1 100% 	s 100%  in    1 +    0 games:  -200W <-10200:-10200>
+
+
+a30 played: G7
+--------- move 44--------------
+  A B C D E F G H 
+1 - * * * * * * -  1
+2 - - * * * * - -  2
+3 O O O * * * * -  3
+4 O O O O * * * -  4
+5 O O O O * * - -  5
+6 O O O * O * O -  6
+7 O - O O O O * -  7
+8 - - O O O O - -  8
+  A B C D E F G H 
+
+Black: 22  White: 25  Empty: 17
+
+White to move
+s 100%  in    1 +    0 games:   200W <10200:10200>
+book G5 102.00 1 100% 	s 100%  in    1 +    0 games:   200L <10200:10200>
+
+
+a30 played: G5
+--------- move 45--------------
+  A B C D E F G H 
+1 - * * * * * * -  1
+2 - - * * * * - -  2
+3 O O O * * * * -  3
+4 O O O O * * * -  4
+5 O O O O O O O -  5
+6 O O O * O O O -  6
+7 O - O O O O * -  7
+8 - - O O O O - -  8
+  A B C D E F G H 
+
+Black: 19  White: 29  Empty: 16
+
+Black to move
+s 100%  in    1 +    0 games:  -200L <-10200:-10200>
+book B2 -102.00 1 100% 	s 100%  in    1 +    0 games:  -200W <-10200:-10200>
+
+
+a30 played: B2
+--------- move 46--------------
+  A B C D E F G H 
+1 - * * * * * * -  1
+2 - * * * * * - -  2
+3 O O * * * * * -  3
+4 O O O * * * * -  4
+5 O O O O * O O -  5
+6 O O O * O * O -  6
+7 O - O O O O * -  7
+8 - - O O O O - -  8
+  A B C D E F G H 
+
+Black: 24  White: 25  Empty: 15
+
+White to move
+s 100%  in    1 +    0 games:   200W <10200:10200>
+book H4 102.00 1 100% 	s 100%  in    1 +    0 games:   200L <10200:10200>
+
+
+a30 played: H4
+--------- move 47--------------
+  A B C D E F G H 
+1 - * * * * * * -  1
+2 - * * * * * - -  2
+3 O O * * * * * -  3
+4 O O O O O O O O  4
+5 O O O O * O O -  5
+6 O O O * O * O -  6
+7 O - O O O O * -  7
+8 - - O O O O - -  8
+  A B C D E F G H 
+
+Black: 20  White: 30  Empty: 14
+
+Black to move
+s 100%  in    1 +    0 games:  -200L <-10200:-10200>
+book H5 -102.00 1 100% 	s 100%  in    1 +    0 games:  -200W <-10200:-10200>
+
+
+a30 played: H5
+--------- move 48--------------
+  A B C D E F G H 
+1 - * * * * * * -  1
+2 - * * * * * - -  2
+3 O O * * * * * -  3
+4 O O O O O O * O  4
+5 O O O O * * * *  5
+6 O O O * O * O -  6
+7 O - O O O O * -  7
+8 - - O O O O - -  8
+  A B C D E F G H 
+
+Black: 24  White: 27  Empty: 13
+
+White to move
+s 100%  in    1 +    0 games:   200W <10200:10200>
+book H2 102.00 1 100% 	s 100%  in    1 +    0 games:   200L <10200:10200>
+
+
+a30 played: H2
+--------- move 49--------------
+  A B C D E F G H 
+1 - * * * * * * -  1
+2 - * * * * * - O  2
+3 O O * * * * O -  3
+4 O O O O O O * O  4
+5 O O O O * * * *  5
+6 O O O * O * O -  6
+7 O - O O O O * -  7
+8 - - O O O O - -  8
+  A B C D E F G H 
+
+Black: 23  White: 29  Empty: 12
+
+Black to move
+s 100%  in    1 +    0 games:  -200L <-10200:-10200>
+book H3 -102.00 1 100% 	s 100%  in    1 +    0 games:  -200W <-10200:-10200>
+
+
+a30 played: H3
+--------- move 50--------------
+  A B C D E F G H 
+1 - * * * * * * -  1
+2 - * * * * * - O  2
+3 O O * * * * * *  3
+4 O O O O O O * *  4
+5 O O O O * * * *  5
+6 O O O * O * O -  6
+7 O - O O O O * -  7
+8 - - O O O O - -  8
+  A B C D E F G H 
+
+Black: 26  White: 27  Empty: 11
+
+White to move
+s 100%  in    1 +    0 games:   200W <10200:10200>
+book H6 102.00 1 100% 	s 100%  in    1 +    0 games:   200L <10200:10200>
+
+
+a30 played: H6
+--------- move 51--------------
+  A B C D E F G H 
+1 - * * * * * * -  1
+2 - * * * * * - O  2
+3 O O * * * * * O  3
+4 O O O O O O * O  4
+5 O O O O * * O O  5
+6 O O O * O * O O  6
+7 O - O O O O O -  7
+8 - - O O O O - -  8
+  A B C D E F G H 
+
+Black: 21  White: 33  Empty: 10
+
+Black to move
+s 100%  in    1 +    0 games:  -200L <-10200:-10200>
+book H7 -102.00 1 100% 	s 100%  in    1 +    0 games:  -200W <-10200:-10200>
+
+
+a30 played: H7
+--------- move 52--------------
+  A B C D E F G H 
+1 - * * * * * * -  1
+2 - * * * * * - O  2
+3 O O * * * * * O  3
+4 O O O O O O * O  4
+5 O O O O * * O O  5
+6 O O O * O * * O  6
+7 O - O O O O O *  7
+8 - - O O O O - -  8
+  A B C D E F G H 
+
+Black: 23  White: 32  Empty: 9
+
+White to move
+s 100%  in    1 +    0 games:   200W <10200:10200>
+
+
+a30 played: H8
+Analysis complete in 0.00938 seconds

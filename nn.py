@@ -11,26 +11,26 @@ batch_size = 100
 epochs = 100
 
 #map each location to a category
-groups = [[0]*9 for i in xrange(9)]
-for i in xrange(1, 9):
-	for j in xrange(1, 9):
+groups = [[0]*9 for i in range(9)]
+for i in range(1, 9):
+	for j in range(1, 9):
 		groups[i][j] = (i-1)*8+(j-1)
 
 X_trn = []
 Y_trn = []
 
 #read from the training data
-dataFile = "/Users/liuyujin/othello/training data converter/final_output.txt"
+dataFile = 'training data converter/final_output.txt'
 with open(dataFile) as f:
 	content = f.readlines()
 content = [l.strip() for l in content]
-for i in xrange(len(content)):
+for i in range(len(content)):
 	if i % 2 == 0:
-		#features 
-		X_trn.append(map(float, content[i].split()))
+		#features
+		X_trn.append(list(map(float, content[i].split())))
 	else:
-		#class 
-		l = map(int, content[i].split())
+		#class
+		l = list(map(int, content[i].split()))
 		Y_trn.append(groups[l[0]][l[1]])
 X_trn = np.array(X_trn)
 Y_trn = np.array(Y_trn)
@@ -60,5 +60,5 @@ X_trn = X_trn.reshape(X_trn.shape[0], input_cols,1, 1)
 Y_trn = np_utils.to_categorical(Y_trn, num_groups)
 model.fit(X_trn, Y_trn, batch_size=batch_size, nb_epoch=epochs)
 model.save('model.h5')
-#model.save_weights('model_weights.h5')
-#model.load_model(model.h5)
+model.save_weights('model_weights.h5')
+model.load_model(model.h5)
