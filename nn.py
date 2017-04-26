@@ -8,7 +8,7 @@ from keras.layers.core import Dense, Flatten
 from keras.callbacks import ModelCheckpoint
 
 batch_size = 100
-epochs = 100
+epochs = 200
 
 #map each location to a category
 groups = [[0]*9 for i in range(9)]
@@ -20,7 +20,7 @@ X_trn = []
 Y_trn = []
 
 #read from the training data
-dataFile = 'training data converter/final_output.txt'
+dataFile = 'C:\\Users\\Eliot\\Documents\\CMU\\S17\\10-401\\Othello Project\\othello\\training data converter\\final_output.txt'
 with open(dataFile) as f:
 	content = f.readlines()
 content = [l.strip() for l in content]
@@ -61,4 +61,5 @@ Y_trn = np_utils.to_categorical(Y_trn, num_groups)
 model.fit(X_trn, Y_trn, batch_size=batch_size, nb_epoch=epochs)
 model.save('model.h5')
 model.save_weights('model_weights.h5')
-model.load_model(model.h5)
+
+modelTest = load_model('model.h5')

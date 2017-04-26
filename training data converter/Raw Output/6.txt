@@ -1,0 +1,713 @@
+Ntest version as of Apr 17 2017
+Copyright 1999-2014 Chris Welty and Vlad Petric
+All Rights Reserved
+
+64-bit compile
+file was stored correctly
+---- Heights ----
+midgame : 12
+100% WLD: 20
+ 97% WLD: 20
+ 91% WLD: 20
+ 70% WLD: 21
+ 60% WLD: 21
+ 50% WLD: 22
+
+status Loading book
+status Negamaxing book
+status
+status Loading book
+status Negamaxing book
+status
+
+   A B C D E F G H  
+ 1 - - - - - - - - 1
+ 2 - - - - - - - - 2
+ 3 - - - - - - - - 3
+ 4 - - - O * - - - 4
+ 5 - - - * O - - - 5
+ 6 - - - - - - - - 6
+ 7 - - - - - - - - 7
+ 8 - - - - - - - - 8
+   A B C D E F G H  
+Black to move
+
+status Thinking
+search D3       -0.81 0   1
+search D3       -1.39 0   2
+search D3       -0.98 0   3
+search D3       -1.34 0   4
+search D3       -0.46 0   5
+search D3       -1.30 0   6
+search D3       -0.97 0   7
+search D3       -0.60 0   8
+search D3       -0.48 0   9
+search F5       -0.47 0   9
+search F5       -0.73 0  10
+search F5       -0.91 0  11
+search F5       -0.90 0  12
+search F5       -0.61 0  13
+search F5       -1.14 0  14
+search F5       -0.93 0  15
+search F5       -1.18 0  16
+search F5       -0.88 0  17
+search F5       -1.20 0  18
+search E6       -1.15 0  18
+search E6       -1.04 0  19
+search E6       -1.05 0  20
+search E6       -1.03 0  21
+search F5       -1.01 0  21
+search D3       -0.99 0  21
+search C4       -0.98 0  21
+search C4       -1.11 0  22
+search C4       -0.92 0  23
+search C4       -0.86 0  24
+search C4       -0.77 0  25
+search C4       -1.45 0  26
+search D3       -1.44 0  26
+search F5       -1.43 0  26
+search E6       -1.42 0  26
+search E6       -1.38 0  27
+search C4       -1.37 0  27
+search C4       -1.41 0  28
+search C4       -1.03 0  29
+search C4       -1.40 0  30
+search C4       -1.19 0  31
+search C4       -1.28 0  32
+search C4       -1.00 0  33
+ 33 (60 empty)	C4/-1.00		31s elapsed
+status
+=== C4  -1.00 0  33 31.05  230Mn/31.046s = 7427kn/s;  0.13 us/n 60e:  ===
+
+   A B C D E F G H  
+ 1 - - - - - - - - 1
+ 2 - - - - - - - - 2
+ 3 - - - - - - - - 3
+ 4 - - * * * - - - 4
+ 5 - - - * O - - - 5
+ 6 - - - - - - - - 6
+ 7 - - - - - - - - 7
+ 8 - - - - - - - - 8
+   A B C D E F G H  
+White to move
+
+status Thinking
+search C3       +0.22 0   1
+search E3       +1.39 0   1
+search E3       +1.00 0   2
+search E3       +1.00 0   3
+search E3       +1.00 0   4
+search E3       +1.00 0   5
+search E3       +1.00 0   6
+search E3       +1.00 0   7
+search E3       +1.00 0   8
+search E3       +1.00 0   9
+search E3       +1.00 0  10
+search E3       +1.00 0  11
+search E3       +1.00 0  12
+search E3       +1.00 0  13
+search E3       +1.00 0  14
+search E3       +1.00 0  15
+search E3       +1.00 0  16
+search E3       +1.00 0  17
+search E3       +1.00 0  18
+search E3       +1.00 0  19
+search E3       +1.00 0  20
+search E3       +1.00 0  21
+search E3       +1.00 0  22
+search E3       +1.00 0  23
+search E3       +1.00 0  24
+search E3       +1.00 0  25
+search E3       +1.00 0  26
+search E3       +1.00 0  27
+search E3       +1.00 0  28
+search E3       +1.00 0  29
+search E3       +1.00 0  30
+search E3       +1.00 0  31
+search E3       +1.00 0  32
+>> Abort round!!!
+ 32 (59 empty)	E3/1.00		45s elapsed
+status
+=== E3  +1.00 0  32 45.00  327Mn/45.003s = 7280kn/s;  0.14 us/n 59e:  ===
+
+   A B C D E F G H  
+ 1 - - - - - - - - 1
+ 2 - - - - - - - - 2
+ 3 - - - - O - - - 3
+ 4 - - * * O - - - 4
+ 5 - - - * O - - - 5
+ 6 - - - - - - - - 6
+ 7 - - - - - - - - 7
+ 8 - - - - - - - - 8
+   A B C D E F G H  
+Black to move
+
+status Thinking
+search F2       -3.16 0   1
+search F3       -1.60 0   1
+search F5       -1.27 0   1
+search F6       -0.98 0   1
+search F6       -1.51 0   2
+search F5       -1.34 0   2
+search F5       -1.29 0   3
+search F5       -1.49 0   4
+search F5       -1.00 0   5
+search F5       -1.39 0   6
+search F5       -1.44 0   7
+search F5       -1.51 0   8
+search F5       -1.51 0   9
+search F5       -1.51 0  10
+search F5       -1.51 0  11
+search F5       -1.51 0  12
+search F5       -1.51 0  13
+search F5       -1.51 0  14
+search F5       -1.51 0  15
+search F5       -1.51 0  16
+search F5       -1.51 0  17
+search F5       -1.51 0  18
+search F5       -1.51 0  19
+search F5       -1.51 0  20
+search F5       -1.51 0  21
+search F5       -1.51 0  22
+search F5       -1.51 0  23
+search F5       -1.51 0  24
+search F5       -1.51 0  25
+search F5       -1.51 0  26
+search F5       -1.51 0  27
+search F5       -1.51 0  28
+search F5       -1.51 0  29
+ 29 (58 empty)	F5/-1.51		15.7s elapsed
+status
+=== F5  -1.51 0  29 15.67  111Mn/15.665s = 7131kn/s;  0.14 us/n 58e:  ===
+
+   A B C D E F G H  
+ 1 - - - - - - - - 1
+ 2 - - - - - - - - 2
+ 3 - - - - O - - - 3
+ 4 - - * * O - - - 4
+ 5 - - - * * * - - 5
+ 6 - - - - - - - - 6
+ 7 - - - - - - - - 7
+ 8 - - - - - - - - 8
+   A B C D E F G H  
+White to move
+
+status Thinking
+search B4       +0.41 0   1
+search C5       +1.29 0   1
+search E6       +1.34 0   1
+search E6       +1.29 0   2
+search E6       +1.49 0   3
+search E6       +1.00 0   4
+search E6       +1.39 0   5
+search E6       +1.44 0   6
+search E6       +1.51 0   7
+search E6       +1.51 0   8
+search E6       +1.51 0   9
+search E6       +1.51 0  10
+search E6       +1.51 0  11
+search E6       +1.51 0  12
+search E6       +1.51 0  13
+search E6       +1.51 0  14
+search E6       +1.51 0  15
+search E6       +1.51 0  16
+search E6       +1.51 0  17
+search E6       +1.51 0  18
+search E6       +1.51 0  19
+search E6       +1.51 0  20
+search E6       +1.51 0  21
+search E6       +1.51 0  22
+search E6       +1.51 0  23
+search E6       +1.51 0  24
+search E6       +1.51 0  25
+search E6       +1.51 0  26
+search E6       +1.51 0  27
+search E6       +1.51 0  28
+search E6       +1.51 0  29
+>> Abort round!!!
+ 29 (57 empty)	E6/1.51	 28 (57 empty)	E6/1.51		45s elapsed
+status
+=== E6  +1.51 0  28 , best to  29 45.00  334Mn/45.002s = 7432kn/s;  0.13 us/n 57e:  ===
+
+   A B C D E F G H  
+ 1 - - - - - - - - 1
+ 2 - - - - - - - - 2
+ 3 - - - - O - - - 3
+ 4 - - * * O - - - 4
+ 5 - - - * O * - - 5
+ 6 - - - - O - - - 6
+ 7 - - - - - - - - 7
+ 8 - - - - - - - - 8
+   A B C D E F G H  
+Black to move
+
+status Thinking
+search F2       -4.32 0   1
+search D3       -1.52 0   1
+search F6       -1.29 0   1
+search F6       -1.51 0   2
+search F4       -1.49 0   2
+search F4       -1.41 0   3
+search D3       -1.00 0   3
+search D3       -1.71 0   4
+search F4       -1.39 0   4
+search F4       -1.44 0   5
+search F4       -2.17 0   6
+search F6       -1.51 0   6
+search F6       -1.51 0   7
+search F6       -1.51 0   8
+search F6       -1.51 0   9
+search F6       -1.51 0  10
+search F6       -1.51 0  11
+search F6       -1.51 0  12
+search F6       -1.51 0  13
+search F6       -1.51 0  14
+search F6       -1.51 0  15
+search F6       -1.51 0  16
+search F6       -1.51 0  17
+search F6       -1.51 0  18
+search F6       -1.51 0  19
+search F6       -1.51 0  20
+search F6       -1.51 0  21
+search F6       -1.51 0  22
+search F6       -1.51 0  23
+search F6       -1.51 0  24
+search F6       -1.51 0  25
+search F6       -1.51 0  26
+search F6       -1.51 0  27
+search F6       -1.51 0  28
+search F6       -1.51 0  29
+search F6       -1.51 0  30
+ 30 (56 empty)	F6/-1.51		15.4s elapsed
+status
+=== F6  -1.51 0  30 15.39  110Mn/15.386s = 7202kn/s;  0.14 us/n 56e:  ===
+
+   A B C D E F G H  
+ 1 - - - - - - - - 1
+ 2 - - - - - - - - 2
+ 3 - - - - O - - - 3
+ 4 - - * * O - - - 4
+ 5 - - - * * * - - 5
+ 6 - - - - O * - - 6
+ 7 - - - - - - - - 7
+ 8 - - - - - - - - 8
+   A B C D E F G H  
+White to move
+
+status Thinking
+search B3       -2.65 0   1
+search B4       -1.26 0   1
+search G4       -0.55 0   1
+search C5       +1.30 0   1
+search C5       +1.13 0   2
+search C5       +0.51 0   3
+search C5       +0.25 0   4
+search C5       +0.73 0   5
+search C5       +0.91 0   6
+search C5       +0.90 0   7
+search C5       +0.61 0   8
+search C5       +1.14 0   9
+search C5       +0.93 0  10
+search C5       +1.18 0  11
+search C5       +0.88 0  12
+search C5       +1.20 0  13
+search C5       +1.04 0  14
+search C5       +1.05 0  15
+search C5       +1.03 0  16
+search C5       +1.11 0  17
+search C5       +0.92 0  18
+search C5       +0.86 0  19
+search C5       +0.77 0  20
+search C5       +1.45 0  21
+search C5       +1.37 0  22
+search C5       +1.41 0  23
+search C5       +1.03 0  24
+search C5       +1.40 0  25
+search C5       +1.19 0  26
+search C5       +1.70 0  27
+search C5       +1.02 0  28
+search C5       +1.50 0  29
+search C5       +1.37 0  30
+ 30 (55 empty)	C5/1.37		18s elapsed
+status
+=== C5  +1.37 0  30 17.97  126Mn/17.970s = 7013kn/s;  0.14 us/n 55e:  ===
+
+   A B C D E F G H  
+ 1 - - - - - - - - 1
+ 2 - - - - - - - - 2
+ 3 - - - - O - - - 3
+ 4 - - * O O - - - 4
+ 5 - - O * * * - - 5
+ 6 - - - - O * - - 6
+ 7 - - - - - - - - 7
+ 8 - - - - - - - - 8
+   A B C D E F G H  
+Black to move
+
+status Thinking
+search E2       -5.93 0   1
+search C3       -1.18 0   1
+search F4       -1.13 0   1
+search F4       -1.37 0   2
+search F4       -1.37 0   3
+search F4       -1.37 0   4
+search F4       -1.37 0   5
+search F4       -1.37 0   6
+search F4       -1.37 0   7
+search F4       -1.54 0   8
+search C3       -1.37 0   8
+search C3       -1.37 0   9
+search C3       -1.37 0  10
+search C3       -1.37 0  11
+search C3       -1.37 0  12
+search C3       -1.37 0  13
+search C3       -1.37 0  14
+search C3       -1.37 0  15
+search C3       -1.37 0  16
+search C3       -1.37 0  17
+search C3       -1.37 0  18
+search C3       -1.37 0  19
+search C3       -1.37 0  20
+search C3       -1.37 0  21
+search C3       -1.37 0  22
+search C3       -1.37 0  23
+search C3       -1.37 0  24
+search C3       -1.37 0  25
+search C3       -1.37 0  26
+search C3       -1.37 0  27
+search C3       -1.37 0  28
+search C3       -1.37 0  29
+>> Abort round!!!
+ 29 (54 empty)	C3/-1.37		45s elapsed
+status
+=== C3  -1.37 0  29 45.00  315Mn/45.002s = 7009kn/s;  0.14 us/n 54e:  ===
+
+   A B C D E F G H  
+ 1 - - - - - - - - 1
+ 2 - - - - - - - - 2
+ 3 - - * - O - - - 3
+ 4 - - * * O - - - 4
+ 5 - - O * * * - - 5
+ 6 - - - - O * - - 6
+ 7 - - - - - - - - 7
+ 8 - - - - - - - - 8
+   A B C D E F G H  
+White to move
+
+status Thinking
+search C2       -3.81 0   1
+search B3       -1.39 0   1
+search B4       +0.62 0   1
+search C6       +1.43 0   1
+search C6       +1.48 0   2
+search C6       +1.48 0   3
+search C6       +1.48 0   4
+search C6       +1.48 0   5
+search C6       +1.48 0   6
+search C6       +1.48 0   7
+search C6       +1.48 0   8
+search C6       +1.48 0   9
+search C6       +1.48 0  10
+search C6       +1.48 0  11
+search C6       +1.48 0  12
+search C6       +1.48 0  13
+search C6       +1.48 0  14
+search C6       +1.48 0  15
+search C6       +1.48 0  16
+search C6       +1.48 0  17
+search C6       +1.48 0  18
+search C6       +1.48 0  19
+search C6       +1.48 0  20
+search C6       +1.48 0  21
+search C6       +1.48 0  22
+search C6       +1.48 0  23
+search C6       +1.48 0  24
+search C6       +1.48 0  25
+search C6       +1.48 0  26
+search C6       +1.48 0  27
+search C6       +1.48 0  28
+search C6       +1.48 0  29
+>> Abort round!!!
+ 29 (53 empty)	C6/1.48		45s elapsed
+status
+=== C6  +1.48 0  29 45.00  310Mn/45.002s = 6895kn/s;  0.15 us/n 53e:  ===
+
+   A B C D E F G H  
+ 1 - - - - - - - - 1
+ 2 - - - - - - - - 2
+ 3 - - * - O - - - 3
+ 4 - - * * O - - - 4
+ 5 - - O O * * - - 5
+ 6 - - O - O * - - 6
+ 7 - - - - - - - - 7
+ 8 - - - - - - - - 8
+   A B C D E F G H  
+Black to move
+
+status Thinking
+search E2       -6.59 0   1
+search F2       -4.19 0   1
+search D3       -1.45 0   1
+search D3       -1.66 0   2
+search D6       -0.56 0   2
+search D6       -1.47 0   3
+search D3       -1.29 0   3
+search D3       -0.90 0   4
+search D3       -0.61 0   5
+search D3       -1.14 0   6
+search D3       -0.93 0   7
+search D3       -1.18 0   8
+search D3       -0.88 0   9
+search D3       -1.20 0  10
+search D3       -1.04 0  11
+search D3       -1.05 0  12
+search D3       -1.07 0  13
+search D3       -1.11 0  14
+search D3       -1.22 0  15
+search D3       -1.67 0  16
+search D3       -1.09 0  17
+search D3       -1.30 0  18
+search D3       -1.18 0  19
+search D3       -1.18 0  20
+search D3       -1.18 0  21
+search D3       -1.49 0  22
+search D3       -1.27 0  23
+search D3       -1.57 0  24
+search D3       -1.00 0  25
+search D3       -1.51 0  26
+search D3       -1.37 0  27
+search D3       -1.28 0  28
+ 28 (52 empty)	D3/-1.28		17.2s elapsed
+status
+=== D3  -1.28 0  28 17.25  117Mn/17.250s = 6820kn/s;  0.15 us/n 52e:  ===
+
+   A B C D E F G H  
+ 1 - - - - - - - - 1
+ 2 - - - - - - - - 2
+ 3 - - * * O - - - 3
+ 4 - - * * * - - - 4
+ 5 - - O O * * - - 5
+ 6 - - O - O * - - 6
+ 7 - - - - - - - - 7
+ 8 - - - - - - - - 8
+   A B C D E F G H  
+White to move
+
+status Thinking
+search C2       -2.12 0   1
+search D2       +1.66 0   1
+search D2       +1.29 0   2
+search D2       +0.90 0   3
+search D2       +1.28 0   4
+search D2       +1.28 0   5
+search D2       +1.28 0   6
+search D2       +1.28 0   7
+search D2       +1.28 0   8
+search D2       +1.28 0   9
+search D2       +1.28 0  10
+search D2       +1.28 0  11
+search D2       +1.28 0  12
+search D2       +1.28 0  13
+search D2       +1.28 0  14
+search D2       +1.28 0  15
+search D2       +1.28 0  16
+search D2       +1.28 0  17
+search D2       +1.28 0  18
+search D2       +1.28 0  19
+search D2       +1.28 0  20
+search D2       +1.28 0  21
+search D2       +1.28 0  22
+search D2       +1.28 0  23
+search D2       +1.28 0  24
+search D2       +1.28 0  25
+search D2       +1.28 0  26
+search D2       +1.28 0  27
+>> Abort round!!!
+ 27 (51 empty)	D2/1.28		45s elapsed
+status
+=== D2  +1.28 0  27 45.00  296Mn/45.002s = 6579kn/s;  0.15 us/n 51e:  ===
+
+   A B C D E F G H  
+ 1 - - - - - - - - 1
+ 2 - - - O - - - - 2
+ 3 - - * O O - - - 3
+ 4 - - * O * - - - 4
+ 5 - - O O * * - - 5
+ 6 - - O - O * - - 6
+ 7 - - - - - - - - 7
+ 8 - - - - - - - - 8
+   A B C D E F G H  
+Black to move
+
+status Thinking
+search E1       -4.06 0   1
+search C2       -1.98 0   1
+search E2       -1.95 0   1
+search F3       -1.51 0   1
+search D6       -1.29 0   1
+search D6       -2.22 0   2
+search F3       -0.90 0   2
+search F3       -1.28 0   3
+search F3       -1.28 0   4
+search F3       -1.28 0   5
+search F3       -1.28 0   6
+search F3       -1.28 0   7
+search F3       -1.28 0   8
+search F3       -1.28 0   9
+search F3       -1.28 0  10
+search F3       -1.37 0  11
+search E2       -1.28 0  11
+search E2       -1.28 0  12
+search E2       -1.28 0  13
+search E2       -1.31 0  14
+search E2       -1.52 0  15
+search F3       -1.28 0  15
+search F3       -1.37 0  16
+search F3       -1.37 0  17
+search E2       -1.28 0  17
+search E2       -1.28 0  18
+search E2       -1.28 0  19
+search E2       -1.32 0  20
+search E2       -1.28 0  21
+search E2       -1.29 0  22
+search E2       -1.28 0  23
+search E2       -1.30 0  24
+search E2       -1.43 0  25
+search F3       -1.37 0  25
+ 25 (50 empty)	F3/-1.37	E2/-1.43		17.3s elapsed
+status
+=== F3  -1.37 0  25 17.34   99Mn/17.340s = 5745kn/s;  0.17 us/n 50e:  ===
+
+   A B C D E F G H  
+ 1 - - - - - - - - 1
+ 2 - - - O - - - - 2
+ 3 - - * * * * - - 3
+ 4 - - * O * - - - 4
+ 5 - - O O * * - - 5
+ 6 - - O - O * - - 6
+ 7 - - - - - - - - 7
+ 8 - - - - - - - - 8
+   A B C D E F G H  
+White to move
+
+status Thinking
+search C2       -0.23 0   1
+search F2       +0.07 0   1
+search B3       +0.90 0   1
+search B3       +0.54 0   2
+search B4       +1.28 0   2
+search B4       +1.28 0   3
+search B4       +1.37 0   4
+search B4       +1.37 0   5
+search B4       +1.37 0   6
+search B4       +1.31 0   7
+search B4       +1.37 0   8
+search B4       +1.37 0   9
+search B4       +1.37 0  10
+search B4       +1.37 0  11
+search B4       +1.37 0  12
+search B4       +1.37 0  13
+search B4       +1.37 0  14
+search B4       +1.37 0  15
+search B4       +1.37 0  16
+search B4       +1.37 0  17
+search B4       +1.37 0  18
+search B4       +1.37 0  19
+search B4       +1.37 0  20
+search B4       +1.37 0  21
+search B4       +1.37 0  22
+search B4       +1.37 0  23
+search B4       +1.37 0  24
+search B4       +1.88 0  25
+search B4       +1.38 0  26
+ 26 (49 empty)	B4/1.38		21.3s elapsed
+status
+=== B4  +1.38 0  26 21.32  125Mn/21.323s = 5884kn/s;  0.17 us/n 49e:  ===
+
+   A B C D E F G H  
+ 1 - - - - - - - - 1
+ 2 - - - O - - - - 2
+ 3 - - O * * * - - 3
+ 4 - O O O * - - - 4
+ 5 - - O O * * - - 5
+ 6 - - O - O * - - 6
+ 7 - - - - - - - - 7
+ 8 - - - - - - - - 8
+   A B C D E F G H  
+Black to move
+
+status Thinking
+search C1       -0.97 0   1
+search D6       -0.95 0   1
+search E7       -0.61 0   1
+search E7       -1.38 0   2
+search E7       -1.38 0   3
+search E7       -1.38 0   4
+search E7       -1.38 0   5
+search E7       -1.38 0   6
+search E7       -1.38 0   7
+search E7       -1.38 0   8
+search E7       -1.38 0   9
+search E7       -1.38 0  10
+search E7       -1.38 0  11
+search E7       -1.38 0  12
+search E7       -1.38 0  13
+search E7       -1.38 0  14
+search E7       -1.38 0  15
+search E7       -1.38 0  16
+search E7       -1.38 0  17
+search E7       -1.38 0  18
+search E7       -1.38 0  19
+search E7       -1.38 0  20
+search E7       -1.38 0  21
+search E7       -1.38 0  22
+search E7       -1.38 0  23
+search E7       -1.38 0  24
+search E7       -1.38 0  25
+search E7       -1.38 0  26
+search E7       -1.13 0  27
+search E7       -1.52 0  28
+ 28 (48 empty)	E7/-1.52		20.6s elapsed
+status
+=== E7  -1.52 0  28 20.62  124Mn/20.625s = 6033kn/s;  0.17 us/n 48e:  ===
+
+   A B C D E F G H  
+ 1 - - - - - - - - 1
+ 2 - - - O - - - - 2
+ 3 - - O * * * - - 3
+ 4 - O O O * - - - 4
+ 5 - - O O * * - - 5
+ 6 - - O - * * - - 6
+ 7 - - - - * - - - 7
+ 8 - - - - - - - - 8
+   A B C D E F G H  
+White to move
+
+status Thinking
+search E2       +1.49 0   1
+search E2       +1.52 0   2
+search E2       +1.52 0   3
+search E2       +1.52 0   4
+search E2       +1.52 0   5
+search E2       +1.52 0   6
+search E2       +1.52 0   7
+search E2       +1.52 0   8
+search E2       +1.52 0   9
+search E2       +1.52 0  10
+search E2       +1.52 0  11
+search E2       +1.52 0  12
+search E2       +1.52 0  13
+search E2       +1.52 0  14
+search E2       +1.52 0  15
+search E2       +1.52 0  16
+search E2       +1.52 0  17
+search E2       +1.52 0  18
+search E2       +1.52 0  19
+search E2       +1.52 0  20
+search E2       +1.52 0  21
+search E2       +1.52 0  22
+search E2       +1.52 0  23
+search E2       +1.52 0  24
+search E2       +1.52 0  25
+search E2       +1.52 0  26
+search E2       +1.52 0  27

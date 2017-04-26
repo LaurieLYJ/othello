@@ -25,6 +25,9 @@
 
 import os
 
+boardset = set()
+repCount = 0
+
 #Recursively flattens a list
 #From my own 112 homework 9
 def flatten(L,spot=0):
@@ -120,6 +123,14 @@ def readUntilBoard(trainingFile):
 #Format of returned vector detailed at top of file
 def makeVector(rawBoard, rawPlayer, rawMove):
     boardVector = flatten(rawBoard)
+
+    global repCount
+    setRawBoard = tuple(boardVector)
+    if setRawBoard not in boardset:
+        boardset.add(setRawBoard)
+    else:
+        repCount += 1
+
     outVector = []
     score = 0
 
@@ -171,6 +182,8 @@ if __name__ == '__main__':
 
     outFile = open(directory + "final_output.txt", 'w')
 
+    totalCount = 0
+
     for trainingFileName in os.listdir(directory + rawFolder):
         if trainingFileName.endswith(".txt"):
             print(trainingFileName)
@@ -193,6 +206,10 @@ if __name__ == '__main__':
                     #Write training vector to file
                     trainingVector = makeVector(rawBoard, rawPlayer, rawMove)
                     outFile.write(trainingVector)
+                    totalCount += 1
 
                 #Updates running label
                 keepRunning = skipAnalysis(trainingFile)
+
+    print('%(repetitions)i repeated positions detected (%(percent)f of total)'
+            % {'repetitions' : repCount, 'percent' : (repCount/totalCount)})

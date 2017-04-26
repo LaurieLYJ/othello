@@ -5,9 +5,13 @@ from keras.layers import MaxPooling2D
 from keras.layers.core import Dense, Flatten
 from keras.callbacks import ModelCheckpoint
 
-testVector = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-              0, 0, 1, -1, 0, 0, 0, 0, 0, -1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-              0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1]
+#Board vector without the starting player, to be initialized
+startVector = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+               0, 0, 0, 1, -1, 0, 0, 0, 0, 0, -1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+               0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+def getMove(model, position):
+    model.predict
 
 #Takes in a boardVector and prints the game state according to a given vector
 def printBoard(boardVector):
@@ -48,6 +52,17 @@ def loadModel():
 
     return model
 
+#Initializes and returns a game state based on user input
+def startGame():
+    print('Would you like to play first or second? (1 for first, 2 for second):')
+    playerOrder = input()
+    print('Would you like to play as black or white? (b for black, w for white):')
+    playerColor = input()
+
+
+
+
+
 if __name__ == '__main__':
     model = loadModel()
-    printBoard(testVector)
+    printBoard()
