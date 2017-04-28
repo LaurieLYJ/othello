@@ -44,8 +44,8 @@ def aiTurn(board,model,color):
 def playerMove(board,color):
     validMove = False
     while(not validMove):
-        print("Where do you want to move?")
-        playerMove = raw_input()
+        print("Where do you want to move? (Must follow pattern of \"A1\")")
+        playerMove = input()
         move = ord(playerMove[0])-ord('A') + 8*(int(playerMove[1]) -1)
         validMove = validateMove(board,move,color)
         if(not validMove):
@@ -57,11 +57,11 @@ def playerTurn(board,color):
     canMove = printBoard(board,color)
     if(canMove):
         playerMove(board,color)
-	return True
+        return True
     else:
-	print("No valid moves, hit enter to continue")
-	raw_input()
-	return False
+        print("No valid moves, hit enter to continue")
+        raw_input()
+        return False
 
 
 def up(i):
@@ -173,9 +173,9 @@ def gameTurn(model, board, color, player, prev):
         elif(sum(board)>0):
             print("WHITE WINS!")
         else:
-	    print("BLACK WINS!")
+            print("BLACK WINS!")
     else:
-	gameTurn(model, board, -color, not player, madeMove)
+        gameTurn(model, board, -color, not player, madeMove)
            
 
 
@@ -191,7 +191,7 @@ def loadModel():
 #Initializes and returns a game state based on user input
 def startGame(model):
     print('Would you like to play first or second? (1 for first, 2 for second):')
-    playerOrder = input() == 1
+    playerOrder = input() == "1"
     gameTurn(model, startVector, -1, playerOrder, True)
     
 
