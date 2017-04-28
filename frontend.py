@@ -26,7 +26,7 @@ def findBest(position, predictions, color):
     max = 0
     best = -1
     for i in range(len(predictions)):
-        if(predictions[i]>max and validateMove(position, i, color)):
+        if(predictions[i]>max and validateMove(position, i%8, i/8, color)):
             max = predictions[i]
             best = i
     return best
@@ -38,7 +38,7 @@ def aiTurn(board,model,color):
     board.pop()
     board.pop()
     if(move != -1):
-        placeMove(board, move, color)
+        placeMove(board, move % 8, move / 8, color)
     return move != -1
 
 def playerMove(board,color):
@@ -46,12 +46,13 @@ def playerMove(board,color):
     while(not validMove):
         print("Where do you want to move? (Must follow pattern of \"A1\")")
         playerMove = input()
-        move = ord(playerMove[0])-ord('A') + 8*(int(playerMove[1]) -1)
-        validMove = validateMove(board,move,color)
+        moveX = ord(playerMove[0]) - ord('A')
+        moveY = int(playerMove[1]) - 1
+        validMove = validateMove(board,moveX,moveY,color)
         if(not validMove):
             print("That move is not valid")
-    print(move)
-    placeMove(board, move, color)
+    print("{:d},{:d}".format(moveX, moveY))
+    placeMove(board, moveX, moveY, color)
 
 def playerTurn(board,color):
     canMove = printBoard(board,color)
@@ -64,75 +65,78 @@ def playerTurn(board,color):
         return False
 
 
-def up(i):
-    return i+8
+def up(x, y):
+    return (x, y - 1)
 
-def down(i):
-    return i-8
+def down(x, y):
+    return (x, y + 1)
 
-def left(i):
-    return i-1
+def left(x, y):
+    return (x - 1, y)
 
-def right(i):
-    return i+1
+def right(x, y):
+    return (x + 1, y)
 
-def upleft(i):
-    return i-9
+def upleft(x, y):
+    return (x - 1, y - 1)
 
-def upright(i):
-    return i-7
+def upright(x, y):
+    return (x + 1, y - 1)
 
-def downleft(i):
-    return i+7
+def downleft(x, y):
+    return (x - 1, y + 1)
 
-def downright(i):
-    return i+9
+def downright(x, y):
+    return (x + 1, y + 1)
 
-def validateDir(board, i, dir, color):
-    i = dir(i)
-    if(i < 0 or i >=64 or board[i] != -color):
+def pAt(board,x,y):
+    return board[x + 8 * y]
+
+def validateDir(board, x, y, dir, color):
+    (x, y) = dir(x, y)
+    if(x < 0 or x >= 8 or y < 0 or y >= 8 or pAt(board,x,y) != -color):
         return False
-    while(i>=0 and i < 64 and board[i] != 0):
-        if(board[i] == color):
+    while(x >= 0 and x < 8 and y >= 0 and y < 8 and pAt(board,x,y) != 0):
+        if(pAt(board,x,y) == color):
             return True
-        i = dir(i)
+        (x,y) = dir(x, y)
     return False
 
-def flipDir(board, i, dir, color):
-    i = dir(i)
-    while(board[i] == -color):
-        board[i] = color
-        i = dir(i)
+def flipDir(board, x, y, dir, color):
+    (x, y) = dir(x, y)
+    while(pAt(board,x,y) == -color):
+        board[x + 8 * y] = color
+        (x, y) = dir(x, y)
 
-def validateMove(board, i, color):
-    return board[i] == 0 and (
-        validateDir(board, i, up, color) or 
-        validateDir(board, i, down, color) or 
-        validateDir(board, i, left, color) or 
-        validateDir(board, i, right, color) or 
-        validateDir(board, i, upleft, color) or 
-        validateDir(board, i, upright, color) or 
-        validateDir(board, i, downleft, color) or 
-        validateDir(board, i, downright, color))
+def validateMove(board, x, y, color):
+    return pAt(board, x, y) == 0 and (
+        validateDir(board, x, y, up, color) or 
+        validateDir(board, x, y, down, color) or 
+        validateDir(board, x, y, left, color) or 
+        validateDir(board, x, y, right, color) or 
+        validateDir(board, x, y, upleft, color) or 
+        validateDir(board, x, y, upright, color) or 
+        validateDir(board, x, y, downleft, color) or 
+        validateDir(board, x, y, downright, color))
 
-def placeMove(board, i, color):
-    board[i] = color
-    if(validateDir(board, i, up, color)):
-        flipDir(board, i, up, color)
-    if(validateDir(board, i, down, color)):
-        flipDir(board, i, down, color)
-    if(validateDir(board, i, left, color)):
-        flipDir(board, i, left, color)
-    if(validateDir(board, i, right, color)):
-        flipDir(board, i, right,  color)
-    if(validateDir(board, i, upleft, color)):
-        flipDir(board, i, upleft, color)
-    if(validateDir(board, i, upright, color)):
-        flipDir(board, i, upright, color)
-    if(validateDir(board, i, downleft, color)):
-        flipDir(board, i, downleft,  color)
-    if(validateDir(board, i, downright, color)):
-        flipDir(board, i, downright, color)
+def placeMove(board, x, y, color):
+    board[x + 8 * y] = color
+    if(validateDir(board, x, y, up, color)):
+        flipDir(board, x, y, up, color)
+    if(validateDir(board, x, y, down, color)):
+        flipDir(board, x, y, down, color)
+    if(validateDir(board, x, y, left, color)):
+        flipDir(board, x, y, left, color)
+    if(validateDir(board, x, y, right, color)):
+        flipDir(board, x, y, right,  color)
+    if(validateDir(board, x, y, upleft, color)):
+        flipDir(board, x, y, upleft, color)
+    if(validateDir(board, x, y, upright, color)):
+        flipDir(board, x, y, upright, color)
+    if(validateDir(board, x, y, downleft, color)):
+        flipDir(board, x, y, downleft,  color)
+    if(validateDir(board, x, y, downright, color)):
+        flipDir(board, x, y, downright, color)
     
 
 #Takes in a boardVector and prints the game state according to a given vector
@@ -149,7 +153,7 @@ def printBoard(boardVector,color):
                 row += 'O '
             elif(rows[i][j] == -1):
                 row += '* '
-            elif(validateMove(boardVector, 8*i + j, color)):
+            elif(validateMove(boardVector, j, i, color)):
                 canMove = True
                 row += '- '
             else:
