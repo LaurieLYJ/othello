@@ -20,7 +20,7 @@ X_trn = []
 Y_trn = []
 
 #read from the training data
-dataFile = 'C:\\Users\\Eliot\\Documents\\CMU\\S17\\10-401\\Othello Project\\othello\\training data converter\\final_output.txt'
+dataFile = 'final_output.txt'
 with open(dataFile) as f:
 	content = f.readlines()
 content = [l.strip() for l in content]
@@ -35,7 +35,7 @@ for i in range(len(content)):
 X_trn = np.array(X_trn)
 Y_trn = np.array(Y_trn)
 
-input_cols = 58
+input_cols = 66
 
 num_groups = 64
 
@@ -49,7 +49,7 @@ convolution_layers = [
 
 classification_layers = [
     Flatten(),
-    Dense(58*4, activation='relu'),
+    Dense(66*4, activation='relu'),
     Dense(num_groups, activation='softmax')
 ]
 

@@ -55,7 +55,7 @@ def readBoard(trainingFile):
             return []
 
         line = rawLine.split()
-        boardLine = line[1:8]
+        boardLine = line[1:9]
         board.append(boardLine)
 
     return board
@@ -177,8 +177,8 @@ def skipAnalysis(trainingFile):
 
 if __name__ == '__main__':
     #@TODO Change directory based on computer
-    directory = "C:\\Users\\Eliot\\Documents\\CMU\\S17\\10-401\\Othello Project\\othello\\training data converter\\"
-    rawFolder = "Raw Output\\"
+    directory = "./"
+    rawFolder = "test/"
 
     outFile = open(directory + "final_output.txt", 'w')
 
