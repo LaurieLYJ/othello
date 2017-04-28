@@ -177,8 +177,8 @@ def skipAnalysis(trainingFile):
 
 if __name__ == '__main__':
     #@TODO Change directory based on computer
-    directory = "./"
-    rawFolder = "test/"
+    directory = "C:\\Users\\Eliot\\Documents\\CMU\\S17\\10-401\\Othello Project\\othello\\training data converter\\"
+    rawFolder = "Raw Output\\"
 
     outFile = open(directory + "final_output.txt", 'w')
 
