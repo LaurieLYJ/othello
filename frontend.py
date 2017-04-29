@@ -6,6 +6,10 @@ from keras.layers.core import Dense, Flatten
 from keras.callbacks import ModelCheckpoint
 import numpy as np
 import tdleaf as td
+import copy
+
+NEGINF = -9999999999999
+POSINF = 999999999999
 
 #Board vector without the starting player, to be initialized
 startVector = [0, 0, 0, 0, 0, 0, 0, 0,
@@ -18,27 +22,43 @@ startVector = [0, 0, 0, 0, 0, 0, 0, 0,
                0, 0, 0, 0, 0, 0, 0, 0]
 
 def getMove(model, position, color):
-    x = np.array(position)
-    x = x.reshape(1,66,1,1)
-    out = model.predict(x)
-    return findBest(position, out[0], color)
+    predictions = td.getGuess(model, position)
+    possBests = td.getNBest(position, predictions, 7)
+    evaluator = td.evalFun()
+    depth = 7
+    bestMove = -1
+    bestMoveVal = 0
 
-def findBest(position, predictions, color):
-    bestVal = 0
-    best = -1
+    position.pop()
+    position.pop()
 
-    for i in range(len(predictions)):
-        if(predictions[i] > bestVal and td.validateMove(position, i%8, i//8, color)):
-            bestVal = predictions[i]
-            best = i
-    return best
+    if color == 1:
+        bestMoveVal = NEGINF
+        for move in possBests:
+            nextPos = copy.deepcopy(position)
+            td.placeMove(nextPos, move % 8, move // 8, color)
+            value = td.white(NEGINF, POSINF, model, evaluator, nextPos, depth-1)
+
+            if value > bestMoveVal:
+                bestMove = move
+                bestMoveVal = value
+    else:
+        bestMoveVal = POSINF
+        for move in possBests:
+            nextPos = copy.deepcopy(position)
+            td.placeMove(nextPos, move % 8, move // 8, color)
+            value = td.black(NEGINF, POSINF, model, evaluator, nextPos, depth-1)
+
+            if value < bestMoveVal:
+                bestMove = move
+                bestMoveVal = value
+
+    return bestMove
 
 def aiTurn(board,model,color):
     board.append(sum(board))
-    board.append(color)
+    board.append(-color)
     move = getMove(model, board, color)
-    board.pop()
-    board.pop()
     if(move != -1):
         td.placeMove(board, move % 8, move // 8, color)
     return move != -1
@@ -70,6 +90,7 @@ def playerTurn(board,color):
 def printBoard(boardVector,color):
     rows = [boardVector[x:x+8] for x in range(0, 64, 8)]
     lettersRow = '  A B C D E F G H\n'
+    assert(len(boardVector) == 64)
 
     canMove = False
     output = lettersRow
@@ -90,7 +111,6 @@ def printBoard(boardVector,color):
 
     output += lettersRow
 
-    print(output)
     return canMove
 
 def gameTurn(model, board, color, player, prev):

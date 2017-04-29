@@ -8,23 +8,8 @@ import numpy as np
 import heapq as hq
 import copy
 
-startVector = [0, 0, 0, 0, 0, 0, 0, 0,
-               0, 0, 0, 0, 0, 0, 0, 0,
-               0, 0, 0, 0, 0, 0, 0, 0,
-               0, 0, 0, 1,-1, 0, 0, 0,
-               0, 0, 0,-1, 1, 0, 0, 0,
-               0, 0, 0, 0, 0, 0, 0, 0,
-               0, 0, 0, 0, 0, 0, 0, 0,
-               0, 0, 0, 0, 0, 0, 0, 0]
-
-nextVector = [0, 0, 0, 0, 0, 0, 0, 0,
-               0, 0, 0, 0, 0, 0, 0, 0,
-               0, 0, 0, 0, 0, 0, 0, 0,
-               0, 0, 0, 1, 1, 1, 0, 0,
-               0, 0, 0,-1, 1, 0, 0, 0,
-               0, 0, 0, 0, 0, 0, 0, 0,
-               0, 0, 0, 0, 0, 0, 0, 0,
-               0, 0, 0, 0, 0, 0, 0, 0]
+NEGINF = -9999999999999
+POSINF = 999999999999
 
 class evalFun:
     def __init__(self):
@@ -137,6 +122,11 @@ def placeMove(board, x, y, color):
     if(validateDir(board, x, y, downright, color)):
         flipDir(board, x, y, downright, color)
 
+def isTerminal(position):
+    for square in position:
+        if square == 0: return False
+
+    return True
 
 def loadModel():
     model_name = 'model.h5'
@@ -148,8 +138,8 @@ def loadModel():
     return model
 
 # Used for alpha-beta serach. Can be thought of as "maxie"
-def white(model, evaluator, position, depth, nBest=5):
-    if depth == 0:
+def white(alpha, beta, model, evaluator, position, depth, nBest=5):
+    if depth == 0 or isTerminal(position):
         return evaluator.predict(position)
 
     else:
@@ -157,26 +147,29 @@ def white(model, evaluator, position, depth, nBest=5):
         newPos.append(sum(position))
         newPos.append(1)
 
+
         prob_prediction = getGuess(model, newPos)
         moves = getNBest(newPos, prob_prediction, nBest)
 
-        bestMove = 0
-        bestMoveVal = -99999
+        bestMoveVal = NEGINF
 
         for move in moves:
             nextPos = copy.deepcopy(position)
             placeMove(nextPos, move % 8, move // 8, 1)
-            value = black(model, evaluator, nextPos, depth-1)
+            value = black(alpha, beta, model, evaluator, nextPos, depth-1)
 
-            if value > bestMoveVal:
-                bestMoveVal = value
+            bestMoveVal = max(value, bestMoveVal)
+            alpha = max(alpha, value)
+
+            if beta <= alpha:
+                break
 
         return bestMoveVal
 
 
 # Used for alpha-beta serach. Can be thought of as "minnie"
-def black(model, evaluator, position, depth, nBest=5):
-    if depth == 0:
+def black(alpha, beta, model, evaluator, position, depth, nBest=5):
+    if depth == 0 or isTerminal(position):
         return evaluator.predict(position)
 
     else:
@@ -187,16 +180,18 @@ def black(model, evaluator, position, depth, nBest=5):
         prob_prediction = getGuess(model, newPos)
         moves = getNBest(newPos, prob_prediction, nBest)
 
-        bestMove = 0
-        bestMoveVal = 99999
+        bestMoveVal = POSINF
 
         for move in moves:
             nextPos = copy.deepcopy(position)
             placeMove(nextPos, move % 8, move // 8, -1)
-            value = white(model, evaluator, nextPos, depth-1)
+            value = white(alpha, beta, model, evaluator, nextPos, depth-1)
 
-            if value < bestMoveVal:
-                bestMoveVal = value
+            bestMoveVal = min(value, bestMoveVal)
+            beta = min(beta, value)
+
+            if beta <= alpha:
+                break
 
         return bestMoveVal
 
@@ -205,11 +200,3 @@ if __name__ == '__main__':
     evaluator = evalFun()
     evaluator.train()
     model = loadModel()
-    testPos = startVector
-    testPos2 = nextVector
-    print(black(model, evaluator, testPos, 3))
-    print(black(model, evaluator, testPos2, 3))
-    '''
-
-    prediction = getGuess(model, testPos)
-    print(getNBest(testPos, prediction, 5))'''
