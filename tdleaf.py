@@ -157,10 +157,10 @@ def loadModel():
     return model
 
 # Used for alpha-beta search. Can be thought of as "maxie"
-# return best move and its value 
+
 def white(alpha, beta, model, evaluator, position, depth, nBest=5):
     if depth == 0 or isTerminal(position):
-        return evaluator.predict(position), None
+        return evaluator.predict(position)
 
     else:
         newPos = copy.deepcopy(position)
@@ -172,30 +172,24 @@ def white(alpha, beta, model, evaluator, position, depth, nBest=5):
         moves = getNBest(newPos, prob_prediction, nBest)
 
         bestMoveVal = NEGINF
-        bestMove = None 
+ 
         for move in moves:
             nextPos = copy.deepcopy(position)
             placeMove(nextPos, move % 8, move // 8, 1)
-            (value, pos) = black(alpha, beta, model, evaluator, nextPos, depth-1)
+            value = black(alpha, beta, model, evaluator, nextPos, depth-1)
 
-            #bestMoveVal = max(value, bestMoveVal)
-            if value > bestMoveVal:
-                bestMove = move 
-                bestMoveVal = value 
-
+            bestMoveVal = max(value, bestMoveVal)
             alpha = max(alpha, value)
 
             if beta <= alpha:
                 break
-        assert(bestMove != None)
-        return bestMoveVal, bestMove
+        return bestMoveVal
 
 
 # Used for alpha-beta search. Can be thought of as "minnie"
-# return best move and its value 
 def black(alpha, beta, model, evaluator, position, depth, nBest=5):
     if depth == 0 or isTerminal(position):
-        return evaluator.predict(position), None
+        return evaluator.predict(position)
 
     else:
         newPos = copy.deepcopy(position)
@@ -206,23 +200,19 @@ def black(alpha, beta, model, evaluator, position, depth, nBest=5):
         moves = getNBest(newPos, prob_prediction, nBest)
 
         bestMoveVal = POSINF
-        bestMove = None
 
         for move in moves:
             nextPos = copy.deepcopy(position)
             placeMove(nextPos, move % 8, move // 8, -1)
-            (value, pos) = white(alpha, beta, model, evaluator, nextPos, depth-1)
+            value = white(alpha, beta, model, evaluator, nextPos, depth-1)
 
-            #bestMoveVal = min(value, bestMoveVal)
-            if value < bestMoveVal:
-                bestMove = move 
-                bestMoveVal = value 
+            bestMoveVal = min(value, bestMoveVal)
             beta = min(beta, value)
 
             if beta <= alpha:
                 break
         assert(bestMove != None)
-        return bestMoveVal, bestMove
+        return bestMoveVal
 
 
 if __name__ == '__main__':
