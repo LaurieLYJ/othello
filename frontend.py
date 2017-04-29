@@ -5,6 +5,7 @@ from keras.layers import MaxPooling2D
 from keras.layers.core import Dense, Flatten
 from keras.callbacks import ModelCheckpoint
 import numpy as np
+import tdleaf as td
 
 #Board vector without the starting player, to be initialized
 startVector = [0, 0, 0, 0, 0, 0, 0, 0,
@@ -23,11 +24,12 @@ def getMove(model, position, color):
     return findBest(position, out[0], color)
 
 def findBest(position, predictions, color):
-    max = 0
+    bestVal = 0
     best = -1
+
     for i in range(len(predictions)):
-        if(predictions[i]>max and validateMove(position, i%8, i/8, color)):
-            max = predictions[i]
+        if(predictions[i] > bestVal and td.validateMove(position, i%8, i//8, color)):
+            bestVal = predictions[i]
             best = i
     return best
 
@@ -38,7 +40,7 @@ def aiTurn(board,model,color):
     board.pop()
     board.pop()
     if(move != -1):
-        placeMove(board, move % 8, move / 8, color)
+        td.placeMove(board, move % 8, move // 8, color)
     return move != -1
 
 def playerMove(board,color):
@@ -48,11 +50,11 @@ def playerMove(board,color):
         playerMove = input()
         moveX = ord(playerMove[0]) - ord('A')
         moveY = int(playerMove[1]) - 1
-        validMove = validateMove(board,moveX,moveY,color)
+        validMove = td.validateMove(board,moveX,moveY,color)
         if(not validMove):
             print("That move is not valid")
     print("{:d},{:d}".format(moveX, moveY))
-    placeMove(board, moveX, moveY, color)
+    td.placeMove(board, moveX, moveY, color)
 
 def playerTurn(board,color):
     canMove = printBoard(board,color)
@@ -61,83 +63,8 @@ def playerTurn(board,color):
         return True
     else:
         print("No valid moves, hit enter to continue")
-        raw_input()
+        input()
         return False
-
-
-def up(x, y):
-    return (x, y - 1)
-
-def down(x, y):
-    return (x, y + 1)
-
-def left(x, y):
-    return (x - 1, y)
-
-def right(x, y):
-    return (x + 1, y)
-
-def upleft(x, y):
-    return (x - 1, y - 1)
-
-def upright(x, y):
-    return (x + 1, y - 1)
-
-def downleft(x, y):
-    return (x - 1, y + 1)
-
-def downright(x, y):
-    return (x + 1, y + 1)
-
-def pAt(board,x,y):
-    return board[x + 8 * y]
-
-def validateDir(board, x, y, dir, color):
-    (x, y) = dir(x, y)
-    if(x < 0 or x >= 8 or y < 0 or y >= 8 or pAt(board,x,y) != -color):
-        return False
-    while(x >= 0 and x < 8 and y >= 0 and y < 8 and pAt(board,x,y) != 0):
-        if(pAt(board,x,y) == color):
-            return True
-        (x,y) = dir(x, y)
-    return False
-
-def flipDir(board, x, y, dir, color):
-    (x, y) = dir(x, y)
-    while(pAt(board,x,y) == -color):
-        board[x + 8 * y] = color
-        (x, y) = dir(x, y)
-
-def validateMove(board, x, y, color):
-    return pAt(board, x, y) == 0 and (
-        validateDir(board, x, y, up, color) or 
-        validateDir(board, x, y, down, color) or 
-        validateDir(board, x, y, left, color) or 
-        validateDir(board, x, y, right, color) or 
-        validateDir(board, x, y, upleft, color) or 
-        validateDir(board, x, y, upright, color) or 
-        validateDir(board, x, y, downleft, color) or 
-        validateDir(board, x, y, downright, color))
-
-def placeMove(board, x, y, color):
-    board[x + 8 * y] = color
-    if(validateDir(board, x, y, up, color)):
-        flipDir(board, x, y, up, color)
-    if(validateDir(board, x, y, down, color)):
-        flipDir(board, x, y, down, color)
-    if(validateDir(board, x, y, left, color)):
-        flipDir(board, x, y, left, color)
-    if(validateDir(board, x, y, right, color)):
-        flipDir(board, x, y, right,  color)
-    if(validateDir(board, x, y, upleft, color)):
-        flipDir(board, x, y, upleft, color)
-    if(validateDir(board, x, y, upright, color)):
-        flipDir(board, x, y, upright, color)
-    if(validateDir(board, x, y, downleft, color)):
-        flipDir(board, x, y, downleft,  color)
-    if(validateDir(board, x, y, downright, color)):
-        flipDir(board, x, y, downright, color)
-    
 
 #Takes in a boardVector and prints the game state according to a given vector
 def printBoard(boardVector,color):
@@ -153,7 +80,7 @@ def printBoard(boardVector,color):
                 row += 'O '
             elif(rows[i][j] == -1):
                 row += '* '
-            elif(validateMove(boardVector, j, i, color)):
+            elif(td.validateMove(boardVector, j, i, color)):
                 canMove = True
                 row += '- '
             else:
@@ -180,25 +107,15 @@ def gameTurn(model, board, color, player, prev):
             print("BLACK WINS!")
     else:
         gameTurn(model, board, -color, not player, madeMove)
-           
 
-
-def loadModel():
-    model_name = 'model.h5'
-    model_weights_name = 'model_weights.h5'
-
-    model = load_model(model_name)
-    model.load_weights(model_weights_name)
-
-    return model
 
 #Initializes and returns a game state based on user input
 def startGame(model):
     print('Would you like to play first or second? (1 for first, 2 for second):')
     playerOrder = input() == "1"
     gameTurn(model, startVector, -1, playerOrder, True)
-    
+
 
 if __name__ == '__main__':
-    model = loadModel()
+    model = td.loadModel()
     startGame(model)

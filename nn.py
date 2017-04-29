@@ -31,8 +31,9 @@ for i in range(len(content)):
 		X_trn.append(list(map(float, content[i].split())))
 	else:
 		#class
-		l = list(map(int, content[i].split()))
+		l = list(map(int, content[i].split()[0:2]))
 		Y_trn.append(groups[l[0]][l[1]])
+
 X_trn = np.array(X_trn)
 Y_trn = np.array(Y_trn)
 

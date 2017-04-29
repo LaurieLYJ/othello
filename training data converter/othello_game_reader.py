@@ -100,12 +100,24 @@ def readMove(trainingFile):
 
     else:
         if rawLine[4] == "p":
-            return (0,0) #Means player passed
+            return (0,0,0) #Means player passed
 
         col = colToInt(rawLine[4])
         row = int(rawLine[5])
 
-        return (row,col)
+        sign = ''
+        num = ''
+
+        if rawLine[12] == '?':
+            sign = '+'
+            num = 0.00
+        else:
+            sign = rawLine[8]
+            num = float(rawLine[9:13])
+
+        if sign == '-': num = -num
+
+        return (row, col, num)
 
 #Reads from target file until we reach a board
 #EOF reached true if board found, false if EOF reached
@@ -157,6 +169,7 @@ def makeVector(rawBoard, rawPlayer, rawMove):
 
     outVector.append(str(rawMove[0]))
     outVector.append(str(rawMove[1]))
+    outVector.append(str(rawMove[2]))
     outVector.append("\n")
 
     return " ".join(outVector)
