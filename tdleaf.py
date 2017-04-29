@@ -16,14 +16,33 @@ class evalFun:
         #Always read in training from file
         weightsFile = open('weights.txt', 'r')
         rawIn = weightsFile.readline()
-        self.weights = list(map(float, rawIn.split(',')))
+        self.weights = np.array(list(map(float, rawIn.split(','))))
         assert(len(self.weights) == 64)
+        self.Lambda = 0.5
+        self.Alpha = 0.5
+        #set of starting positions
+        self.S = []
+        #number of states
+        self.N = 0
+        #depth
+        self.d = 5
 
     def predict(self, position):
         return(np.dot(self.weights, position))
 
+    #deritivative of inner product 
+    #make sure to change if predict has changed
+    def derivative(self, position):
+        return position
+
     def train(self):
-        #@TODO make it actually train according to TD-Leaf
+        for i in xrange(len(self.S)):
+            #get a sequence of positions with length N
+            pos = []
+            for j in xrange(self.N-1):
+                s = sum([self.Lambda**(k-j)*(predict(pos[k+1]) - predict(pos[k])) for k in xrange(j, N-1)])
+                self.weights += self.Alpha*s*self.derivative(pos[j])
+
 
         #After any training, save what we've done
         weightsFile = open('weights.txt', 'w')
@@ -137,10 +156,11 @@ def loadModel():
 
     return model
 
-# Used for alpha-beta serach. Can be thought of as "maxie"
+# Used for alpha-beta search. Can be thought of as "maxie"
+# return best move and its value 
 def white(alpha, beta, model, evaluator, position, depth, nBest=5):
     if depth == 0 or isTerminal(position):
-        return evaluator.predict(position)
+        return evaluator.predict(position), None
 
     else:
         newPos = copy.deepcopy(position)
@@ -152,25 +172,30 @@ def white(alpha, beta, model, evaluator, position, depth, nBest=5):
         moves = getNBest(newPos, prob_prediction, nBest)
 
         bestMoveVal = NEGINF
-
+        bestMove = None 
         for move in moves:
             nextPos = copy.deepcopy(position)
             placeMove(nextPos, move % 8, move // 8, 1)
-            value = black(alpha, beta, model, evaluator, nextPos, depth-1)
+            (value, pos) = black(alpha, beta, model, evaluator, nextPos, depth-1)
 
-            bestMoveVal = max(value, bestMoveVal)
+            #bestMoveVal = max(value, bestMoveVal)
+            if value > bestMoveVal:
+                bestMove = move 
+                bestMoveVal = value 
+
             alpha = max(alpha, value)
 
             if beta <= alpha:
                 break
+        assert(bestMove != None)
+        return bestMoveVal, bestMove
 
-        return bestMoveVal
 
-
-# Used for alpha-beta serach. Can be thought of as "minnie"
+# Used for alpha-beta search. Can be thought of as "minnie"
+# return best move and its value 
 def black(alpha, beta, model, evaluator, position, depth, nBest=5):
     if depth == 0 or isTerminal(position):
-        return evaluator.predict(position)
+        return evaluator.predict(position), None
 
     else:
         newPos = copy.deepcopy(position)
@@ -181,19 +206,23 @@ def black(alpha, beta, model, evaluator, position, depth, nBest=5):
         moves = getNBest(newPos, prob_prediction, nBest)
 
         bestMoveVal = POSINF
+        bestMove = None
 
         for move in moves:
             nextPos = copy.deepcopy(position)
             placeMove(nextPos, move % 8, move // 8, -1)
-            value = white(alpha, beta, model, evaluator, nextPos, depth-1)
+            (value, pos) = white(alpha, beta, model, evaluator, nextPos, depth-1)
 
-            bestMoveVal = min(value, bestMoveVal)
+            #bestMoveVal = min(value, bestMoveVal)
+            if value < bestMoveVal:
+                bestMove = move 
+                bestMoveVal = value 
             beta = min(beta, value)
 
             if beta <= alpha:
                 break
-
-        return bestMoveVal
+        assert(bestMove != None)
+        return bestMoveVal, bestMove
 
 
 if __name__ == '__main__':
