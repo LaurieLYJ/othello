@@ -20,7 +20,8 @@ X_trn = []
 Y_trn = []
 
 #read from the training data
-dataFile = 'final_output.txt'
+#@TODO Change directory based on computer
+dataFile = 'C:\\Users\\Eliot\\Documents\\CMU\\S17\\10-401\\Othello Project\\othello\\training data converter\\final_output.txt'
 with open(dataFile) as f:
 	content = f.readlines()
 content = [l.strip() for l in content]
