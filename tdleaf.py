@@ -42,8 +42,9 @@ class evalFun:
             pos = []
             for j in xrange(self.N-1):
                 #s = sum([self.Lambda**(k-j)*(predict(pos[k+1]) - predict(pos[k])) for k in xrange(j, N-1)])
-                s = sum([lam**(k-j)*predict(pos[k]) for k in xrange(j, N-1)])
-                s = lam**(N-j-1)*predict(pos[N]) + lam**(-1)*s - predict(pos[j])
+                s = sum([lam**(k-j)*predict(pos[k]) for k in xrange(j+1, N-1)])
+                s = (lam**(-1) - 1) * s
+                s = lam**(N-j-1)*predict(pos[N]) + s - predict(pos[j])
                 self.weights += self.Alpha*s*self.derivative(pos[j])
 
 
