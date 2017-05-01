@@ -40,12 +40,16 @@ class evalFun:
         return position
 
     def train(self):
-
-        pos = self.S
-        self.N = len(pos)
-        for j in xrange(self.N-1):
-            s = sum([self.Lambda**(k-j)*(self.predict(pos[k+1]) - self.predict(pos[k])) for k in xrange(j, self.N-1)])
-            self.weights += self.Alpha*s*self.derivative(pos[j])
+        lam = self.Lambda
+        for i in xrange(len(self.S)):
+            #get a sequence of positions with length N
+            pos = []
+            for j in xrange(self.N-1):
+                #s = sum([self.Lambda**(k-j)*(predict(pos[k+1]) - predict(pos[k])) for k in xrange(j, N-1)])
+                s = sum([lam**(k-j)*predict(pos[k]) for k in xrange(j+1, N-1)])
+                s = (lam**(-1) - 1) * s
+                s = lam**(N-j-1)*predict(pos[N]) + s - predict(pos[j])
+                self.weights += self.Alpha*s*self.derivative(pos[j])
 
 
         #After any training, save what we've done
