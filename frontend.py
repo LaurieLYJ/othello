@@ -111,6 +111,7 @@ def printBoard(boardVector,color):
 
     output += lettersRow
 
+    print(output)
     return canMove
 
 def gameTurn(model, board, color, player, prev):
@@ -121,7 +122,7 @@ def gameTurn(model, board, color, player, prev):
     if((not madeMove) and(not prev)):
         if(sum(board) == 0):
             print("TIE!")
-        elif(sum(board)>0):
+        elif(sum(board[0:65])<0):
             print("WHITE WINS!")
         else:
             print("BLACK WINS!")
