@@ -20,7 +20,7 @@ class evalFun:
         self.weights = np.array(list(map(float, rawIn.split(','))))
         assert(len(self.weights) == 64)
         self.Lambda = 0.5
-        self.Alpha = 0.1**10
+        self.Alpha = 0.01
         #set of positions in a game
         self.S = []
         #number of states
@@ -44,10 +44,10 @@ class evalFun:
         pos = self.S
         self.N = len(self.S)
         predicts = [None]*self.N
-        for j in xrange(self.N):
+        for j in range(self.N):
             predicts[j] = self.predict(pos[j])
-        for j in xrange(self.N-1):
-            s = sum([self.Lambda**(k-j)*(predicts[k+1] - predicts[k]) for k in xrange(j, self.N-1)])
+        for j in range(self.N-1):
+            s = sum([self.Lambda**(k-j)*(predicts[k+1] - predicts[k]) for k in range(j, self.N-1)])
             self.weights += self.Alpha*s*self.derivative(pos[j])
 
 

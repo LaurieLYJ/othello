@@ -15,9 +15,8 @@ with open(dataFile) as f:
 	content = f.readlines()
 content = [l.strip() for l in content]
 del content[1::2]
-content = [list(map(float, content[i].split())) for i in xrange(len(content))]
-for i in xrange(len(content)):
-	content[i].pop()
+content = [list(map(float, content[i].split())) for i in range(len(content))]
+for i in range(len(content)):
 	content[i].pop()
 	assert(len(content[i]) == 64)
 content = random.sample(content, 100)
@@ -28,7 +27,7 @@ def makePositions(model, startingPos):
 	turns = [-1, 1]
 	color = turns[random.randint(0, 1)]
 	board = copy.deepcopy(startingPos)
-	for i in xrange(12):
+	for i in range(12):
 		valid = fd.aiTurn(board, model, color)
 		if not valid:
 			break 
@@ -43,10 +42,10 @@ def makePositions(model, startingPos):
 def main():
 	evaluator = td.evalFun()
 	model = td.loadModel()
-	for i in xrange(len(content)):
+	for i in range(len(content)):
 		evaluator.setS(makePositions(model, content[i]))
 		evaluator.train()
-		print "case {} done.".format(i)
+		print ("case {} done".format(i))
 
 
 main()
