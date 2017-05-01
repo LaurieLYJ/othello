@@ -7,6 +7,7 @@ from keras.callbacks import ModelCheckpoint
 import numpy as np
 import heapq as hq
 import copy
+import h5py
 
 NEGINF = -9999999999999
 POSINF = 999999999999
@@ -19,13 +20,16 @@ class evalFun:
         self.weights = np.array(list(map(float, rawIn.split(','))))
         assert(len(self.weights) == 64)
         self.Lambda = 0.5
-        self.Alpha = 0.5
-        #set of starting positions
+        self.Alpha = 0.1**10
+        #set of positions in a game
         self.S = []
         #number of states
-        self.N = 0
+        self.N = 13
         #depth
         self.d = 5
+
+    def setS(self, S):
+        self.S = S
 
     def predict(self, position):
         return(np.dot(self.weights, position))
@@ -37,15 +41,14 @@ class evalFun:
 
     def train(self):
         lam = self.Lambda
-        for i in xrange(len(self.S)):
-            #get a sequence of positions with length N
-            pos = []
-            for j in xrange(self.N-1):
-                #s = sum([self.Lambda**(k-j)*(predict(pos[k+1]) - predict(pos[k])) for k in xrange(j, N-1)])
-                s = sum([lam**(k-j)*predict(pos[k]) for k in xrange(j+1, N-1)])
-                s = (lam**(-1) - 1) * s
-                s = lam**(N-j-1)*predict(pos[N]) + s - predict(pos[j])
-                self.weights += self.Alpha*s*self.derivative(pos[j])
+        pos = self.S
+        self.N = len(self.S)
+        predicts = [None]*self.N
+        for j in xrange(self.N):
+            predicts[j] = self.predict(pos[j])
+        for j in xrange(self.N-1):
+            s = sum([self.Lambda**(k-j)*(predicts[k+1] - predicts[k]) for k in xrange(j, self.N-1)])
+            self.weights += self.Alpha*s*self.derivative(pos[j])
 
 
         #After any training, save what we've done
