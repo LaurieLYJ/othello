@@ -150,26 +150,23 @@ def makeVector(rawBoard, rawPlayer, rawMove):
         #0 is empty space, 1 is white, -1 is black
         #O = white piece, * = black piece, - = empty space
         nextVect = "0"
-        if space == 'O':
+        if space == "-":
+            nextVect = "0"
+        elif (space == 'O') != (rawPlayer == -1) :
             nextVect = "1"
             score += 1
-        elif space == "*":
+        else:
             nextVect = "-1"
             score -= 1
-        elif space == "-":
-            nextVect = "0"
-        else:
-            print("Invalid board piece for conversion!")
 
         outVector.append(nextVect)
 
     outVector.append(str(score))
-    outVector.append(str(rawPlayer))
     outVector.append("\n")
 
     outVector.append(str(rawMove[0]))
     outVector.append(str(rawMove[1]))
-    outVector.append(str(rawMove[2]))
+    outVector.append(str(rawPlayer*rawMove[2]))
     outVector.append("\n")
 
     return " ".join(outVector)
@@ -190,8 +187,8 @@ def skipAnalysis(trainingFile):
 
 if __name__ == '__main__':
     #@TODO Change directory based on computer
-    directory = "C:\\Users\\Eliot\\Documents\\CMU\\S17\\10-401\\Othello Project\\othello\\training data converter\\"
-    rawFolder = "Raw Output\\"
+    directory = "./"
+    rawFolder = "Raw Output/"
 
     outFile = open(directory + "final_output.txt", 'w')
 

@@ -68,7 +68,7 @@ def getNBest(position, predictions, n, color):
     assert(len(testPos) == 64)
 
     withIndexes = [(predictions[i],i) for i in range(len(predictions))]
-    valMoves = filter(lambda x: validateMove(testPos, x[1] % 8, x[1] // 8, -color), withIndexes)
+    valMoves = filter(lambda x: validateMove(testPos, x[1] % 8, x[1] // 8, color), withIndexes)
 
     largest = hq.nlargest(n, valMoves, key=(lambda x: x[0]))
 
@@ -198,10 +198,11 @@ def black(alpha, beta, model, evaluator, position, depth, nBest=5):
 
     else:
         newPos = copy.deepcopy(position)
+        flipBoard(newPos)
         newPos.append(sum(position))
 
         prob_prediction = getGuess(model, newPos)
-        moves = getNBest(newPos, prob_prediction, nBest, -1)
+        moves = getNBest(newPos, prob_prediction, nBest, 1)
 
         bestMoveVal = POSINF
 

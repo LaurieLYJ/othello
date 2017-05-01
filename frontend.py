@@ -21,44 +21,34 @@ startVector = [0, 0, 0, 0, 0, 0, 0, 0,
                0, 0, 0, 0, 0, 0, 0, 0,
                0, 0, 0, 0, 0, 0, 0, 0]
 
-def getMove(model, position, color):
+def getMove(model, position):
+    position.append(sum(position))
     predictions = td.getGuess(model, position)
-    possBests = td.getNBest(position, predictions, 7)
+    possBests = td.getNBest(position, predictions, 7, 1)
     evaluator = td.evalFun()
     depth = 7
     bestMove = -1
     bestMoveVal = 0
-
-    position.pop()
     position.pop()
 
-    if color == 1:
-        bestMoveVal = NEGINF
-        for move in possBests:
-            nextPos = copy.deepcopy(position)
-            td.placeMove(nextPos, move % 8, move // 8, color)
-            value = td.white(NEGINF, POSINF, model, evaluator, nextPos, depth-1)
+    bestMoveVal = NEGINF
+    for move in possBests:
+        nextPos = copy.deepcopy(position)
+        td.placeMove(nextPos, move % 8, move // 8, 1)
+        value = td.black(NEGINF, POSINF, model, evaluator, nextPos, depth-1)
 
-            if value > bestMoveVal:
-                bestMove = move
-                bestMoveVal = value
-    else:
-        bestMoveVal = POSINF
-        for move in possBests:
-            nextPos = copy.deepcopy(position)
-            td.placeMove(nextPos, move % 8, move // 8, color)
-            value = td.black(NEGINF, POSINF, model, evaluator, nextPos, depth-1)
-
-            if value < bestMoveVal:
-                bestMove = move
-                bestMoveVal = value
+        if value > bestMoveVal:
+            bestMove = move
+            bestMoveVal = value
 
     return bestMove
 
 def aiTurn(board,model,color):
-    board.append(sum(board))
-    board.append(-color)
-    move = getMove(model, board, color)
+    if(color == -1):
+        td.flipBoard(board)
+    move = getMove(model, board)
+    if(color == -1):
+        td.flipBoard(board)
     if(move != -1):
         td.placeMove(board, move % 8, move // 8, color)
     return move != -1
@@ -110,6 +100,7 @@ def printBoard(boardVector,color):
         output += row
 
     output += lettersRow
+    print(output)
 
     return canMove
 
