@@ -7,6 +7,7 @@ from keras.callbacks import ModelCheckpoint
 import numpy as np
 import heapq as hq
 import copy
+import h5py
 
 NEGINF = -9999999999999
 POSINF = 999999999999
@@ -18,12 +19,37 @@ class evalFun:
         rawIn = weightsFile.readline()
         self.weights = np.array(list(map(float, rawIn.split(','))))
         assert(len(self.weights) == 64)
+        self.Lambda = 0.5
+        self.Alpha = 0.01
+        #set of positions in a game
+        self.S = []
+        #number of states
+        self.N = 13
+        #depth
+        self.d = 5
+
+    def setS(self, S):
+        self.S = S
 
     def predict(self, position):
         return(np.dot(self.weights, position))
 
+    #deritivative of inner product 
+    #make sure to change if predict has changed
+    def derivative(self, position):
+        return position
+
     def train(self):
-        #@TODO make it actually train according to TD-Leaf
+        lam = self.Lambda
+        pos = self.S
+        self.N = len(self.S)
+        predicts = [None]*self.N
+        for j in range(self.N):
+            predicts[j] = self.predict(pos[j])
+        for j in range(self.N-1):
+            s = sum([self.Lambda**(k-j)*(predicts[k+1] - predicts[k]) for k in range(j, self.N-1)])
+            self.weights += self.Alpha*s*self.derivative(pos[j])
+
 
         #After any training, save what we've done
         weightsFile = open('weights.txt', 'w')
@@ -32,18 +58,17 @@ class evalFun:
 
 def getGuess(model, position):
     x = np.array(position)
-    x = x.reshape(1,66,1,1)
+    x = x.reshape(1,65,1,1)
     out = model.predict(x)
     return out[0]
 
-def getNBest(position, predictions, n):
+def getNBest(position, predictions, n, color):
     testPos = copy.deepcopy(position)
-    color = testPos.pop()
     testPos.pop()
     assert(len(testPos) == 64)
 
     withIndexes = [(predictions[i],i) for i in range(len(predictions))]
-    valMoves = filter(lambda x: validateMove(testPos, x[1] % 8, x[1] // 8, -color), withIndexes)
+    valMoves = filter(lambda x: validateMove(testPos, x[1] % 8, x[1] // 8, color), withIndexes)
 
     largest = hq.nlargest(n, valMoves, key=(lambda x: x[0]))
 
@@ -138,7 +163,7 @@ def loadModel():
 
     return model
 
-# Used for alpha-beta serach. Can be thought of as "maxie"
+# Used for alpha-beta search. Can be thought of as "maxie"
 def white(alpha, beta, model, evaluator, position, depth, nBest=5):
     if depth == 0 or isTerminal(position):
         return evaluator.predict(position)
@@ -146,14 +171,13 @@ def white(alpha, beta, model, evaluator, position, depth, nBest=5):
     else:
         newPos = copy.deepcopy(position)
         newPos.append(sum(position))
-        newPos.append(1)
 
 
         prob_prediction = getGuess(model, newPos)
-        moves = getNBest(newPos, prob_prediction, nBest)
+        moves = getNBest(newPos, prob_prediction, nBest, 1)
 
         bestMoveVal = NEGINF
-
+ 
         for move in moves:
             nextPos = copy.deepcopy(position)
             placeMove(nextPos, move % 8, move // 8, 1)
@@ -164,9 +188,10 @@ def white(alpha, beta, model, evaluator, position, depth, nBest=5):
 
             if beta <= alpha:
                 break
-
         return bestMoveVal
 
+
+# Used for alpha-beta search. Can be thought of as "minnie"
 def black(alpha, beta, model, evaluator, position, depth, nBest=5):
     "Alpha-Beta serach for black. Can be thought of as minnie."
     if depth == 0 or isTerminal(position):
@@ -174,11 +199,11 @@ def black(alpha, beta, model, evaluator, position, depth, nBest=5):
 
     else:
         newPos = copy.deepcopy(position)
+        flipBoard(newPos)
         newPos.append(sum(position))
-        newPos.append(-1)
 
         prob_prediction = getGuess(model, newPos)
-        moves = getNBest(newPos, prob_prediction, nBest)
+        moves = getNBest(newPos, prob_prediction, nBest, 1)
 
         bestMoveVal = POSINF
 
@@ -192,8 +217,11 @@ def black(alpha, beta, model, evaluator, position, depth, nBest=5):
 
             if beta <= alpha:
                 break
-
         return bestMoveVal
+
+def flipBoard(board):
+    for i in range(len(board)):
+        board[i]=-board[i]
 
 
 if __name__ == '__main__':
