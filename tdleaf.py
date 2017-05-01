@@ -55,13 +55,12 @@ class evalFun:
 
 def getGuess(model, position):
     x = np.array(position)
-    x = x.reshape(1,66,1,1)
+    x = x.reshape(1,65,1,1)
     out = model.predict(x)
     return out[0]
 
-def getNBest(position, predictions, n):
+def getNBest(position, predictions, n, color):
     testPos = copy.deepcopy(position)
-    color = testPos.pop()
     testPos.pop()
     assert(len(testPos) == 64)
 
@@ -169,11 +168,10 @@ def white(alpha, beta, model, evaluator, position, depth, nBest=5):
     else:
         newPos = copy.deepcopy(position)
         newPos.append(sum(position))
-        newPos.append(1)
 
 
         prob_prediction = getGuess(model, newPos)
-        moves = getNBest(newPos, prob_prediction, nBest)
+        moves = getNBest(newPos, prob_prediction, nBest, 1)
 
         bestMoveVal = NEGINF
  
@@ -198,10 +196,9 @@ def black(alpha, beta, model, evaluator, position, depth, nBest=5):
     else:
         newPos = copy.deepcopy(position)
         newPos.append(sum(position))
-        newPos.append(-1)
 
         prob_prediction = getGuess(model, newPos)
-        moves = getNBest(newPos, prob_prediction, nBest)
+        moves = getNBest(newPos, prob_prediction, nBest, -1)
 
         bestMoveVal = POSINF
 
@@ -215,8 +212,11 @@ def black(alpha, beta, model, evaluator, position, depth, nBest=5):
 
             if beta <= alpha:
                 break
-        assert(bestMove != None)
         return bestMoveVal
+
+def flipBoard(board):
+    for i in range(len(board)):
+        board[i]=-board[i]
 
 
 if __name__ == '__main__':
