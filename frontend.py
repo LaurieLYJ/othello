@@ -101,8 +101,6 @@ def printBoard(boardVector,color):
 
     output += lettersRow
     print(output)
-
-    print(output)
     return canMove
 
 def gameTurn(model, board, color, player, prev):
