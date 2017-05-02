@@ -148,6 +148,7 @@ def placeMove(board, x, y, color):
         flipDir(board, x, y, downright, color)
 
 def isTerminal(position):
+    "Returns true if position denotes a game in a terminal state."
     for square in position:
         if square == 0: return False
 
@@ -163,7 +164,6 @@ def loadModel():
     return model
 
 # Used for alpha-beta search. Can be thought of as "maxie"
-
 def white(alpha, beta, model, evaluator, position, depth, nBest=5):
     if depth == 0 or isTerminal(position):
         return evaluator.predict(position)
@@ -193,6 +193,7 @@ def white(alpha, beta, model, evaluator, position, depth, nBest=5):
 
 # Used for alpha-beta search. Can be thought of as "minnie"
 def black(alpha, beta, model, evaluator, position, depth, nBest=5):
+    "Alpha-Beta serach for black. Can be thought of as minnie."
     if depth == 0 or isTerminal(position):
         return evaluator.predict(position)
 
